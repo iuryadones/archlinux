@@ -170,35 +170,35 @@ bindsym XF86MonBrightnessUp exec "xbacklight -inc 40"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 40"
 
 # Colors
-# colorclass		border		background	text		indicator	child_border
-client.focused		"#000000"	"#0093b0"	"#ffffff"	"#6093b0"	"#000000"
-client.focused_inactive	"#000000"	"#5f676a"	"#ffffff"	"#000000"	"#000000"
-client.unfocused	"#000000"	"#222222"	"#888888"	"#000000"	"#000000"
-client.urgent		"#000000"	"#900000"	"#ffffff"	"#900000"	"#000000"
-client.placeholder	"#000000"	"#0c0c0c"	"#ffffff"	"#000000"	"#000000"
-client.background	"#000000"
+# colorclass            border      background  text        indicator   child_border
+client.focused          "#000000"	"#0093b0"	"#ffffff"	"#6093b0"	"#000000"
+client.focused_inactive "#000000"	"#5f676a"	"#ffffff"	"#000000"	"#000000"
+client.unfocused        "#000000"	"#222222"	"#888888"	"#000000"	"#000000"
+client.urgent           "#000000"	"#900000"	"#ffffff"	"#900000"	"#000000"
+client.placeholder      "#000000"	"#0c0c0c"	"#ffffff"	"#000000"	"#000000"
+client.background       "#000000"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
 	colors {
 		# whole color settings
-		background	"#000000"
-		statusline	"#ffffff"
-		separator	"#999999"
+		background  "#000000"
+		statusline  "#ffffff"
+		separator   "#999999"
 
-		# Type			border		background	text
-		focused_workspace	"#008fff"	"#0093b0"	"#ffffff"
-		active_workspace	"#444444"	"#5f676a"	"#ffffff"
-		inactive_workspace	"#444444"	"#222222"	"#888888"
-		urgent_workspace	"#aa0000"	"#990000"	"#ffffff"
+		# Type              border		background	text
+		focused_workspace   "#008fff"	"#0093b0"	"#ffffff"
+		active_workspace    "#444444"	"#5f676a"	"#ffffff"
+		inactive_workspace  "#444444"	"#222222"	"#888888"
+		urgent_workspace    "#aa0000"	"#990000"	"#ffffff"
 	}
 
-	status_command		i3status -c ~/.config/i3/i3status.conf
-	position		bottom
-	workspace_buttons	yes
-	binding_mode_indicator	yes
-	tray_padding		1
+	status_command          i3status -c ~/.config/i3/i3status.conf
+	position                bottom
+	workspace_buttons       yes
+	binding_mode_indicator  yes
+	tray_padding            1
 }
 
 # Wallpaper
@@ -209,7 +209,6 @@ exec --no-startup-id "pulseaudio --start"
 
 # nm-applet
 exec --no-startup-id "nm-applet"
-
 
 ####################
 ####################
