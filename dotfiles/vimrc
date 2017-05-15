@@ -1,0 +1,11 @@
+"Arquivo de Configurações do Vim
+
+syntax on           "Syntax highlight
+set showmatch       "Mostra caracteres ( { [ quando fechados
+set textwidth=79    "Largura do texto
+set nowrap          "Sem wrap (quebra de linha)
+set nu              "Numeração de linhas
+set ts=4            "Seta onde o tab para
+set sw=4            "Largura do tab
+set et              "Espaços em vez de tab
+
