@@ -2,7 +2,7 @@
 ##
 ## Please note that you must have configured nano with --enable-nanorc
 ## for this file to be read!  Also note that this file should not be in
-## DOS or Mac format, and that characters specially interpreted by the
+##  DOS or Mac format, and that characters specially interpreted by the
 ## shell should not be escaped here.
 ##
 ## To make sure an option is disabled, use "unset <option>".
@@ -64,7 +64,7 @@ set autoindent
 # set justifytrim
 
 ## Display line numbers to the left of the text.
-# set linenumbers
+set linenumbers
 
 ## Enable vim-style lock-files.  This is just to let a vim user know you
 ## are editing a file [s]he is trying to edit and vice versa. There are
@@ -207,11 +207,11 @@ set tabstospaces
 # set keycolor cyan
 # set functioncolor green
 ## In root's .nanorc you might want to use:
-# set titlecolor brightwhite,red
-# set statuscolor brightwhite,red
-# set numbercolor magenta
-# set keycolor brightmagenta
-# set functioncolor magenta
+set titlecolor brightwhite,red
+set statuscolor brightwhite
+set numbercolor brightwhite
+set keycolor brightblue
+set functioncolor brightred
 
 
 ## Setup of syntax coloring.
