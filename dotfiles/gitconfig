@@ -1,0 +1,11 @@
+[user]
+	name = Iury Adones Xavier dos Santos
+	email = iuryadones@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore-global
+[alias]
+	log-graph = log --decorate --oneline --graph
+	log-all = log --decorate --oneline --graph --all
+[merge]
+	tool = vimdiff
