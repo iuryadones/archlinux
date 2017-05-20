@@ -1,0 +1,17 @@
+#!/bin/sh
+# Xsetup - run as root before the login dialog appears
+
+vga_in=VGA-0
+vga_out=VGA-1-1
+lvds=LVDS-1-1
+hdmi=HDMI-1-1
+
+# nvidia
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
+# GPU - VGA-0
+xrandr --newmode "1368x768"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+xrandr --addmode "$vga_in" 1368x768
+xrandr --output "$vga_in" --mode 1368x768 --pos -1x0 --primary --output "$lvds" --auto --pos 0x0
+
