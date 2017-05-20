@@ -1,5 +1,4 @@
 atom-editor-bin
-gnome-terminal-transparency
 google-chrome
 popcorntime-bin
 robomongo
