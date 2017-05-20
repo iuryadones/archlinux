@@ -162,9 +162,10 @@ bindsym --release Print exec "scrot ~/Imagens/Captura_de_tela_%Y-%m-%d-%T.png"
 bindsym --release Shift+Print exec "scrot -s ~/Imagens/Captura_de_area_%Y-%m-%d-%T.png"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 2 +5%"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 2 -5%"
-bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 2 toggle"
+set $sink `pactl list short sinks | cut -f1`
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink -5%"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute $sink toggle"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 40"
@@ -174,14 +175,13 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 40"
 exec --no-startup-id "xrandr --output VGA-0 --off --output LVDS-1-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output DP-1-1 --off --output VGA-1-1 --off --output HDM-1-1 --off"
 
 # Set the shortcuts and what they do
-set $mode_display Ext Screen (v) VGA-out ON, (h) HDMI ON, (x) VGA-out OFF, (y) HDMI OFF, (k) VGA-in ON, (j) VGA-in OFF
+set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
 mode "$mode_display" {
     bindsym v exec --no-startup-id xrandr --output VGA-1-1 --auto --right-of LVDS-1-1, mode "default"
     bindsym x exec --no-startup-id xrandr --output VGA-1-1 --auto --off, mode "default"
     bindsym h exec --no-startup-id xrandr --output HDMI-1-1 --auto --right-of LVDS-1-1, mode "default"
     bindsym y exec --no-startup-id xrandr --output HDMI-1-1 --auto --off, mode "default"
-    bindsym k exec --no-startup-id xrandr --output VGA-0 --auto --right-of LVDS-1-1, mode "default"
-    bindsym j exec --no-startup-id xrandr --output VGA-0 --auto --off, mode "default"
+
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -190,9 +190,13 @@ mode "$mode_display" {
 bindsym $mod+x mode "$mode_display"
 
 # set variaveis
+#color base
 set $white                #ffffff
 set $black                #000000
 set $green                #00ff00
+set $red                  #ff0000
+set $blue                 #0000ff
+
 set $bg-color 	          #2f343f
 set $active-bg-color      #444444
 set $inactive-bg-color    #2f343f
@@ -210,8 +214,7 @@ client.focused_inactive  $inactive-bg-color  $inactive-bg-color  $inactive-text-
 client.unfocused	     $inactive-bg-color  $inactive-bg-color  $inactive-text-color  $indicator  $black
 client.urgent            $urgent-bg-color    $urgent-bg-color    $text-color           $indicator  $black
 client.placeholder       $black              "#0c0c0c"           $white                $black      $black
-client.background        $black
-
+client.background        $bg-color
 
 # bar
 bar {
