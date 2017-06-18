@@ -154,6 +154,9 @@ mode "$mode_display" {
 }
 bindsym $mod+x mode "$mode_display"
 
+# Nautilus
+bindsym $mod+Shift+f exec nautilus
+
 # color: http://www.color-hex.com/color-palette/39942
 # set color focused 
 set $f-border                       #41434f
