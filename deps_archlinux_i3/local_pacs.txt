@@ -1,4 +1,8 @@
+android-studio
 atom-editor-bin
 google-chrome
+light
 popcorntime-bin
+postman-bin
 robomongo
+vokoscreen
