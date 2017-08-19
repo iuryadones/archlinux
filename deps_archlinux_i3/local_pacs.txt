@@ -1,8 +1,9 @@
 android-studio
 atom-editor-bin
+genymotion
 google-chrome
 light
 popcorntime-bin
-postman-bin
 robomongo
+steam-fonts
 vokoscreen
