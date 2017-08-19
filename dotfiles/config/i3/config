@@ -2,21 +2,127 @@
 set $mod Mod4
 
 #font pango:monospace 8
-font pango:DejaVu Sans Mono 10
+font pango:DejaVu Sans Mono Terminus (TTF) 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# Start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec gnome-terminal
+# color: http://www.color-hex.com/color-palette/39942
+# set color focused 
+set $f-border                       #41434f
+set $f-background                   #406e8f
+set $f-text                         #cee0c8
+set $f-indicator                    #468ca5
+set $f-child-border                 #7196a6
 
-# kill focused window
-bindsym $mod+Shift+q kill
+# set color focused_inactive
+set $fi-border                      #406e8f
+set $fi-background                  #41434f
+set $fi-text                        #7196a6
+set $fi-indicator                   #468ca5
+set $fi-child-border                #cee0c8
 
-# Start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id dmenu_run
+# set color unfocused
+set $uf-border                      #406e8f
+set $uf-background                  #41434f
+set $uf-text                        #7196a6
+set $uf-indicator                   #468ca5
+set $uf-child-border                #41434f
+
+# set color urgent
+set $u-border                       #406e8f
+set $u-background                   #ffe0c8
+set $u-text                         #406e8f
+set $u-indicator                    #468ca5
+set $u-child-border                 #ffe0c8
+
+# set color placeholder
+set $ph-border                      #406e8f
+set $ph-background                  #41434f
+set $ph-text                        #7196a6
+set $ph-indicator                   #468ca5
+set $ph-child-border                #41434f
+
+# set color background
+set $background                     #406e8f
+
+# Bar
+# set color
+set $bar-background                 #41434f
+set $bar-statusline                 #cee0c8
+set $bar-separator                  #7196a6
+
+# set color focused workspace
+set $fw-border                      #41434f
+set $fw-background                  #406e8f
+set $fw-text                        #cee0c8
+
+# set color active workspace
+set $aw-border                      #41434f
+set $aw-background                  #cee0c8
+set $aw-text                        #7196a6
+
+# set color inactive workspace
+set $iw-border                      #406e8f
+set $iw-background                  #41434f
+set $iw-text                        #7196a6
+
+# set color urgent workspace
+set $uw-border                      #406e8f
+set $uw-background                  #ffe0c8
+set $uw-text                        #406e8f
+
+# Color_Class           Border       Background     Text     Indicator     Child_Border
+client.focused          $f-border    $f-background  $f-text  $f-indicator  $f-child-border
+client.focused_inactive $fi-border   $fi-background $fi-text $fi-indicator $fi-child-border
+client.unfocused	    $uf-border   $uf-background $uf-text $uf-indicator $uf-child-border
+client.urgent           $u-border    $u-background  $u-text  $u-indicator  $u-child-border
+client.placeholder      $ph-border   $ph-background $ph-text $ph-indicator $ph-child-border
+client.background       $blackground
+
+# Bar
+bar {
+    output                 LVDS-1-1
+    status_command         i3status -c ~/.config/i3/i3status/config
+    position               bottom
+    workspace_buttons      yes
+    binding_mode_indicator yes
+    tray_padding           1
+    colors {
+        background $bar-background
+        statusline $bar-statusline
+        separator  $bar-separator
+
+        # Color_Class      Border     Background     Text
+        focused_workspace  $fw-border $fw-background $fw-text
+        active_workspace   $aw-border $aw-background $aw-text
+        inactive_workspace $iw-border $iw-background $iw-text
+        urgent_workspace   $uw-border $uw-background $uw-text
+    }
+}
+
+###########################
+# Disparos Personalizados #
+###########################
+
+# Configura os displays internos
+exec --no-startup-id "xrandr --output LVDS-1-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output VGA-0 --off --output DP-1-1 --off --output VGA-1-1 --off --output HDM-1-1 --off"
+
+# Compton
+exec --no-startup-id "compton --config ~/.config/i3/compton/config -b"
+
+# Wallpaper
+exec --no-startup-id "feh --bg-fill ~/.wallpaper/dragon.jpg"
+
+# Audio
+exec --no-startup-id "pulseaudio --start"
+
+# Wifi
+exec --no-startup-id "nm-applet"
+
+###########################
+# Comandos Personalizados #
+###########################
 
 # Change Focus
 bindsym $mod+j         focus left
@@ -66,7 +172,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -92,14 +198,14 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# kill focused window
+bindsym $mod+Shift+q kill
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -119,28 +225,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#################
-# Personalizado #
-#################
-
-# PrintScreen
-bindsym --release Print       exec "scrot ~/Imagens/Captura_de_tela_%Y-%m-%d-%T.png"
-bindsym --release Shift+Print exec "scrot -s ~/Imagens/Captura_de_area_%Y-%m-%d-%T.png"
-
-# Pulse Audio controls
-set $sink `pactl list short sinks | cut -f1`
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink +5%"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink -5%"
-bindsym XF86AudioMute        exec --no-startup-id "pactl set-sink-mute $sink toggle"
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp   exec "light -A 10"
-bindsym XF86MonBrightnessDown exec "light -U 10"
-
-# Manual management of external displays
-exec --no-startup-id "xrandr --output LVDS-1-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output VGA-0 --off --output DP-1-1 --off --output VGA-1-1 --off --output HDM-1-1 --off"
-
-# Manual management of external displays
+# Configure os displays externos
 set $mode_display Ext Screen (v) VGA ON, (h) HDMI ON, (x) VGA OFF, (y) HDMI OFF
 mode "$mode_display" {
     bindsym v exec --no-startup-id xrandr --output VGA-1-1  --auto --right-of LVDS-1-1, mode "default"
@@ -154,106 +239,32 @@ mode "$mode_display" {
 }
 bindsym $mod+x mode "$mode_display"
 
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg sair'"
+
 # Nautilus
 bindsym $mod+Shift+f exec nautilus
 
-# color: http://www.color-hex.com/color-palette/39942
-# set color focused 
-set $f-border                       #41434f
-set $f-background                   #406e8f
-set $f-text                         #cee0c8
-set $f-indicator                    #468ca5
-set $f-child-border                 #7196a6
-# set color focused_inactive
-set $fi-border                      #406e8f
-set $fi-background                  #41434f
-set $fi-text                        #7196a6
-set $fi-indicator                   #468ca5
-set $fi-child-border                #cee0c8
-# set color unfocused
-set $uf-border                      #406e8f
-set $uf-background                  #41434f
-set $uf-text                        #7196a6
-set $uf-indicator                   #468ca5
-set $uf-child-border                #41434f
-# set color urgent
-set $u-border                       #406e8f
-set $u-background                   #ffe0c8
-set $u-text                         #406e8f
-set $u-indicator                    #468ca5
-set $u-child-border                 #ffe0c8
-# set color placeholder
-set $ph-border                      #406e8f
-set $ph-background                  #41434f
-set $ph-text                        #7196a6
-set $ph-indicator                   #468ca5
-set $ph-child-border                #41434f
-# set color background
-set $background                     #406e8f
+# Google Chrome
+bindsym $mod+Shift+i exec google-chrome-stable
 
-# Bar
-# set color
-set $bar-background                 #41434f
-set $bar-statusline                 #cee0c8
-set $bar-separator                  #7196a6
-# set color focused workspace
-set $fw-border                      #41434f
-set $fw-background                  #406e8f
-set $fw-text                        #cee0c8
-# set color active workspace
-set $aw-border                      #41434f
-set $aw-background                  #cee0c8
-set $aw-text                        #7196a6
-# set color inactive workspace
-set $iw-border                      #406e8f
-set $iw-background                  #41434f
-set $iw-text                        #7196a6
-# set color urgent workspace
-set $uw-border                      #406e8f
-set $uw-background                  #ffe0c8
-set $uw-text                        #406e8f
+# Start a terminal
+bindsym $mod+Return exec termite 
 
-# Color_Class           Border       Background     Text     Indicator     Child_Border
-client.focused          $f-border    $f-background  $f-text  $f-indicator  $f-child-border
-client.focused_inactive $fi-border   $fi-background $fi-text $fi-indicator $fi-child-border
-client.unfocused	    $uf-border   $uf-background $uf-text $uf-indicator $uf-child-border
-client.urgent           $u-border    $u-background  $u-text  $u-indicator  $u-child-border
-client.placeholder      $ph-border   $ph-background $ph-text $ph-indicator $ph-child-border
-client.background       $blackground
+# Start dmenu (a program launcher)
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -fn 'DejaVu Sans Mono Terminus (TTF) 10' -l 5 -i"
 
-# Bar
-bar {
-    output                 LVDS-1-1
-    status_command         i3status -c ~/.config/i3/i3status.conf
-    position               bottom
-    workspace_buttons      yes
-    binding_mode_indicator yes
-    tray_padding           1
-    colors {
-        background $bar-background
-        statusline $bar-statusline
-        separator  $bar-separator
+# PrintScreen
+bindsym --release Print       exec "scrot ~/Imagens/Captura_de_tela_%Y-%m-%d-%T.png"
+bindsym --release Shift+Print exec "scrot -s ~/Imagens/Captura_de_area_%Y-%m-%d-%T.png"
 
-        # Color_Class      Border     Background     Text
-        focused_workspace  $fw-border $fw-background $fw-text
-        active_workspace   $aw-border $aw-background $aw-text
-        inactive_workspace $iw-border $iw-background $iw-text
-        urgent_workspace   $uw-border $uw-background $uw-text
-    }
-}
+# Sreen brightness controls
+bindsym --release XF86MonBrightnessUp   exec "light -A 10"
+bindsym --release XF86MonBrightnessDown exec "light -U 10"
 
-# Wallpaper
-exec --no-startup-id "feh --bg-fill ~/.wallpaper/dragon.jpg"
-#exec --no-startup-id "feh --bg-scale ~/.wallpaper/dragon.jpg"
+# Pulse Audio controls
+set $sink `pactl list short sinks | cut -f1`
+bindsym --release XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink +5%"
+bindsym --release XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink -5%"
+bindsym --release XF86AudioMute        exec --no-startup-id "pactl set-sink-mute $sink toggle"
 
-# Audio
-exec --no-startup-id "pulseaudio --start"
-
-# Wifi
-exec --no-startup-id "nm-applet"
-
-# Compton 
-exec --no-startup-id "compton --config ~/.config/i3/compton.conf -b"
-
-####################
-####################

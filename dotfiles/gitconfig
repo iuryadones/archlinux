@@ -5,7 +5,7 @@
 	editor = vim
 	excludesfile = ~/.gitignore-global
 [alias]
-	log-graph = log --decorate --oneline --graph
-	log-all = log --decorate --oneline --graph --all
+	log-graph = log --decorate --oneline --graph --color
+	log-all = log --decorate --oneline --graph --all --color
 [merge]
 	tool = vimdiff

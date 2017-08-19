@@ -17,5 +17,5 @@ detect-client-opacity = true; # This prevents opacity being ignored for some app
 # Window type settings
 wintypes:
 {
-  tooltip = { fade = true; shadow = false; };
+  tooltip = { fade = true; shadow = true; };
 };
