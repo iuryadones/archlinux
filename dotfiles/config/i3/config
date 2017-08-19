@@ -285,13 +285,13 @@ mode "$mode_display" {
 bindsym $mod+x mode "$mode_display"
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg sair'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg sair'"
 
 # Nautilus
-bindsym $mod+Shift+f exec nautilus
+bindsym $mod+Shift+f exec --no-startup-id nautilus
 
 # Google Chrome
-bindsym $mod+Shift+i exec google-chrome-stable
+bindsym $mod+Shift+i exec --no-startup-id google-chrome-stable
 
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id termite 
@@ -300,16 +300,20 @@ bindsym $mod+Return exec --no-startup-id termite
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -fn 'DejaVu Sans Mono Terminus (TTF) 10' -l 5 -i"
 
 # PrintScreen
-bindsym --release Print       exec "scrot ~/Imagens/Captura_de_tela_%Y-%m-%d-%T.png"
-bindsym --release Shift+Print exec "scrot -s ~/Imagens/Captura_de_area_%Y-%m-%d-%T.png"
+bindsym --release Print       exec --no-startup-id "scrot ~/Imagens/Captura_de_tela_%Y-%m-%d-%T.png"
+bindsym --release Shift+Print exec --no-startup-id "scrot -s ~/Imagens/Captura_de_area_%Y-%m-%d-%T.png"
 
 # Sreen brightness controls
-bindsym --release XF86MonBrightnessUp   exec "light -A 10"
-bindsym --release XF86MonBrightnessDown exec "light -U 10"
+bindsym --release XF86MonBrightnessUp   exec --no-startup-id "light -A 10"
+bindsym --release XF86MonBrightnessDown exec --no-startup-id "light -U 10"
 
 # Pulse Audio controls
 set $sink `pactl list short sinks | cut -f1`
 bindsym --release XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink +5%"
 bindsym --release XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink -5%"
 bindsym --release XF86AudioMute        exec --no-startup-id "pactl set-sink-mute $sink toggle"
+
+###########################
+#    Configura Janelas    #
+###########################
 
