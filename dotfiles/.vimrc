@@ -1,15 +1,4 @@
 """""""""""""""""""" 0) Definição de funções auxiliares """"""""""""""""""""
-"
-" Retorna verdadeiro se o modo de copiar e colar estiver ativado
-function! HasPaste()
-        if &paste
-                return 'PASTE MODE ON'
-        en
-                return 'PASTE MODE OFF'
-        return ''
-endfunction
-"
-"""""""""""""""""""" 0) Definição de funções auxiliares """"""""""""""""""""
 """""""""""""""""""" 1) Configurações gerais """"""""""""""""""""
 "
 " Usa as definições do vim, não as do vi
@@ -65,7 +54,7 @@ set number
 syntax enable
 "
 " Esquema de cores do vim
-colorscheme desert
+colorscheme monokai 
 set background=light
 "
 " Desativa a quebra de linha automática (comentado por padrão)
@@ -96,7 +85,7 @@ set tabstop=4
 set laststatus=2
 "
 " Formato da linha de status
-set statusline=\ %{HasPaste()}\ Arquivo:\ %F%m%r%h\ %w\ \ Diretório\ de\ trabalho:\ %r%{getcwd()}%h\ -\ Linha:\ %l\ -\ Coluna:\ %c
+set statusline=\ Arquivo:\ %F%m%r%h\ %w\ \ Diretório\ de\ trabalho:\ %r%{getcwd()}%h\ -\ Linha:\ %l\ -\ Coluna:\ %c
 "
 """""""""""""""""""" 5) Linha de status """"""""""""""""""""
 
