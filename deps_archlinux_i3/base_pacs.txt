@@ -80,6 +80,7 @@ libtraceevent
 libva-vdpau-driver
 licenses
 linux
+linux-headers
 logrotate
 lshw
 lvm2
@@ -170,7 +171,6 @@ vde2
 vi
 vim
 virtualbox
-virtualbox-guest-modules-arch
 vlc
 wget
 which
