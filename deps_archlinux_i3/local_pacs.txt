@@ -1,9 +1,0 @@
-android-studio
-atom-editor-bin
-genymotion
-google-chrome
-light
-popcorntime-bin
-robomongo
-steam-fonts
-vokoscreen

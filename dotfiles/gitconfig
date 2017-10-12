@@ -7,5 +7,6 @@
 [alias]
 	log-graph = log --decorate --oneline --graph --color
 	log-all = log --decorate --oneline --graph --all --color
+	status-column = status --untracked-files=all --column=auto
 [merge]
 	tool = vimdiff

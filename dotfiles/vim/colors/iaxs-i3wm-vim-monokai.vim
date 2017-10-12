@@ -1,8 +1,7 @@
 " Vim color file
 " Maintainer:  Iury Xavier <iuryadones@gmail.com>
-" WWW:         http://site.com/iaxs-i3wm-vim-monokai.vim
 " Last Change: 2017 Ago 20
-" Version:     0.0.0
+" Version:     1.0.0
 
 set background=dark
 
@@ -14,7 +13,7 @@ endif
 
 let g:colors_name="iaxs-i3wm-vim-monokai"
 
-hi Normal       guifg=#F8F8F2 guibg=#272822
+hi Normal      guifg=#F8F8F2 guibg=#272822
 
 " Main highlight groups
 hi Cursor       guibg=fg

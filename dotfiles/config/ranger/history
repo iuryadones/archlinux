@@ -1,0 +1,45 @@
+default_linemode devicons
+search media
+delete Images_
+open_with 
+search I
+search share
+search *share
+find fon
+find *scomp
+find sc
+find secomp
+rename archlinux_simplicity.png
+rename planeta.jpg
+rename alone.jpg
+rename karpas.jpg
+rename skull_colors.jpg
+rename archlinux_magic.jpg
+delete https___avell.com.pdf
+delete test_cpuid_issue.cpp
+mkdir sprint-1
+mkdir db_localfiles
+mkdir f90py
+delete TableauReader-64bit-10-3-2.exe
+untar
+linemode devicons
+default_linemode 
+delete captcha.jpeg
+delete captcha.png
+python filter.py
+find I
+ 
+1
+delete vokoscreen-2017-10-11_21-27-10.mov 
+delete vokoscreen-2017-10-11_21-36-56.mov
+delete vokoscreen-2017-10-11_21-45-16.mov
+delete vokoscreen-2017-10-11_22-00-48.mov
+delete vokoscreen-2017-10-11_22-08-53.mov
+delete vokoscreen-2017-10-11_22-27-51.mov
+delete vokoscreen-2017-10-11_22-41-46.mov
+delete vokoscreen-2017-10-11_23-02-30.mov
+Q
+delete vokoscreen-2017-10-11_23-20-01.mov
+delete vokoscreen-2017-10-11_23-41-27.mov
+delete
+

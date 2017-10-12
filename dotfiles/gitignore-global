@@ -1,5 +1,8 @@
+# pyenv
 .python-version
 
+
+# data-scraping
 run-consultar.py
 run-extrair.py
 run-coletar.py
@@ -7,13 +10,26 @@ run-coletar.py
 dump.html
 dump_extract.html
 
-.pdbrc
-
-_pycache__/ *.py[cod]
-
 command_python.txt
 err.txt
 out.txt
 regex_parte_ativo.txt
 regex_parte_passivo.txt
+
+
+# data-science
+db_localfiles/
+db_pickles/
+research/
+requirements.txt
+sprints/
+lab-local/
+
+# python
+.pdbrc
+_pycache__/ *.py[cod]
+
+
+# vim
+*.*.swp
 

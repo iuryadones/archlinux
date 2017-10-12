@@ -1,65 +1,379 @@
-"""""""""""""""""""" 0) Definição de funções auxiliares """"""""""""""""""""
-"""""""""""""""""""" 1) Configurações gerais """"""""""""""""""""
+" .vimrc of Iury Adones  {iuryadones@gmail.com}                            {{{1
+" vim: set foldmethod=marker:
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Maintainer:	Iury Adones <iuryadones@gmail.com>
+" Last change:	2017 Set 27
 "
-" Usa as definições do vim, não as do vi
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.vimrc
+"	      for Amiga:  s:.vimrc
+"  for MS-DOS and Win32:  $VIM\_vimrc
+"	    for OpenVMS:  sys$login:.vimrc
+
 set nocompatible
-" Define o tamanho do histórico de comandos do vim:
-set history=10000
-" Habilita o reconhecimento de arquivos
-filetype plugin on
-filetype indent on
-" Recarrega o arquivo caso ele seja editado por um programa externo enquanto aberto
-set autoread
-" Habilita o uso do mouse no vim para cliques e coisas do tipo
-set mouse=a
-"""""""""""""""""""" 2) Interface do vim """""""""""""""""""""
-" Ativa o menu WiLd (entre outras coisas, ativa <Ctrl>n e <Ctrl>p para navegar entre as correspondências da busca
-set wildmenu
-" Sempre mostra a posição atual do cursor
-set ruler
-" Altura da barra de comandos
-set cmdheight=2
-" Configurando a tecla <Backspace> para o que ela tem que fazer
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
-" Destaca os resultados da busca
-set hlsearch
-" Habilita expressões regulares
-set magic
-" Destaca pares de colchetes ao passar o cursor, e configura o tempo do destaque em décimos de segundo
-set showmatch
-set mat=10
-"""""""""""""""""""" 3) Cores e fontes """"""""""""""""""""
-" Ativa a numeração das linhas
-set number
-" Habilita o destaque de sintaxe
-syntax enable
-" Esquema de cores do vim
-syntax on
-set t_Co=256
-set termguicolors
-colorscheme iaxs-i3wm-vim-monokai 
-" Desativa a quebra de linha automática (comentado por padrão)
-set nolinebreak
-" Permite a navegação dentro de uma mesma linha longa com j e k
-set wrap
-"""""""""""""""""""" 4) Texto e tabulações """"""""""""""""""""
-" Insere espaços no lugar de caracteres de tabulação
-set expandtab
-" Uso inteligente de tabulações
-set smarttab
-" Define uma tabulação como sendo oito espaços
-set shiftwidth=4
-set tabstop=4
-""""""""""""""""""" 5) Linha de status """"""""""""""""""""
-" Sempre mostra a linha de status
+filetype off
+
+let mapleader="\<F6>"
+let g:mapleader="\<F6>"
+let s:home=$HOME
+let s:vimhome=s:home."/.vim"
+let s:plugdir=s:vimhome."/plugged"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim Plug                                                                 {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+call plug#begin(s:plugdir)
+
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
+    Plug 'mhinz/vim-startify'
+    Plug 'vim-pandoc/vim-pandoc'
+    Plug 'vim-pandoc/vim-pandoc-syntax'
+    Plug 'mhinz/vim-signify'
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+    if has('nvim')
+    
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        Plug 'scrooloose/nerdtree'
+        Plug 'jistr/vim-nerdtree-tabs'
+        Plug 'ervandew/supertab'
+        Plug 'tommcdo/vim-exchange'
+    
+    endif
+
+call plug#end()
+autocmd VimEnter *
+     \ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
+     \ | PlugInstall | q
+     \ | endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Default Config                                                           {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" When started as "evim", evim.vim will already have done these settings.
+if v:progname =~? "evim"
+  finish
+endif
+
+" Get the defaults that most users want.
+" Bail out if something that ran earlier, e.g. a system wide vimrc, does not
+" want Vim to use these default values.
+if exists('skip_defaults_vim')
+  finish
+endif
+
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+" Avoid side effects when it was already reset.
+if &compatible
+  set nocompatible
+endif
+
+" When the +eval feature is missing, the set command above will be skipped.
+" Use a trick to reset compatible only when the +eval feature is missing.
+silent! while 0
+  set nocompatible
+silent! endwhile
+
+" Allow backspacing over everything in insert mode.
+set backspace=indent,eol,start
+
+set history=500		" keep 200 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set wildmenu		" display completion matches in a status line
+
+set ttimeout		" time out for key codes
+set ttimeoutlen=100	" wait up to 100ms after Esc for special key
+
+" Show @@@ in the last line if it is truncated.
+set display=truncate
+
+" Show a few lines of context around the cursor.  Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" Do incremental searching when it's possible to timeout.
+if has('reltime')
+  set incsearch
+endif
+
+" Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
+" confusing.
+set nrformats-=octal
+
+" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
+if has('win32')
+  set guioptions-=t
+endif
+
+" Don't use Ex mode, use Q for formatting.
+" Revert with ":unmap Q".
+map Q gq
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+" Revert with ":iunmap <C-U>".
+inoremap <C-U> <C-G>u<C-U>
+
+" In many terminal emulators the mouse works just fine.  By enabling it you
+" can position the cursor, Visually select and scroll with the mouse.
+if has('mouse')
+  set mouse=a
+endif
+
+" Switch syntax highlighting on when the terminal has colors or when using the
+" GUI (which always has colors).
+if &t_Co > 2 || has("gui_running")
+  " Revert with ":syntax off".
+  syntax on
+
+  " I like highlighting strings inside C comments.
+  " Revert with ":unlet c_comment_strings".
+  let c_comment_strings=1
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  " Revert with ":filetype off".
+  filetype plugin indent on
+
+  " Put these in an autocmd group, so that you can revert them with:
+  " ":augroup vimStartup | au! | augroup END"
+  augroup vimStartup
+    au!
+
+    " When editing a file, always jump to the last known cursor position.
+    " Don't do it when the position is invalid, when inside an event handler
+    " (happens when dropping a file on gvim) and for a commit message (it's
+    " likely a different one than last time).
+    autocmd BufReadPost *
+      \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+      \ |   exe "normal! g`\""
+      \ | endif
+
+  augroup END
+
+endif " has("autocmd")
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+" Revert with: ":delcommand DiffOrig".
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+
+if has('langmap') && exists('+langremap')
+  " Prevent that the langmap option applies to characters that result from a
+  " mapping.  If set (default), this may break plugins (but it's backward
+  " compatible).
+  set nolangremap
+endif
+
+if has("vms")
+  set nobackup		" do not keep a backup file, use versions instead
+else
+  set backup		" keep a backup file (restore to previous version)
+  if has('persistent_undo')
+    set undofile	" keep an undo file (undo changes after closing)
+  endif
+endif
+
+if &t_Co > 2 || has("gui_running")
+  " Switch on highlighting the last used search pattern.
+  set hlsearch
+endif
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+  " Put these in an autocmd group, so that we can delete them easily.
+  augroup vimrcEx
+  au!
+  " For all text files set 'textwidth' to 79 characters.
+  autocmd FileType text setlocal textwidth=79
+  augroup END
+else
+  set autoindent		" always set autoindenting on
+endif " has("autocmd")
+
+" Add optional packages.
+"
+" The matchit plugin makes the % command work better, but it is not backwards
+" compatible.
+if has('syntax') && has('eval')
+  if has('nvim')
+   runtime! macros/matchit.vim
+ else
+   packadd! matchit
+ endif
+endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Behavior                                                                 {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set encoding=utf-8
+set fileformats=unix,dos,mac
+set number relativenumber
+if has("nvim")    
+    au TermOpen * setlocal number relativenumber
+endif
+
+set showtabline=2
 set laststatus=2
-" Formato da linha de status
-set statusline=\ Arquivo:\ %F%m%r%h\ %w\ \ Diretório\ de\ trabalho:\ %r%{getcwd()}%h\ -\ Linha:\ %l\ -\ Coluna:\ %c
-"""""""""""""""""""" 6) Desfazer persistente """"""""""""""""""""
-" Preserva o histórico do desfazer após o fim da sessão atual salvando-o em um arquivo
-set undodir=~/.vim/undobackups
-set undofile
-set clipboard+=unnamed  " use the clipboards of vim and win
-set paste               " Paste from a windows or from vim
-set go+=a               " Visual selection automatically copied to the clipboard
+
+set showmatch
+
+set noignorecase
+
+set completeopt=menuone,longest,preview
+
+set exrc
+set secure
+
+" autoread and autowrite
+augroup save
+  au!
+  au FocusLost * wall
+augroup END
+set nohidden
+set nobackup
+set noswapfile
+set nowritebackup
+set autoread
+set autowrite
+set autowriteall
+
+" Unbind the cursor keys in insert, normal and visual modes.
+for prefix in ['n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Clipboard                                                                {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if has('unamedplus')
+  set clipboard=unnamed,unamedplus
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colorsheme                                                               {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+syntax enable
+syntax on
+
+if has('termguicolors')
+    set termguicolors
+endif
+
+try
+    colorscheme iaxs-i3wm-vim-monokai
+catch
+    try
+        colorscheme molokai
+    catch
+        colorscheme default
+    endtry
+endtry
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Formatting                                                               {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+set autoindent
+set copyindent
+set smartindent
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Functions and Commands                                                   {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Based on window movement shortcuts by 'nicknisi/dotfiles'
+function! WinCreate(key)
+  if (match(a:key,'[jk]'))
+    wincmd v
+  else
+    wincmd s
+  endif
+  if (match(a:key,'[kh]'))
+    exec "wincmd ".a:key
+  endif
+  if isdirectory(s:vimhome)
+    Startify
+  endif
+endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mapping                                                                  {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Simplify Leader mappings Clipboard
+nnoremap <silent> <Leader>y "+y
+nnoremap <silent> <Leader>p "+p
+
+" Simplify shortcut for creating windows
+nnoremap <silent> <C-W>wh :call WinCreate('h')<CR>
+nnoremap <silent> <C-W>wj :call WinCreate('j')<CR>
+nnoremap <silent> <C-W>wk :call WinCreate('k')<CR>
+nnoremap <silent> <C-W>wl :call WinCreate('l')<CR>
+
+" NERDTreeToggle open/close
+nnoremap <silent> <C-\> <ESC>:NERDTreeToggle<CR>
+inoremap <silent> <C-\> <ESC>:NERDTreeToggle<CR>
+
+" Python
+nnoremap <silent> <F5> <ESC>:w<CR><ESC>:term python %<CR>
+inoremap <silent> <F5> <ESC>:w<CR><ESC>:term python %<CR>
+vnoremap <silent> <F5> :!python<CR>
+
+" terminal-mode
+tnoremap <Esc> <C-\><C-n>  
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Configs Vim Plug                                                         {{{1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" enable line numbers
+let g:NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
+
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+let g:ycm_server_python_interpreter="python"
+let g:ycm_python_binary_path="python"
+
+let g:ycm_min_num_of_chars_for_completion=1
+
+let g:jedi#popup_on_dot=1
+let g:ycm_max_num_candidates=0
+let g:ycm_max_num_identifier_candidates=0
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" pandoc syntax
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+
