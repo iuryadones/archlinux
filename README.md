@@ -197,7 +197,7 @@ Exemplo:
 - enp#s#: rede cabeada
 - wlp#s#: rede wifi
 
-> * # é qualquer número
+> `#` é qualquer número
 
 ## Configurando a rede cabeada
 
