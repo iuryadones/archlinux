@@ -1,224 +1,130 @@
-# Install Archlinux 
+[#] Mudar teclado para abnt2
+loadkeys br-abnt2
 
-## Mudar teclado para abnt2
+[#] Mudar a lingua da instalação para portugues br
+nano /etc/locale.gen
 
-```bash
-$ loadkeys br-abnt2
-```
+[#] procurar e descomentar essas linhas:
+pt_BR.UTF-8
+pt_BR.ISO-8859-1
 
-## Mudar a lingua da instalação para portugues br
-
-```bash
-$ vi ou nano /etc/locale.gen
-```
-
-## Procurar e descomentar essas linhas:
-
-```bash
-$ pt_BR.UTF-8
-$ pt_BR.ISO-8859-1
-```
-
-## Executar esses comandos:
-
-```bash
-$ locale-gen
-$ export LANG=pt_BR.UTF-8
-```
-
-## Testa coneçao com a internet
-
-```bash
-ping -c 3 www.google.com
-```
-
-## Mostra as particoes
-
-```bash
-$ fdisk -l
-```
-
-> Falto descrever um moi de coisas aki
-> Alguém pode me ajudar e cobrar
-> Quero que fique legal a parte do fdisk
-
-## Começar o particionamento
-
-```bash
-$ fdisk /dev/sda
-```
-
-## Formatar as partições
-
-```bash
-$ mkfs.ext4 /dev/sda1
-$ mkfs.ext4 /dev/sda2
-$ mkfs.ext4 /dev/sda3
-```
-
-## Formatar a particao swap e ligar
-
-```bash
-$ mkswap /dev/sda4
-$ swapon /dev/sda4
-```
-
-## Ver o layout do particionamento
-
-```bash
-$ lsblk /dev/sda
-```
-
-## Montar as partições
-
-```bash
-$ mount /dev/sda2 /mnt
-```
-
-## Criar a pasta (home,boot) e montar a partição (home,boot)
-
-```bash
-$ mkdir /mnt/home
-$ mkdir /mnt/boot
-$ mount /dev/sda1 /mnt/boot
-$ mount /dev/sda3 /mnt/home
-```
-
-## Instalar o sistema base
-
-```bash
-$ pacstrap -i /mnt base base-devel
-```
-
-## Gerar o arquivo fstab que decreve as partições
-
-```bash
-$ genfstab -U -p /mnt >> /mnt/etc/fstab
-```
-
-## Ver o que esta escrito nesse arquivo
-
-```bash
-$ cat /mnt/etc/fstab
-```
-
-# Configura o `root` ou `/` 
-
-## Logando na instalação para configurar
-
-```bash
-$ arch-chroot /mnt /bin/bash
-```
-
-## Muda a língua novamente
-
-```bash
-# nano /etc/locale.gen
-```
-
-## Procurar e descomentar essas linhas:
-
-```bash
-# pt_BR.UTF-8
-# pt_BR.ISO-8859-1
-```bash
-
-## Executar esse comando:
-
-```bash
+[###] executar esses comandos:
 # locale-gen
-```
+# export LANG=pt_BR.UTF-8
 
-## Criar o aquirvo de conf de lingua
+[###] testa coneccao com a internet
+# ping -c 3 www.google.com
 
-```bash
+[###] mostra as particoes
+# fdisk -l
+[###] Falto descrever um moi de coisas aki
+
+[###] começar o particionamento
+# fdisk /dev/sda
+
+[###] formatar as partições
+# mkfs.ext4 /dev/sda1
+# mkfs.ext4 /dev/sda2
+# mkfs.ext4 /dev/sda3
+	[##] Obs: usando label para organizar
+	# mkfs.ext4 -L "Boot" /dev/sda1
+	# mkfs.ext4 -L "Arch Linux" /dev/sda2
+	# mkfs.ext4 -L "Documentos" /dev/sda3
+	# mkswap -L "Linux Swap" /dev/sda4
+		[#] Obs: Dual boot windows e Arch Linux [/* Para Compartilhar Documentos */]
+			# mkfs.ntfs -L "Windows" /dev/sdaX
+			# mkfs.ext4 -L "Documentos" /dev/sda3
+
+[###] formatar a particao swap e ligar
+# mkswap /dev/sda4
+# swapon /dev/sda4
+
+[###] ver o layout do particionamento
+# lsblk /dev/sda
+
+[###] montar as partições
+# mount /dev/sda2 /mnt
+
+[###] criar a pasta (home,boot) e montar a partição (home,boot)
+# mkdir /mnt/home
+# mkdir /mnt/boot
+# mount /dev/sda1 /mnt/boot
+# mount /dev/sda3 /mnt/home
+
+[###] instalar o sistema base
+# pacstrap -i /mnt base base-devel
+
+[###] gerar e acrescenta [cmd: '>>' ] o arquivo fstab que decreve as partições
+# genfstab -U -p /mnt >> /mnt/etc/fstab
+
+[###] Ver o que esta escrito nesse arquivo
+# cat /mnt/etc/fstab
+
+#####################################################
+######### Configurando o [/, root ou raíz] ##########
+#####################################################
+
+[###] logando na instalação para configurar
+# arch-chroot /mnt /bin/bash
+
+[###] muda a língua novamente
+# nano /etc/locale.gen
+
+[###] procurar e descomentar essas linhas:
+pt_BR.UTF-8
+pt_BR.ISO-8859-1
+
+[###] executar esse comando:
+# locale-gen
+
+[###] criar o aquirvo de conf de lingua
 # echo LANG=pt_BR.UTF-8 > /etc/locale.conf
 # export LANG=pt_BR.UTF-8
-```
 
-## Configurar o teclado para que persistam pos reboot
-
-```bash
+[###] configurar o teclado para que persistam pos reboot
 # nano /etc/vconsole.conf
-```
-
-Adiciona essas linhas no arquivo e salvar
-
-```bash
+[###] adiciona essas linhas no arquivo e salvar
 KEYMAP=br-abnt2
-```
 
-## Adicionando um hostname
-
-```bash
+[###] adicionando um hostname
 # nano /etc/hostname
-```
+[###] Escreva seu hostname
+myhostname
 
-## Escreva seu hostname
-
-> <your-hostname>
-
-configurando o hosts
-
-```bash
+[###] configurando o hosts
 # nano /etc/hosts
-```
-
-escrevendo add o myhostname 
-
-```bash
+[###] escrevendo add o myhostname
 127.0.0.1    localhost.localdomain    localhost
 ::1          localhost.localdomain    localhost
 127.0.1.1    myhostname.localdomain   myhostname
-```
 
-## Fuso horário do America/Cidade
-
-```bash
+[###] Fuso horário do America/Cidade
 # ls /usr/share/zoneinfo/America
 # ln -s /usr/share/zoneinfo/America/Recife /etc/localtime
-```
 
-Sincronizando o relógio do hardware com o do Sis. Op.
-
-```bash
+[###] sincronizando o relógio do hardware com o do Sis. Op.
 # hwclock --systohc --utc
-```
 
-## Comando para saber o nome da sua rede local,cabeada e wifi 
-
-```bash
+[###] comando para saber o nome da sua rede local,cabeada e wifi
 # ip address
-```
 
 Exemplo:
+- 1: lo: rede local
+- 2: enp3s0: rede cabeada
+- 3: wlp2s0: rede wifi
 
-- lo: rede local
-- enp#s#: rede cabeada
-- wlp#s#: rede wifi
-
-> * # é qualquer número
-
-## Configurando a rede cabeada
-
-```bash
+[###] configurando a rede cabeada
 # systemctl enable dhcpcd.service
-```
 
-## Configurando rede wireless
-
-```bash
+[###] configurando rede wireless
+# pacman -S wireless_tools iw wpa_supplicant wpa_actiond
 # pacman -S netcf dialog
-```
 
-depois
-
-```bash
+# não gosto, mas podes ver
 # systemctl enable net-auto-wireless.service
-```
 
 [###] configurar os repositórios pacman para 32bits e 64bits
-# nano /etc/pacman.conf 
+# nano /etc/pacman.conf
 
 [###] descomentar [multilib]
 [multilib]
@@ -294,7 +200,7 @@ $ sudo pacman -S xorg-xinit xorg-server xorg-server-utils xorg-utils
 
 [###] instalar algumas ferramentas drives graficos 2D
 $ sudo pacman -S xf86-video-vesa
-$ sudo pacman -S mesa mesa-demos 
+$ sudo pacman -S mesa mesa-demos
 
 [###] instalar fonts
 $ sudo pacman -S ttf-dejavu
@@ -302,9 +208,9 @@ $ sudo pacman -S ttf-dejavu
 [###] Caso seu mouse e teclados sejam especiais:
 $ sudo pacman -S xf86-input-synaptics xf86-input-mouse xf86-input-keyboard
 
-[###] instalar configurações da internet 
-$ sudo pacman -S networkmanager networkmanager-vpnc vpnc 
-$ sudo pacman -S networkmanager-pptp networkmanager-openconnect 
+[###] instalar configurações da internet
+$ sudo pacman -S networkmanager networkmanager-vpnc vpnc
+$ sudo pacman -S networkmanager-pptp networkmanager-openconnect
 $ sudo pacman -S network-manager-applet
 
 [###] ativar o gerenciador de rede automaticamente
@@ -315,11 +221,11 @@ $ sudo systemctl start NetworkManager.service
 $ sudo pacman -S ufw
 $ sudo systemctl enable ufw.service
 
-[###]  Saber ver qual a chipset de vídeo do pc 
+[###]  Saber ver qual a chipset de vídeo do pc
 $ lspci | grep VGA
 
 [###] instalar driver de video
-[###] instalar o que for o seu: 
+[###] instalar o que for o seu:
 $ sudo pacman -S virtualbox-guest-utils   - para o virtualbox
 $ sudo pacman -S nvidia && nvidia-xconfig - para placas nvidia
 $ sudo pacman -S xf86-video-ati           - para placas amd-radeon
@@ -369,7 +275,7 @@ $ sudo pacman -Syu
 $ sudo pacman -S yaourt
 
 [###] Reniciando o sistema e faça um bom uso
-$ sudo reboot
+sudo reboot
 
 [###] Sobre o gerenciador local [yaourt]
 $ yaourt -Ss <programa> ### Procurar
