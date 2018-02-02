@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/inject.js" ],
+      "matches": [ "*://*.appear.in/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Share the screen from your computer in a video conversation, to show presentations, photos and documents. ",
+   "icons": {
+      "128": "images/logo_128.png",
+      "16": "images/logo_16.png",
+      "48": "images/logo_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjo+5QOt7rde0ZaikFAOLL8vJFu8ciZfI7yemleiJZ2cNuNeCH7+sVljguTzmwjhbpZf7eBqLYod4KVTB/0axvGsXzFXai0itJyo051XkKwv7NKqec6Xk9nUbAoBjnV8deCByzAx0vsR2jkkKXB2nNbRA7IfmL9HiwY1SBRxzpqvilQf6xAkrCZBroDMGFncynEBgcR8d4qfCF7us7kcLu0WE1jEdiUB74GELIRIUg+uTqjUkNQdOFDl2STBZbHATQvD8mKOXyWIDADUtW73yZZKy/tBiG/b+f0KE7C/D/lCOia75ro8bS5knK4nyhFoE5SU7yB8sKdrpo2QiUEablwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "appear.in screen sharing",
+   "offline_enabled": true,
+   "permissions": [ "desktopCapture", "*://appear.in/*" ],
+   "short_name": "appear.in screen sharing",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1"
+}

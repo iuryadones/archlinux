@@ -1,0 +1,6 @@
+2017/11/16-10:37:59.392 3773 Reusing MANIFEST /home/iury/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2017/11/16-10:37:59.392 3773 Recovering log #3
+2017/11/16-10:37:59.410 3773 Reusing old log /home/iury/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000003.log 
+2017/11/16-10:38:05.007 3858 Level-0 table #5: started
+2017/11/16-10:38:05.035 3858 Level-0 table #5: 4210162 bytes OK
+2017/11/16-10:38:05.039 3858 Delete type=0 #3

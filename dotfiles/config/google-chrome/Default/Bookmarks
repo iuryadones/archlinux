@@ -1,0 +1,1417 @@
+{
+   "checksum": "c83d052893363204e50952ad90d75ce7",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13132329285288110",
+            "id": "6",
+            "meta_info": {
+               "last_visited_desktop": "13152979722656465"
+            },
+            "name": "cheatsheet do git-flow",
+            "sync_transaction_version": "223",
+            "type": "url",
+            "url": "https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html"
+         }, {
+            "date_added": "13132530590659781",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13151537654167914"
+            },
+            "name": "DICAS FUNDAMENTAIS PARA ATOM EDITOR - Snippets, Extensões, Temas, personalização... ~ Thiago Lúcio",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://thiagolucioblog.blogspot.com.br/2015/06/dicas-fundamentais-para-atom-editor.html"
+         }, {
+            "date_added": "13134069784598469",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13157642969998320"
+            },
+            "name": "Running GUI apps with Docker – Fábio Rehm",
+            "sync_transaction_version": "461",
+            "type": "url",
+            "url": "http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/"
+         }, {
+            "date_added": "13136471392866440",
+            "id": "9",
+            "meta_info": {
+               "last_visited_desktop": "13136471392878889"
+            },
+            "name": "tmux/tmux: tmux source code",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://github.com/tmux/tmux"
+         }, {
+            "date_added": "13138287782660089",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13153320362287757"
+            },
+            "name": "Vim Awesome",
+            "sync_transaction_version": "224",
+            "type": "url",
+            "url": "http://vimawesome.com/"
+         }, {
+            "date_added": "13138287857151974",
+            "id": "11",
+            "meta_info": {
+               "last_visited_desktop": "13151038470731342"
+            },
+            "name": "Vimcasts - Free screencasts about the text editor Vim",
+            "sync_transaction_version": "146",
+            "type": "url",
+            "url": "http://vimcasts.org/"
+         }, {
+            "date_added": "13138814861886683",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13155657813081920"
+            },
+            "name": "Teclado ABNT2 definitivo no Archlinux [Dica]",
+            "sync_transaction_version": "328",
+            "type": "url",
+            "url": "https://www.vivaolinux.com.br/dica/Teclado-ABNT2-definitivo-no-Archlinux"
+         }, {
+            "date_added": "13143902677602126",
+            "id": "13",
+            "meta_info": {
+               "last_visited_desktop": "13143902677602994"
+            },
+            "name": "How to Change GRUB Splash Image, Background, Font Color on Your Linux",
+            "sync_transaction_version": "150",
+            "type": "url",
+            "url": "http://www.thegeekstuff.com/2012/10/grub-splash-image/"
+         }, {
+            "date_added": "13143902843278329",
+            "id": "14",
+            "meta_info": {
+               "last_visited_desktop": "13143902843280143"
+            },
+            "name": "Installing Arch Linux on a USB key - ArchWiki",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/index.php/Installing_Arch_Linux_on_a_USB_key"
+         }, {
+            "date_added": "13144159437269798",
+            "id": "15",
+            "meta_info": {
+               "last_visited_desktop": "13144159437270313"
+            },
+            "name": "reveal.js – The HTML Presentation Framework",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://lab.hakim.se/reveal-js/#/25"
+         }, {
+            "date_added": "13144442760345768",
+            "id": "16",
+            "meta_info": {
+               "last_visited_desktop": "13144442760350434"
+            },
+            "name": "Logojoy | Make a Logo Design Online",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://logojoy.com/"
+         }, {
+            "date_added": "13144506432206694",
+            "id": "17",
+            "meta_info": {
+               "last_visited_desktop": "13144506432207214"
+            },
+            "name": "AngelList - Where the world meets startups",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://angel.co/"
+         }, {
+            "date_added": "13145541371920819",
+            "id": "18",
+            "meta_info": {
+               "last_visited_desktop": "13145541371921348"
+            },
+            "name": "Machine Intelligence - Research at Google",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://research.google.com/pubs/MachineIntelligence.html"
+         }, {
+            "date_added": "13146244550530576",
+            "id": "19",
+            "meta_info": {
+               "last_visited_desktop": "13146244550531126"
+            },
+            "name": "Install BlackArch Linux on Arch Linux - OSTechNix",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.ostechnix.com/install-blackarch-linux-arch-linux/"
+         }, {
+            "date_added": "13146599788940545",
+            "id": "20",
+            "meta_info": {
+               "last_visited_desktop": "13146667807786347"
+            },
+            "name": "Testador de Expressao Regular",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://tools.lymas.com.br/regexp_br.php#"
+         }, {
+            "date_added": "13146755277258065",
+            "id": "21",
+            "meta_info": {
+               "last_visited_desktop": "13146755277258763"
+            },
+            "name": "Lista de comandos úteis do GIT",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://gist.github.com/leocomelli/2545add34e4fec21ec16"
+         }, {
+            "date_added": "13149004959948358",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13149004959948826"
+            },
+            "name": "WPA supplicant - ArchWiki",
+            "sync_transaction_version": "4",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/index.php/WPA_supplicant"
+         }, {
+            "date_added": "13149031388589015",
+            "id": "27",
+            "meta_info": {
+               "last_visited_desktop": "13149031388589321"
+            },
+            "name": "[SOLVED] Connecting eduroam network via netctl / Networking, Server, and Protection / Arch Linux Forums",
+            "sync_transaction_version": "7",
+            "type": "url",
+            "url": "https://bbs.archlinux.org/viewtopic.php?id=201901"
+         } ],
+         "date_added": "13147797555757680",
+         "date_modified": "13149177232083336",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13149177232083336",
+               "id": "30",
+               "meta_info": {
+                  "last_visited_desktop": "13149177232084316"
+               },
+               "name": "Polêmica: o melhor Product Owner NÃO é o cliente | Marcos Garrido | Pulse | LinkedIn",
+               "sync_transaction_version": "13",
+               "type": "url",
+               "url": "https://www.linkedin.com/pulse/pol%C3%AAmica-o-melhor-product-owner-n%C3%A3o-%C3%A9-cliente-marcos-garrido?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BcxS7SNL5xs%2BCmBhqQriHgw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B4MpvctaIQFSKhcIsHY6NCg%3D%3D"
+            } ],
+            "date_added": "13149177265943402",
+            "date_modified": "13149182117335723",
+            "id": "31",
+            "name": "Scrum data-science",
+            "sync_transaction_version": "14",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13149182117335723",
+               "id": "32",
+               "meta_info": {
+                  "last_visited_desktop": "13149194554316268"
+               },
+               "name": "Python for Librarians: Data Ingest & Visualization - Matplotlib & Pandas",
+               "sync_transaction_version": "28",
+               "type": "url",
+               "url": "https://data-lessons.github.io/library-python/07-putting-it-all-together/"
+            }, {
+               "date_added": "13149191284420941",
+               "id": "34",
+               "meta_info": {
+                  "last_visited_desktop": "13150520872686070"
+               },
+               "name": "Merge, join, and concatenate — pandas 0.20.3 documentation",
+               "sync_transaction_version": "85",
+               "type": "url",
+               "url": "https://pandas.pydata.org/pandas-docs/stable/merging.html"
+            }, {
+               "date_added": "13149191628327862",
+               "id": "35",
+               "meta_info": {
+                  "last_visited_desktop": "13149191628328244"
+               },
+               "name": "Using pandas with large data",
+               "sync_transaction_version": "27",
+               "type": "url",
+               "url": "https://www.dataquest.io/blog/pandas-big-data/"
+            }, {
+               "date_added": "13149200217102303",
+               "id": "38",
+               "meta_info": {
+                  "last_visited_desktop": "13149200217102883"
+               },
+               "name": "Group By: split-apply-combine — pandas 0.20.3 documentation",
+               "sync_transaction_version": "31",
+               "type": "url",
+               "url": "https://pandas.pydata.org/pandas-docs/stable/groupby.html"
+            }, {
+               "date_added": "13149618427536385",
+               "id": "41",
+               "meta_info": {
+                  "last_visited_desktop": "13149691552162829"
+               },
+               "name": "Tag - WiFi - triaxx's weblog",
+               "sync_transaction_version": "35",
+               "type": "url",
+               "url": "http://blog.triaxx.org/index.php?tag/WiFi"
+            }, {
+               "date_added": "13149881605062162",
+               "id": "47",
+               "meta_info": {
+                  "last_visited_desktop": "13149881605062690"
+               },
+               "name": "Fundamentos dos Algoritmos de Machine Learning (com código Python e R) – Vooo – Insights",
+               "sync_transaction_version": "44",
+               "type": "url",
+               "url": "https://www.vooo.pro/insights/fundamentos-dos-algoritmos-de-machine-learning-com-codigo-python-e-r/"
+            }, {
+               "date_added": "13150386999106802",
+               "id": "56",
+               "meta_info": {
+                  "last_visited_desktop": "13156519314004564"
+               },
+               "name": "Timing and Profiling in IPython - PyNash",
+               "sync_transaction_version": "412",
+               "type": "url",
+               "url": "http://pynash.org/2013/03/06/timing-and-profiling/"
+            }, {
+               "date_added": "13150388188506484",
+               "id": "57",
+               "meta_info": {
+                  "last_visited_desktop": "13150388188506976"
+               },
+               "name": "IPythonOverview slides",
+               "sync_transaction_version": "75",
+               "type": "url",
+               "url": "http://quasiben.github.io/dfwmeetup_2014/#/22"
+            }, {
+               "date_added": "13150388191491353",
+               "id": "58",
+               "meta_info": {
+                  "last_visited_desktop": "13150388191491814"
+               },
+               "name": "Speed Comparison: Putting Pyston and PyPy to the Test | Lincoln Loop",
+               "sync_transaction_version": "79",
+               "type": "url",
+               "url": "https://lincolnloop.com/blog/speed-comparison-cpython-pypy-pyston/"
+            }, {
+               "date_added": "13150500941361303",
+               "id": "61",
+               "meta_info": {
+                  "last_visited_desktop": "13150500941362075"
+               },
+               "name": "Grafos – 101 | Recologia",
+               "sync_transaction_version": "83",
+               "type": "url",
+               "url": "http://recologia.com.br/2015/11/grafos-101/"
+            }, {
+               "date_added": "13150828162112184",
+               "id": "64",
+               "meta_info": {
+                  "last_visited_desktop": "13150828258780470"
+               },
+               "name": "teranex/dotvim: my personal vim configuration",
+               "sync_transaction_version": "115",
+               "type": "url",
+               "url": "https://github.com/teranex/dotvim"
+            }, {
+               "date_added": "13150901692650741",
+               "id": "67",
+               "meta_info": {
+                  "last_visited_desktop": "13152747862778549"
+               },
+               "name": "Terminals Are Sexy",
+               "sync_transaction_version": "221",
+               "type": "url",
+               "url": "https://terminalsare.sexy/"
+            }, {
+               "date_added": "13150901882740831",
+               "id": "68",
+               "meta_info": {
+                  "last_visited_desktop": "13150902125557901"
+               },
+               "name": "gpakosz/.tmux: Oh My Tmux! My pretty + versatile tmux configuration that just works (imho the best tmux configuration)",
+               "sync_transaction_version": "130",
+               "type": "url",
+               "url": "https://github.com/gpakosz/.tmux"
+            }, {
+               "date_added": "13150921176227310",
+               "id": "71",
+               "meta_info": {
+                  "last_visited_desktop": "13150921176228221"
+               },
+               "name": "Instalação e Configuração do Arch Linux – João Pedro – Medium",
+               "sync_transaction_version": "134",
+               "type": "url",
+               "url": "https://medium.com/@galdino1993/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-do-arch-linux-625c406e56ff"
+            }, {
+               "date_added": "13150924362835937",
+               "id": "74",
+               "meta_info": {
+                  "last_visited_desktop": "13150924362836759"
+               },
+               "name": "consolefontsdump.py — Alexandre de Verteuil",
+               "sync_transaction_version": "138",
+               "type": "url",
+               "url": "https://alexandre.deverteuil.net/pages/consolefonts/consolefontsdump/"
+            }, {
+               "date_added": "13150998502905958",
+               "id": "77",
+               "meta_info": {
+                  "last_visited_desktop": "13151017799552424"
+               },
+               "name": "vimrc | Arabesque",
+               "sync_transaction_version": "144",
+               "type": "url",
+               "url": "https://sanctum.geek.nz/arabesque/tag/vimrc/"
+            }, {
+               "date_added": "13151089560927238",
+               "id": "80",
+               "meta_info": {
+                  "last_visited_desktop": "13161706473280207"
+               },
+               "name": "A guide to Python's function decorators",
+               "sync_transaction_version": "691",
+               "type": "url",
+               "url": "https://www.thecodeship.com/patterns/guide-to-python-function-decorators/"
+            }, {
+               "date_added": "13151421159202178",
+               "id": "83",
+               "meta_info": {
+                  "last_visited_desktop": "13151421159203025"
+               },
+               "name": "Tutorial 17.3 - Markdown and Pandoc",
+               "sync_transaction_version": "154",
+               "type": "url",
+               "url": "http://www.flutterbys.com.au/stats/tut/tut17.3.html"
+            }, {
+               "date_added": "13151442253094505",
+               "id": "86",
+               "meta_info": {
+                  "last_visited_desktop": "13151442253095344"
+               },
+               "name": "What’s New in Python 2.5 — Python 3.6.3rc1 documentation",
+               "sync_transaction_version": "158",
+               "type": "url",
+               "url": "https://docs.python.org/3/whatsnew/2.5.html#pep-308-conditional-expressions"
+            }, {
+               "date_added": "13152206993446628",
+               "id": "89",
+               "meta_info": {
+                  "last_visited_desktop": "13152474892110635"
+               },
+               "name": "arslanbilal/git-cheat-sheet: git and git flow cheat sheet",
+               "sync_transaction_version": "212",
+               "type": "url",
+               "url": "https://github.com/arslanbilal/git-cheat-sheet"
+            }, {
+               "date_added": "13152218724696903",
+               "id": "90",
+               "meta_info": {
+                  "last_visited_desktop": "13152218724698152"
+               },
+               "name": "Editor vi",
+               "sync_transaction_version": "172",
+               "type": "url",
+               "url": "https://www.infowester.com/linuxvi.php"
+            }, {
+               "date_added": "13152219734243121",
+               "id": "91",
+               "meta_info": {
+                  "last_visited_desktop": "13152219734244260"
+               },
+               "name": "Editor VI - Guia de Referência",
+               "sync_transaction_version": "176",
+               "type": "url",
+               "url": "http://aurelio.net/curso/material/vim-ref.html"
+            }, {
+               "date_added": "13152219837538318",
+               "id": "92",
+               "meta_info": {
+                  "last_visited_desktop": "13152219837539746"
+               },
+               "name": "vi-teclado.png (1024×724)",
+               "sync_transaction_version": "180",
+               "type": "url",
+               "url": "http://aurelio.net/vim/vi-teclado.png"
+            }, {
+               "date_added": "13152219961077662",
+               "id": "93",
+               "meta_info": {
+                  "last_visited_desktop": "13152219961078486"
+               },
+               "name": "aurelio.net/vim/vim-medio.txt",
+               "sync_transaction_version": "184",
+               "type": "url",
+               "url": "http://aurelio.net/vim/vim-medio.txt"
+            }, {
+               "date_added": "13152231576455610",
+               "id": "96",
+               "meta_info": {
+                  "last_visited_desktop": "13152231576456849"
+               },
+               "name": "terminal.sexy - Terminal Color Scheme Designer",
+               "sync_transaction_version": "193",
+               "type": "url",
+               "url": "https://terminal.sexy/#Jygi-PjyPz8_cFBQcJCA36-PUGBw3IzDjNDT5eXlX19f3KOjYLSK8N-vlL_z7JPTk-Dj____"
+            }, {
+               "date_added": "13152745682570143",
+               "id": "99",
+               "meta_info": {
+                  "last_visited_desktop": "13152745920471726"
+               },
+               "name": "emacs-evil/evil: The extensible vi layer for Emacs.",
+               "sync_transaction_version": "219",
+               "type": "url",
+               "url": "https://github.com/emacs-evil/evil"
+            }, {
+               "date_added": "13153415316081012",
+               "id": "110",
+               "meta_info": {
+                  "last_visited_desktop": "13153415316081773"
+               },
+               "name": "Approaching (Almost) Any Machine Learning Problem | Abhishek Thakur | No Free Hunch",
+               "sync_transaction_version": "245",
+               "type": "url",
+               "url": "http://blog.kaggle.com/2016/07/21/approaching-almost-any-machine-learning-problem-abhishek-thakur/"
+            }, {
+               "date_added": "13154633723021414",
+               "id": "113",
+               "meta_info": {
+                  "last_visited_desktop": "13154634395728693"
+               },
+               "name": "Writing Awesome Command-Line Programs in Python - YouTube",
+               "sync_transaction_version": "249",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=gR73nLbbgqY"
+            } ],
+            "date_added": "13149182150427495",
+            "date_modified": "13154637311205618",
+            "id": "33",
+            "name": "Study data-science",
+            "sync_transaction_version": "20",
+            "type": "folder"
+         }, {
+            "date_added": "13149709957199561",
+            "id": "44",
+            "meta_info": {
+               "last_visited_desktop": "13158791295042767"
+            },
+            "name": "Vale Mais Saúde - [Home]",
+            "sync_transaction_version": "554",
+            "type": "url",
+            "url": "https://www.valemaissaude.com.br/Publico-VMS-Home/d2498/FCAD=1"
+         }, {
+            "date_added": "13150319363420983",
+            "id": "50",
+            "meta_info": {
+               "last_visited_desktop": "13150319363421485"
+            },
+            "name": "Inserindo texto | Vim para Noobs",
+            "sync_transaction_version": "53",
+            "type": "url",
+            "url": "https://woliveiras.com.br/vimparanoobs/chapters/inserindo-texto.html"
+         }, {
+            "date_added": "13150324302189145",
+            "id": "51",
+            "meta_info": {
+               "last_visited_desktop": "13150381825257201"
+            },
+            "name": "Vim shortcuts",
+            "sync_transaction_version": "143",
+            "type": "url",
+            "url": "https://gist.github.com/awidegreen/3854277"
+         }, {
+            "date_added": "13150382524323673",
+            "id": "54",
+            "meta_info": {
+               "last_visited_desktop": "13150382524324484"
+            },
+            "name": "Spell checking",
+            "sync_transaction_version": "63",
+            "type": "url",
+            "url": "http://vimcasts.org/episodes/spell-checking/"
+         }, {
+            "date_added": "13150385553844431",
+            "id": "55",
+            "meta_info": {
+               "last_visited_desktop": "13150385553845352"
+            },
+            "name": "28 Jupyter Notebook tips, tricks and shortcuts",
+            "sync_transaction_version": "67",
+            "type": "url",
+            "url": "https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/"
+         }, {
+            "date_added": "13153321751407950",
+            "id": "102",
+            "meta_info": {
+               "last_visited_desktop": "13153322856094581"
+            },
+            "name": "Root - Bootstrap 4 Admin Template",
+            "sync_transaction_version": "233",
+            "type": "url",
+            "url": "https://genesisui.com/demo/root/bootstrap4-static/charts.html"
+         }, {
+            "date_added": "13153321758043931",
+            "id": "103",
+            "meta_info": {
+               "last_visited_desktop": "13153322856167978"
+            },
+            "name": "SB Admin - Start Bootstrap Template",
+            "sync_transaction_version": "234",
+            "type": "url",
+            "url": "https://blackrockdigital.github.io/startbootstrap-sb-admin/charts.html"
+         }, {
+            "date_added": "13153324952830863",
+            "id": "106",
+            "meta_info": {
+               "last_visited_desktop": "13153324952831287"
+            },
+            "name": "Pie charts labels - bl.ocks.org",
+            "sync_transaction_version": "237",
+            "type": "url",
+            "url": "http://bl.ocks.org/dbuezas/9306799"
+         }, {
+            "date_added": "13153324959773429",
+            "id": "107",
+            "meta_info": {
+               "last_visited_desktop": "13153324959773620"
+            },
+            "name": "Creating Charts Using the Angular-FusionCharts Directive | FusionCharts",
+            "sync_transaction_version": "240",
+            "type": "url",
+            "url": "https://www.fusioncharts.com/dev/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive.html"
+         }, {
+            "date_added": "13154637311205618",
+            "id": "116",
+            "meta_info": {
+               "last_visited_desktop": "13155900539002525"
+            },
+            "name": "How to Deploy Django Applications on Heroku",
+            "sync_transaction_version": "381",
+            "type": "url",
+            "url": "https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html"
+         }, {
+            "date_added": "13155139661878289",
+            "id": "119",
+            "meta_info": {
+               "last_visited_desktop": "13155312007268577"
+            },
+            "name": "Como criar seu primeiro projeto de Data Science — Parte 2 de 2",
+            "sync_transaction_version": "436",
+            "type": "url",
+            "url": "https://paulovasconcellos.com.br/como-criar-seu-primeiro-projeto-de-data-science-parte-2-de-2-cb9a2fe05eff"
+         }, {
+            "date_added": "13155139664901557",
+            "id": "120",
+            "meta_info": {
+               "last_visited_desktop": "13155139664902200"
+            },
+            "name": "28 comandos úteis de Pandas que talvez você não conheça",
+            "sync_transaction_version": "262",
+            "type": "url",
+            "url": "https://paulovasconcellos.com.br/28-comandos-%C3%BAteis-de-pandas-que-talvez-voc%C3%AA-n%C3%A3o-conhe%C3%A7a-6ab64beefa93"
+         }, {
+            "date_added": "13155404468212993",
+            "id": "123",
+            "meta_info": {
+               "last_visited_desktop": "13155404468213886"
+            },
+            "name": "ipython-notebooks/Tensorflow-2-FullyConnected.ipynb at master · jdwittenauer/ipython-notebooks",
+            "sync_transaction_version": "271",
+            "type": "url",
+            "url": "https://github.com/jdwittenauer/ipython-notebooks/blob/master/notebooks/tensorflow/Tensorflow-2-FullyConnected.ipynb"
+         }, {
+            "date_added": "13155404688761917",
+            "id": "124",
+            "meta_info": {
+               "last_visited_desktop": "13155404688762707"
+            },
+            "name": "Exploring notMNIST with TensorFlow | Machine Learning, Deep Learning, and Computer Vision",
+            "sync_transaction_version": "275",
+            "type": "url",
+            "url": "http://www.ritchieng.com/machine-learning/deep-learning/tensorflow/notmnist/"
+         }, {
+            "date_added": "13155404920781731",
+            "id": "125",
+            "meta_info": {
+               "last_visited_desktop": "13155404920782295"
+            },
+            "name": "davidflanagan/notMNIST-to-MNIST: A sample of the notMNIST dataset in MNIST format so you can drop new data into your existing MNIST neural nets",
+            "sync_transaction_version": "279",
+            "type": "url",
+            "url": "https://github.com/davidflanagan/notMNIST-to-MNIST"
+         }, {
+            "date_added": "13155404989285373",
+            "id": "126",
+            "meta_info": {
+               "last_visited_desktop": "13155404989286022"
+            },
+            "name": "Index of /upload/notMNIST",
+            "sync_transaction_version": "282",
+            "type": "url",
+            "url": "http://yaroslavvb.com/upload/notMNIST/"
+         }, {
+            "date_added": "13155407531496524",
+            "id": "127",
+            "meta_info": {
+               "last_visited_desktop": "13155432975242264"
+            },
+            "name": "ipython-notebooks/Spark-Lab0-Tutorial.ipynb at master · jdwittenauer/ipython-notebooks",
+            "sync_transaction_version": "299",
+            "type": "url",
+            "url": "https://github.com/jdwittenauer/ipython-notebooks/blob/master/notebooks/spark/Spark-Lab0-Tutorial.ipynb"
+         }, {
+            "date_added": "13155432426965617",
+            "id": "130",
+            "meta_info": {
+               "last_visited_desktop": "13155432426966588"
+            },
+            "name": "xrandr - Mirror dual monitors with different resolutions - Unix & Linux Stack Exchange",
+            "sync_transaction_version": "291",
+            "type": "url",
+            "url": "https://unix.stackexchange.com/questions/101490/mirror-dual-monitors-with-different-resolutions"
+         }, {
+            "date_added": "13155432637706680",
+            "id": "131",
+            "meta_info": {
+               "last_visited_desktop": "13155432748306352"
+            },
+            "name": "jdwittenauer/ipython-notebooks: A collection of IPython notebooks covering various topics.",
+            "sync_transaction_version": "298",
+            "type": "url",
+            "url": "https://github.com/jdwittenauer/ipython-notebooks"
+         }, {
+            "date_added": "13155507037979814",
+            "id": "134",
+            "meta_info": {
+               "last_visited_desktop": "13156871005736358"
+            },
+            "name": "AsyncIO - O futuro do Python mudou completamente! | python | BrunoRocha.org | Python web development",
+            "sync_transaction_version": "421",
+            "type": "url",
+            "url": "http://brunorocha.org/python/asyncio-o-futuro-do-python-mudou-completamente.html"
+         }, {
+            "date_added": "13155511818529638",
+            "id": "135",
+            "meta_info": {
+               "last_visited_desktop": "13155511818531923"
+            },
+            "name": "Exploring Python 3’s Asyncio by Example | Giant Flying Saucer",
+            "sync_transaction_version": "307",
+            "type": "url",
+            "url": "http://www.giantflyingsaucer.com/blog/?p=5557"
+         }, {
+            "date_added": "13155536414976902",
+            "id": "138",
+            "meta_info": {
+               "last_visited_desktop": "13155536414977543"
+            },
+            "name": "Multi-scale Template Matching using Python and OpenCV - PyImageSearch",
+            "sync_transaction_version": "311",
+            "type": "url",
+            "url": "https://www.pyimagesearch.com/2015/01/26/multi-scale-template-matching-using-python-opencv/"
+         }, {
+            "date_added": "13155536456405318",
+            "id": "139",
+            "meta_info": {
+               "last_visited_desktop": "13155536994025086"
+            },
+            "name": "Feature Matching + Homography to find Objects — OpenCV-Python Tutorials 1 documentation",
+            "sync_transaction_version": "317",
+            "type": "url",
+            "url": "http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_feature_homography/py_feature_homography.html"
+         }, {
+            "date_added": "13155537290748009",
+            "id": "140",
+            "meta_info": {
+               "last_visited_desktop": "13155650560942818"
+            },
+            "name": "OCR of Hand-written Data using SVM — OpenCV-Python Tutorials 1 documentation",
+            "sync_transaction_version": "327",
+            "type": "url",
+            "url": "http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_ml/py_svm/py_svm_opencv/py_svm_opencv.html#svm-opencv"
+         }, {
+            "date_added": "13155539500556863",
+            "id": "141",
+            "meta_info": {
+               "last_visited_desktop": "13155649376944371"
+            },
+            "name": "My imutils package: A series of OpenCV convenience functions - PyImageSearch",
+            "sync_transaction_version": "326",
+            "type": "url",
+            "url": "https://www.pyimagesearch.com/2015/02/02/just-open-sourced-personal-imutils-package-series-opencv-convenience-functions/"
+         }, {
+            "date_added": "13155672409822490",
+            "id": "144",
+            "meta_info": {
+               "last_visited_desktop": "13155677124209010"
+            },
+            "name": "Configuring Django Apps for Heroku | Heroku Dev Center",
+            "sync_transaction_version": "334",
+            "type": "url",
+            "url": "https://devcenter.heroku.com/articles/django-app-configuration"
+         }, {
+            "date_added": "13155765321502871",
+            "id": "147",
+            "meta_info": {
+               "last_visited_desktop": "13156897187117271"
+            },
+            "name": "byashimov/django-controlcenter: Set of widgets to build dashboards for Django projects",
+            "sync_transaction_version": "427",
+            "type": "url",
+            "url": "https://github.com/byashimov/django-controlcenter"
+         }, {
+            "date_added": "13155765324575410",
+            "id": "148",
+            "meta_info": {
+               "last_visited_desktop": "13155824530373333"
+            },
+            "name": "chrisdev/django-pandas: Tools for working with pandas in your Django projects",
+            "sync_transaction_version": "355",
+            "type": "url",
+            "url": "https://github.com/chrisdev/django-pandas"
+         }, {
+            "date_added": "13155847552224405",
+            "id": "151",
+            "meta_info": {
+               "last_visited_desktop": "13155847552225260"
+            },
+            "name": "sehmaschine/django-grappelli: A jazzy skin for the Django Admin-Interface (official repository).",
+            "sync_transaction_version": "361",
+            "type": "url",
+            "url": "https://github.com/sehmaschine/django-grappelli"
+         }, {
+            "date_added": "13155847932361888",
+            "id": "152",
+            "meta_info": {
+               "last_visited_desktop": "13155900539804393"
+            },
+            "name": "Async Python: The Different Forms of Concurrency · Abu Ashraf Masnun",
+            "sync_transaction_version": "382",
+            "type": "url",
+            "url": "http://masnun.rocks/2016/10/06/async-python-the-different-forms-of-concurrency/"
+         }, {
+            "date_added": "13155848076633137",
+            "id": "153",
+            "meta_info": {
+               "last_visited_desktop": "13155900529611270"
+            },
+            "name": "Cellular Automata (Stanford Encyclopedia of Philosophy)",
+            "sync_transaction_version": "377",
+            "type": "url",
+            "url": "https://plato.stanford.edu/entries/cellular-automata/"
+         }, {
+            "date_added": "13155848120067656",
+            "id": "154",
+            "meta_info": {
+               "last_visited_desktop": "13155900532955002"
+            },
+            "name": "Python Tutorial: Cellular Automata - 2017",
+            "sync_transaction_version": "378",
+            "type": "url",
+            "url": "http://www.bogotobogo.com/python/python_cellular_automata.php"
+         }, {
+            "date_added": "13155848646008556",
+            "id": "155",
+            "meta_info": {
+               "last_visited_desktop": "13155900533899223"
+            },
+            "name": "Python Tutorial: Home - 2017",
+            "sync_transaction_version": "379",
+            "type": "url",
+            "url": "http://www.bogotobogo.com/python/pytut.php"
+         }, {
+            "date_added": "13155900672064182",
+            "id": "158",
+            "meta_info": {
+               "last_visited_desktop": "13155900672064562"
+            },
+            "name": "ParallelProgramming - SciPy wiki dump",
+            "sync_transaction_version": "384",
+            "type": "url",
+            "url": "https://scipy.github.io/old-wiki/pages/ParallelProgramming"
+         }, {
+            "date_added": "13156268848662735",
+            "id": "161",
+            "meta_info": {
+               "last_visited_desktop": "13156343653015921"
+            },
+            "name": "Connecting to a MongoDB in Flask Using Flask-MongoAlchemy - YouTube",
+            "sync_transaction_version": "402",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=Ie3FSFy5os0&list=PLXmMXHVSvS-Db9KK1LA7lifcyZm4c-rwj"
+         }, {
+            "date_added": "13156433405500513",
+            "id": "164",
+            "meta_info": {
+               "last_visited_desktop": "13156463897497946"
+            },
+            "name": "OpenCV 3 Machine Learning : k-nearest neighbors (k-NN) algorithm - 2017",
+            "sync_transaction_version": "411",
+            "type": "url",
+            "url": "http://www.bogotobogo.com/python/OpenCV_Python/python_opencv3_Machine_Learning_Classification_K-nearest_neighbors_k-NN.php"
+         }, {
+            "date_added": "13156611913618154",
+            "id": "167",
+            "meta_info": {
+               "last_visited_desktop": "13156884621502825"
+            },
+            "name": "ngrok – documentation",
+            "sync_transaction_version": "423",
+            "type": "url",
+            "url": "https://ngrok.com/docs"
+         }, {
+            "date_added": "13156613232837262",
+            "id": "168",
+            "meta_info": {
+               "last_visited_desktop": "13156613232838035"
+            },
+            "name": "curl - Documentation Overview",
+            "sync_transaction_version": "419",
+            "type": "url",
+            "url": "https://curl.haxx.se/docs/"
+         }, {
+            "date_added": "13157055909262025",
+            "id": "171",
+            "meta_info": {
+               "last_visited_desktop": "13157055909262764"
+            },
+            "name": "Transforming Code into Beautiful, Idiomatic Python - YouTube",
+            "sync_transaction_version": "431",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=OSGv2VnC0go"
+         }, {
+            "date_added": "13157070340988035",
+            "id": "174",
+            "meta_info": {
+               "last_visited_desktop": "13157070340988638"
+            },
+            "name": "amix/vimrc: The ultimate Vim configuration: vimrc",
+            "sync_transaction_version": "435",
+            "type": "url",
+            "url": "https://github.com/amix/vimrc"
+         }, {
+            "date_added": "13157127165893779",
+            "id": "177",
+            "meta_info": {
+               "last_visited_desktop": "13157127165894877"
+            },
+            "name": "dbKoda | dbKoda is the open-source, next generation IDE for MongoDB. Take your database to the next level with our Rich Code Editor, Multiple Connection Management and Topology Tree Explorer.",
+            "sync_transaction_version": "440",
+            "type": "url",
+            "url": "https://www.dbkoda.com/?gclid=EAIaIQobChMI48LG3vT31wIVSICRCh00awcREAAYAiAAEgK2kPD_BwE#top"
+         }, {
+            "date_added": "13157142508378255",
+            "id": "180",
+            "meta_info": {
+               "last_visited_desktop": "13157142508379195"
+            },
+            "name": "Field Formatters in Kibana 4.1 | Elastic",
+            "sync_transaction_version": "444",
+            "type": "url",
+            "url": "https://www.elastic.co/blog/kibana-4-1-field-formatters"
+         }, {
+            "date_added": "13157464386347670",
+            "id": "183",
+            "meta_info": {
+               "last_visited_desktop": "13157464386348428"
+            },
+            "name": "rafi/vim-config: Lean mean (Neo)Vim machine, carefully crafted with Use with Neovim v0.1.5+ or Vim v7.4+",
+            "sync_transaction_version": "448",
+            "type": "url",
+            "url": "https://github.com/rafi/vim-config"
+         }, {
+            "date_added": "13157573234313366",
+            "id": "186",
+            "meta_info": {
+               "last_visited_desktop": "13157573234314115"
+            },
+            "name": "Credit card OCR with OpenCV and Python - PyImageSearch",
+            "sync_transaction_version": "452",
+            "type": "url",
+            "url": "https://www.pyimagesearch.com/2017/07/17/credit-card-ocr-with-opencv-and-python/"
+         }, {
+            "date_added": "13157574549288926",
+            "id": "187",
+            "meta_info": {
+               "last_visited_desktop": "13157574549289718"
+            },
+            "name": "Cracking Basic Captchas With OpenCV - Robin David",
+            "sync_transaction_version": "456",
+            "type": "url",
+            "url": "http://www.robindavid.fr/opencv-tutorial/cracking-basic-captchas-with-opencv.html"
+         }, {
+            "date_added": "13157585123369440",
+            "id": "188",
+            "meta_info": {
+               "last_visited_desktop": "13157585123370243"
+            },
+            "name": "elasticsearch.helpers.bulk - Nullege Python Samples",
+            "sync_transaction_version": "460",
+            "type": "url",
+            "url": "http://nullege.com/codes/search/elasticsearch.helpers.bulk"
+         }, {
+            "date_added": "13157644733192366",
+            "id": "191",
+            "meta_info": {
+               "last_visited_desktop": "13161727375463959"
+            },
+            "name": "Elasticsearch: Entendendo o ecossistema e o inverted index - YouTube",
+            "sync_transaction_version": "701",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=TMxO2cNeOe8&index=1&list=PLz_YTBuxtxt4X57KE3e3XxyDrg7h7tXkm"
+         }, {
+            "date_added": "13157746500136669",
+            "id": "194",
+            "meta_info": {
+               "last_visited_desktop": "13157923801634199"
+            },
+            "name": "Communication Between Processes - Python Module of the Week",
+            "sync_transaction_version": "495",
+            "type": "url",
+            "url": "https://pymotw.com/2/multiprocessing/communication.html"
+         }, {
+            "date_added": "13157747205975491",
+            "id": "195",
+            "meta_info": {
+               "last_visited_desktop": "13157923810779345"
+            },
+            "name": "Combining Coroutines with Threads and Processes — PyMOTW 3",
+            "sync_transaction_version": "496",
+            "type": "url",
+            "url": "https://pymotw.com/3/asyncio/executors.html"
+         }, {
+            "date_added": "13157754537792526",
+            "id": "196",
+            "meta_info": {
+               "last_visited_desktop": "13157923816166967"
+            },
+            "name": "asyncio — Asynchronous I/O, event loop, and concurrency tools — PyMOTW 3",
+            "sync_transaction_version": "498",
+            "type": "url",
+            "url": "https://pymotw.com/3/asyncio/"
+         }, {
+            "date_added": "13157754674615464",
+            "id": "197",
+            "meta_info": {
+               "last_visited_desktop": "13157923815182402"
+            },
+            "name": "Asynchronous I/O with Protocol Class Abstractions — PyMOTW 3",
+            "sync_transaction_version": "497",
+            "type": "url",
+            "url": "https://pymotw.com/3/asyncio/io_protocol.html#echo-client"
+         }, {
+            "date_added": "13157754831074250",
+            "id": "198",
+            "meta_info": {
+               "last_visited_desktop": "13157822369015277"
+            },
+            "name": "PEP 492 -- Coroutines with async and await syntax | Python.org",
+            "sync_transaction_version": "491",
+            "type": "url",
+            "url": "https://www.python.org/dev/peps/pep-0492/#id101"
+         }, {
+            "date_added": "13158081704887918",
+            "id": "201",
+            "meta_info": {
+               "last_visited_desktop": "13158081704888240"
+            },
+            "name": "How to Use mongo-connector with Elasticsearch - Jixee Blog",
+            "sync_transaction_version": "501",
+            "type": "url",
+            "url": "https://blog.jixee.me/how-to-use-mongo-connector-with-elasticsearch/"
+         }, {
+            "date_added": "13158248423291282",
+            "id": "204",
+            "meta_info": {
+               "last_visited_desktop": "13160664183305290"
+            },
+            "name": "Indexing Metadata in Amazon Elasticsearch Service Using AWS Lambda and Python | AWS Database Blog",
+            "sync_transaction_version": "640",
+            "type": "url",
+            "url": "https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/"
+         }, {
+            "date_added": "13158252001970467",
+            "id": "205",
+            "meta_info": {
+               "last_visited_desktop": "13158252001971339"
+            },
+            "name": "sivasamyk/logtrail: Kibana plugin to view, search & live tail log events",
+            "sync_transaction_version": "509",
+            "type": "url",
+            "url": "https://github.com/sivasamyk/logtrail"
+         }, {
+            "date_added": "13158335530231477",
+            "id": "208",
+            "meta_info": {
+               "last_visited_desktop": "13158335530232651"
+            },
+            "name": "Python Multithreading Tutorial: Lock objects - acquire() and release() 2017",
+            "sync_transaction_version": "517",
+            "type": "url",
+            "url": "http://www.bogotobogo.com/python/Multithread/python_multithreading_Synchronization_Lock_Objects_Acquire_Release.php"
+         }, {
+            "date_added": "13158339397497234",
+            "id": "209",
+            "meta_info": {
+               "last_visited_desktop": "13158339397497906"
+            },
+            "name": "An introduction to parallel programming using Python's multiprocessing module",
+            "sync_transaction_version": "521",
+            "type": "url",
+            "url": "http://sebastianraschka.com/Articles/2014_multiprocessing.html"
+         }, {
+            "date_added": "13158351110212846",
+            "id": "212",
+            "meta_info": {
+               "last_visited_desktop": "13158351110213580"
+            },
+            "name": "A Complete Guide to K-Nearest-Neighbors with Applications in Python and R",
+            "sync_transaction_version": "525",
+            "type": "url",
+            "url": "https://kevinzakka.github.io/2016/07/13/k-nearest-neighbor/"
+         }, {
+            "date_added": "13158354303369055",
+            "id": "215",
+            "meta_info": {
+               "last_visited_desktop": "13158354303369768"
+            },
+            "name": "Flatten a list of lists in one line in Python (Example)",
+            "sync_transaction_version": "529",
+            "type": "url",
+            "url": "https://coderwall.com/p/rcmaea/flatten-a-list-of-lists-in-one-line-in-python"
+         }, {
+            "date_added": "13158356035908373",
+            "id": "216",
+            "meta_info": {
+               "last_visited_desktop": "13158356035908814"
+            },
+            "name": "The Chars74K image dataset - Character Recognition in Natural Images",
+            "sync_transaction_version": "533",
+            "type": "url",
+            "url": "http://www.ee.surrey.ac.uk/CVSSP/demos/chars74k/#download"
+         }, {
+            "date_added": "13158425982442039",
+            "id": "219",
+            "meta_info": {
+               "last_visited_desktop": "13159473199011180"
+            },
+            "name": "intelivix/tribunais at captcha-kinesis",
+            "sync_transaction_version": "615",
+            "type": "url",
+            "url": "https://github.com/intelivix/tribunais/tree/captcha-kinesis"
+         }, {
+            "date_added": "13158426848579426",
+            "id": "220",
+            "meta_info": {
+               "last_visited_desktop": "13158426891635363"
+            },
+            "name": "Shard request cache | Elasticsearch Reference [6.1] | Elastic",
+            "sync_transaction_version": "543",
+            "type": "url",
+            "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/shard-request-cache.html"
+         }, {
+            "date_added": "13158786136901750",
+            "id": "223",
+            "meta_info": {
+               "last_visited_desktop": "13159026399786047"
+            },
+            "name": "Docker: Remove all images and containers – TechOverflow",
+            "sync_transaction_version": "602",
+            "type": "url",
+            "url": "https://techoverflow.net/2013/10/22/docker-remove-all-images-and-containers/"
+         }, {
+            "date_added": "13158786166487528",
+            "id": "224",
+            "meta_info": {
+               "last_visited_desktop": "13159025632956699"
+            },
+            "name": "Docker remove all dangling volumes (Example)",
+            "sync_transaction_version": "601",
+            "type": "url",
+            "url": "https://coderwall.com/p/hdsfpq/docker-remove-all-dangling-volumes"
+         }, {
+            "date_added": "13158863638533569",
+            "id": "227",
+            "meta_info": {
+               "last_visited_desktop": "13158863638539117"
+            },
+            "name": "python - How to append rows in a pandas dataframe in a for loop? - Stack Overflow",
+            "sync_transaction_version": "558",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/31674557/how-to-append-rows-in-a-pandas-dataframe-in-a-for-loop"
+         }, {
+            "date_added": "13158868037030413",
+            "id": "228",
+            "meta_info": {
+               "last_visited_desktop": "13158868037030954"
+            },
+            "name": "Super Advanced Python - YouTube",
+            "sync_transaction_version": "562",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=u2KZJzoz-qI"
+         }, {
+            "date_added": "13158870750017199",
+            "id": "229",
+            "meta_info": {
+               "last_visited_desktop": "13158870750017727"
+            },
+            "name": "Scipy Lecture Notes — Scipy lecture notes",
+            "sync_transaction_version": "566",
+            "type": "url",
+            "url": "http://www.scipy-lectures.org/index.html"
+         }, {
+            "date_added": "13158870861537049",
+            "id": "230",
+            "meta_info": {
+               "last_visited_desktop": "13158870861537645"
+            },
+            "name": "2.3. Debugging code — Scipy lecture notes",
+            "sync_transaction_version": "570",
+            "type": "url",
+            "url": "http://www.scipy-lectures.org/advanced/debugging/index.html"
+         }, {
+            "date_added": "13158870987406101",
+            "id": "231",
+            "meta_info": {
+               "last_visited_desktop": "13158870987406856"
+            },
+            "name": "NumPy: creating and manipulating numerical data — Scipy lecture notes",
+            "sync_transaction_version": "574",
+            "type": "url",
+            "url": "http://www.scipy-lectures.org/intro/numpy/numpy.html"
+         }, {
+            "date_added": "13158871063557044",
+            "id": "232",
+            "meta_info": {
+               "last_visited_desktop": "13158939742540149"
+            },
+            "name": "Version Control with Git: Automated Version Control",
+            "sync_transaction_version": "583",
+            "type": "url",
+            "url": "http://swcarpentry.github.io/git-novice/01-basics/"
+         }, {
+            "date_added": "13158871851963463",
+            "id": "233",
+            "meta_info": {
+               "last_visited_desktop": "13158871851964268"
+            },
+            "name": "vtk 8.1, pip 9.0.1 , python 3.6, archlinux, ModuleNotFoundError: No module named 'vtkOpenGLKitPython' (#17166) · Issues · VTK / VTK · GitLab",
+            "sync_transaction_version": "581",
+            "type": "url",
+            "url": "https://gitlab.kitware.com/vtk/vtk/issues/17166"
+         }, {
+            "date_added": "13158943030979817",
+            "id": "235",
+            "meta_info": {
+               "last_visited_desktop": "13158943246532182"
+            },
+            "name": "greyltc/docker-archlinux: This builds baseline Arch Linux Docker images",
+            "sync_transaction_version": "588",
+            "type": "url",
+            "url": "https://github.com/greyltc/docker-archlinux"
+         }, {
+            "date_added": "13158944126337320",
+            "id": "236",
+            "meta_info": {
+               "last_visited_desktop": "13159372451811719"
+            },
+            "name": "[Docker] – Desvendando: Docker Machine + Swarm com VirtualBox – ChurrOps on DevOps",
+            "sync_transaction_version": "607",
+            "type": "url",
+            "url": "https://churrops.io/2017/07/02/docker-desvendando-docker-machine-swarm-com-virtualbox/"
+         }, {
+            "date_added": "13158944289747417",
+            "id": "237",
+            "meta_info": {
+               "last_visited_desktop": "13159374606654527"
+            },
+            "name": "Get started with Docker Machine and a local VM | Docker Documentation",
+            "sync_transaction_version": "609",
+            "type": "url",
+            "url": "https://docs.docker.com/machine/get-started/#start-and-stop-machines"
+         }, {
+            "date_added": "13159388236799061",
+            "id": "239",
+            "meta_info": {
+               "last_visited_desktop": "13159388236799885"
+            },
+            "name": "How To: Use mitmproxy to read and modify HTTPS traffic - Philipp's Tech Blog",
+            "sync_transaction_version": "613",
+            "type": "url",
+            "url": "https://blog.heckel.xyz/2013/07/01/how-to-use-mitmproxy-to-read-and-modify-https-traffic-of-your-phone/"
+         }, {
+            "date_added": "13159904551627509",
+            "id": "241",
+            "meta_info": {
+               "last_visited_desktop": "13159904551630210"
+            },
+            "name": "python - Pymongo multiprocessing - Stack Overflow",
+            "sync_transaction_version": "618",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/41104582/pymongo-multiprocessing"
+         }, {
+            "date_added": "13160142904362246",
+            "id": "243",
+            "meta_info": {
+               "last_visited_desktop": "13160142904363112"
+            },
+            "name": "gaojiuli/gain: Web crawling framework based on asyncio for everyone.",
+            "sync_transaction_version": "622",
+            "type": "url",
+            "url": "https://github.com/gaojiuli/gain"
+         }, {
+            "date_added": "13160603638429547",
+            "id": "245",
+            "meta_info": {
+               "last_visited_desktop": "13160603638430665"
+            },
+            "name": "Memória Hyperx Impact 4gb Ddr3l 1866 Mhz - Hx318ls11ib/4 - Kingston - Submarino.com",
+            "sync_transaction_version": "631",
+            "type": "url",
+            "url": "https://www.submarino.com.br/produto/20797958/memoria-hyperx-impact-4gb-ddr3l-1866-mhz-hx318ls11ib-4-kingston?WT.srch=1&epar=bp_pl_00_go_g35169&epar=bp_pl_00_go_g35169&gclid=EAIaIQobChMIruXpx5jd2AIVjoWRCh1krA33EAQYAiABEgLbwfD_BwE&opn=XMLGOOGLE&sellerId=23027655000159"
+         }, {
+            "date_added": "13160604832935659",
+            "id": "246",
+            "meta_info": {
+               "last_visited_desktop": "13160604832936845"
+            },
+            "name": "Original Intel Core I7 Processador 2620 M Cache 2.7 GHz i7 2620M4M Notebook Laptop Processador Cpu Frete Grátis em Processadores de Computador e escritório no AliExpress.com | Alibaba Group",
+            "sync_transaction_version": "635",
+            "type": "url",
+            "url": "https://pt.aliexpress.com/item/For-new-Core-i7-2620M-cpu-4M-Cache-up-to-3-40-GHz-ES-QS-i7/32356798028.html?spm=a2g03.search0104.3.2.COa3Tj&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10065_10151_10344_10068_10342_10547_10343_10059_10340_10314_10548_10341_10534_100031_10084_10604_10083_10103_10307_10615_10142,searchweb201603_36,ppcSwitch_5&algo_expid=5b36194b-2b3b-4785-8224-7140e593c1d8-0&algo_pvid=5b36194b-2b3b-4785-8224-7140e593c1d8&transAbTest=ae803_4&priceBeautifyAB=3"
+         }, {
+            "date_added": "13160604990733852",
+            "id": "247",
+            "meta_info": {
+               "last_visited_desktop": "13160604990734753"
+            },
+            "name": "Memória Ram Goldkey Notebook Ou All In One 4 Gb Ddr3l 12800 - Submarino.com",
+            "sync_transaction_version": "639",
+            "type": "url",
+            "url": "https://www.submarino.com.br/produto/25998411/memoria-ram-goldkey-notebook-ou-all-in-one-4-gb-ddr3l-12800?pfm_carac=4gb%20ddr3l%201333%20notebook&pfm_index=0&pfm_page=search&pfm_pos=grid&pfm_type=search_page%20"
+         }, {
+            "date_added": "13160755198834974",
+            "id": "249",
+            "meta_info": {
+               "last_visited_desktop": "13160755198835809"
+            },
+            "name": "Play with Docker Classroom",
+            "sync_transaction_version": "643",
+            "type": "url",
+            "url": "http://training.play-with-docker.com/"
+         }, {
+            "date_added": "13160844596566720",
+            "id": "251",
+            "meta_info": {
+               "last_visited_desktop": "13160844596567273"
+            },
+            "name": "vim tips and tricks: plugins",
+            "sync_transaction_version": "646",
+            "type": "url",
+            "url": "https://www.cs.oberlin.edu/~kuperman/help/vim/plugins.html"
+         }, {
+            "date_added": "13160845225741299",
+            "id": "252",
+            "meta_info": {
+               "last_visited_desktop": "13161095223837441"
+            },
+            "name": "Vim/Como editar preferências - Wikilivros",
+            "sync_transaction_version": "655",
+            "type": "url",
+            "url": "https://pt.wikibooks.org/wiki/Vim/Como_editar_prefer%C3%AAncias"
+         }, {
+            "date_added": "13160854403015213",
+            "id": "253",
+            "meta_info": {
+               "last_visited_desktop": "13161096173333184"
+            },
+            "name": "tomasr/molokai: Molokai color scheme for Vim",
+            "sync_transaction_version": "658",
+            "type": "url",
+            "url": "https://github.com/tomasr/molokai"
+         }, {
+            "date_added": "13161183056616105",
+            "id": "255",
+            "meta_info": {
+               "last_visited_desktop": "13161223804490167"
+            },
+            "name": "Vim Bootstrap",
+            "sync_transaction_version": "663",
+            "type": "url",
+            "url": "http://5.vim-bootstrap.appspot.com/"
+         }, {
+            "date_added": "13161369187611336",
+            "id": "257",
+            "meta_info": {
+               "last_visited_desktop": "13161369187612093"
+            },
+            "name": "CS109 Data Science",
+            "sync_transaction_version": "674",
+            "type": "url",
+            "url": "http://cs109.github.io/2014/"
+         }, {
+            "date_added": "13161369240058245",
+            "id": "258",
+            "meta_info": {
+               "last_visited_desktop": "13161369385685076"
+            },
+            "name": "cs109/content: Official content for Harvard CS109",
+            "sync_transaction_version": "688",
+            "type": "url",
+            "url": "https://github.com/cs109/content"
+         }, {
+            "date_added": "13161706738791244",
+            "id": "260",
+            "meta_info": {
+               "last_visited_desktop": "13161706738791773"
+            },
+            "name": "Entendendo os decorators | Python Help",
+            "sync_transaction_version": "694",
+            "type": "url",
+            "url": "https://pythonhelp.wordpress.com/2013/06/09/entendendo-os-decorators/"
+         }, {
+            "date_added": "13161706759886385",
+            "id": "261",
+            "meta_info": {
+               "last_visited_desktop": "13161706759887361"
+            },
+            "name": "Understanding the apt-cache depends Output",
+            "sync_transaction_version": "697",
+            "type": "url",
+            "url": "https://www.thecodeship.com/gnu-linux/understanding-apt-cache-depends-output/"
+         }, {
+            "date_added": "13161708302780251",
+            "id": "262",
+            "meta_info": {
+               "last_visited_desktop": "13161708302780764"
+            },
+            "name": "7. Decorators — Python Tips 0.1 documentation",
+            "sync_transaction_version": "700",
+            "type": "url",
+            "url": "http://book.pythontips.com/en/latest/decorators.html"
+         } ],
+         "date_added": "13147797555757686",
+         "date_modified": "13161708302780251",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "701",
+      "synced": {
+         "children": [  ],
+         "date_added": "13147797555757688",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

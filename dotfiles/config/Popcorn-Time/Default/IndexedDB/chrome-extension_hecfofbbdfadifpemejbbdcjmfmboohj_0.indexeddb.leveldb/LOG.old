@@ -1,0 +1,18 @@
+2017/12/30-21:12:02.854 4312 Reusing MANIFEST /home/iury/.config/Popcorn-Time/Default/IndexedDB/chrome-extension_hecfofbbdfadifpemejbbdcjmfmboohj_0.indexeddb.leveldb/MANIFEST-000001
+2017/12/30-21:12:02.855 4312 Recovering log #172
+2017/12/30-21:12:02.855 4312 Reusing old log /home/iury/.config/Popcorn-Time/Default/IndexedDB/chrome-extension_hecfofbbdfadifpemejbbdcjmfmboohj_0.indexeddb.leveldb/000172.log 
+2017/12/30-21:12:30.189 4312 Current memtable full; waiting...
+2017/12/30-21:12:30.194 4374 Level-0 table #177: started
+2017/12/30-21:12:30.198 4374 Level-0 table #177: 625 bytes OK
+2017/12/30-21:12:30.211 4374 Delete type=0 #172
+2017/12/30-21:12:30.211 4374 Level-0 table #179: started
+2017/12/30-21:12:30.211 4374 Level-0 table #179: 0 bytes OK
+2017/12/30-21:12:30.220 4374 Delete type=0 #176
+2017/12/30-21:12:30.220 4374 Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1e\x00\x00\xc8\x08\x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a' @ 887 : 1
+2017/12/30-21:12:30.220 4374 Compacting 1@0 + 1@1 files
+2017/12/30-21:12:30.228 4374 Generated table #180@0: 3 keys, 447 bytes
+2017/12/30-21:12:30.228 4374 Compacted 1@0 + 1@1 files => 447 bytes
+2017/12/30-21:12:30.239 4374 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/12/30-21:12:30.239 4374 Delete type=2 #177
+2017/12/30-21:12:30.239 4374 Delete type=2 #174
+2017/12/30-21:12:30.239 4374 Manual compaction at level-0 from '\x00\x1e\x00\x00\xc8\x08\x00m\x00e\x00t\x00a\x00d\x00a\x00t\x00a' @ 887 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)

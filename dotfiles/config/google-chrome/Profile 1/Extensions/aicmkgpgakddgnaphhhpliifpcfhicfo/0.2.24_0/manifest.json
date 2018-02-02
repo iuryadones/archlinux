@@ -1,0 +1,24 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "interceptor_48x48.png",
+      "default_popup": "index.html",
+      "default_title": "Send XHR requests fired from Postman"
+   },
+   "description": "Sends requests fired through the Postman chrome app.",
+   "icons": {
+      "128": "interceptor_128x128.png",
+      "16": "interceptor_16x16.png",
+      "32": "interceptor_32x32.png",
+      "48": "interceptor_48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkYPST7QF7FLpYpDuieFqN7qdPSzz9P9Hu1Xagevs6XSKJwYdG9I3d83FJfPwEuR6eJM4dMkeE06f5SBlSt3o1pf967X9WTcLNOEus5jvoLQxKjskqmWSzjuDouor1XziNca1soldADvvlKrnq8zkfN+zycHNp1QnhrehcdKoyUJIbEuypY6V7pVRDcxHm1raQHRnCvTcHzLEK2hDwBvcQsyXsy/2xaESw7rkhbM2lgVA9WRUS+ZYEiKroUl8dt7ZCRMLfKuYMfNL1TwsShHTPncgWjyZ6DNVxlpb8KpdGwHavQBPC0tlDv1tlIpHau3pSXt6oD2uFt59ALnCHBg24QIDAQAB",
+   "manifest_version": 2,
+   "name": "Postman Interceptor",
+   "permissions": [ "webRequest", "webRequestBlocking", "cookies", "http://*/*", "https://*/*", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.24"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/toggle-switch.css" rel="stylesheet">	
+	<link href="css/onoffswitch.css" rel="stylesheet">	
+</head>
+<body>
+	<div class="main-warning-label-wrapper" id="postman-not-open">
+		<div class="main-warning-label">
+			Not connected. Check that the <a href="https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en" target="_blank" class="warning-link">Postman app</a> is open.
+		</div>
+	</div>
+	<div class="main-warning-label-wrapper" id="postman-not-enabled">
+		<div class="main-warning-label">
+			Ensure that the Interceptor is enabled in the Postman app.
+		</div>
+	</div>
+	<div class="main-wrapper">
+		<h3>Postman Interceptor</h3>	
+		<p>Helps you send requests which use browser cookies through the <a href="https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en" target="_blank">Postman Chrome app</a></p>
+		<br>
+		<h4>Request Capture</h4>	
+		<p>Captured requests will show up inside Postman's history</p>
+
+
+		<div class="onoffswitch">
+		    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+		    <label class="onoffswitch-label" for="myonoffswitch">
+		        <span class="onoffswitch-inner"></span>
+		        <span class="onoffswitch-switch"></span>
+		    </label>
+		</div>
+
+		<div id="filtered-requests">
+			<h5>Filter requests</h5>
+			<input type="text" id="filterRequest" placeholder="filter by domain" value=".*">
+			<button id="apply-filter" class="btn">Apply filter</button>
+
+			<span class="label-success" id="tick-icon">Saved</span>    
+		    
+			<div class="logger-area">
+		        <h5>Last 10 requests</h5>		
+		        <ol id="logger"></ol>
+			</div>
+		</div>
+	</div>
+	<script src="lib/underscore-min.js"></script>
+	<script src="js/deque.js"></script>
+	<script src="js/index_page.js"></script>
+</body>
+</html>

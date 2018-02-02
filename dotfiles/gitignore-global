@@ -7,6 +7,8 @@ run-consultar.py
 run-extrair.py
 run-coletar.py
 
+run-export.sh
+
 dump.html
 dump_extract.html
 

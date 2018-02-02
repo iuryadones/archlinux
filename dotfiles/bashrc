@@ -28,7 +28,4 @@ eval "$(pyenv virtualenv-init -)"
 
 eval "$(pandoc --bash-completion)"
 
-alias vi=nvim
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-

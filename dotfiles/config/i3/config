@@ -1,11 +1,12 @@
 # < Comand: Mod1 > Alt or < Comand: Mod4 > Win
-set $mod Mod4
+set $mod Mod1
+set $sup Mod4
 
-#font pango:monospace 8
-font pango:DejaVu Sans Mono Terminus (TTF) 8
+#font pango:monospace 10
+font pango:DejaVu Sans Mono Terminus (TTF) 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+floating_modifier $sup
 
 # color: http://www.color-hex.com/color-palette/39942
 # set color focused 
@@ -78,11 +79,11 @@ client.focused_inactive $fi-border   $fi-background $fi-text $fi-indicator $fi-c
 client.unfocused	    $uf-border   $uf-background $uf-text $uf-indicator $uf-child-border
 client.urgent           $u-border    $u-background  $u-text  $u-indicator  $u-child-border
 client.placeholder      $ph-border   $ph-background $ph-text $ph-indicator $ph-child-border
-client.background       $blackground
+client.background       $background
 
-# Bar LVDS-1 
+# Bar LVDS-1-1 
 bar {
-    output                 LVDS1
+    output                 LVDS-1-1
     status_command         i3status -c ~/.config/i3/i3status/config
     position               bottom
     workspace_buttons      yes
@@ -101,9 +102,9 @@ bar {
     }
 }
 
-## Bar HDMI-1 
+## Bar HDMI-1-1 
 #bar {
-#    output                 HDMI1
+#    output                 HDMI-1
 #    status_command         i3status -c ~/.config/i3/i3status/config
 #    position               bottom
 #    workspace_buttons      yes
@@ -122,9 +123,9 @@ bar {
 #    }
 #}
 
-## Bar VGA1 
+## Bar VGA-1-1
 #bar {
-#    output                 VGA1
+#    output                 VGA-1-1
 #    status_command         i3status -c ~/.config/i3/i3status/config
 #    position               bottom
 #    workspace_buttons      yes
@@ -165,57 +166,51 @@ exec --no-startup-id "pulseaudio --start"
 ###########################
 
 # Change Focus
-bindsym $mod+j         focus left
-bindsym $mod+k         focus down
-bindsym $mod+l         focus up
-bindsym $mod+semicolon focus right
-
-# Alternatively, you can use the cursor keys:
-bindsym $mod+Left  focus left
-bindsym $mod+Down  focus down
-bindsym $mod+Up    focus up
-bindsym $mod+Right focus right
+bindsym --release $sup+h             focus left
+bindsym --release $sup+j             focus down
+bindsym --release $sup+k             focus up
+bindsym --release $sup+l             focus right
 
 # Move Focused Window
-bindsym $mod+Shift+j         move left
-bindsym $mod+Shift+k         move down
-bindsym $mod+Shift+l         move up
-bindsym $mod+Shift+semicolon move right
+bindsym --release $sup+Shift+h       move left
+bindsym --release $sup+Shift+j       move down
+bindsym --release $sup+Shift+k       move up
+bindsym --release $sup+Shift+l       move right
 
 # Alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym --release $mod+Left          focus left
+bindsym --release $mod+Down          focus down
+bindsym --release $mod+Up            focus up
+bindsym --release $mod+Right         focus right
 
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# split in toggle orientation
-bindsym $mod+t split t
+# Alternatively, you can use the cursor keys:
+bindsym --release $mod+Shift+Left    move left
+bindsym --release $mod+Shift+Down    move down
+bindsym --release $mod+Shift+Up      move up
+bindsym --release $mod+Shift+Right   move right
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym --release $sup+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $sup+h split horizontal
+bindsym $sup+t split toggle
+bindsym $sup+v split vertical
+bindsym $sup+s layout stacking
+bindsym $sup+w layout tabbed
+bindsym $sup+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $sup+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
-bindsym $mod+d focus child
+#bindsym $mod+d focus child
 
 # WorkSpace customizada
 set $WS1 1.
@@ -230,37 +225,37 @@ set $WS9 9
 set $WS0 10
 
 # switch to workspace
-bindsym $mod+1 workspace $WS1
-bindsym $mod+2 workspace $WS2
-bindsym $mod+3 workspace $WS3
-bindsym $mod+4 workspace $WS4
-bindsym $mod+5 workspace $WS5
-bindsym $mod+6 workspace $WS6
-bindsym $mod+7 workspace $WS7
-bindsym $mod+8 workspace $WS8
-bindsym $mod+9 workspace $WS9
-bindsym $mod+0 workspace $WS0
+bindsym --release $sup+1 workspace $WS1
+bindsym --release $sup+2 workspace $WS2
+bindsym --release $sup+3 workspace $WS3
+bindsym --release $sup+4 workspace $WS4
+bindsym --release $sup+5 workspace $WS5
+bindsym --release $sup+6 workspace $WS6
+bindsym --release $sup+7 workspace $WS7
+bindsym --release $sup+8 workspace $WS8
+bindsym --release $sup+9 workspace $WS9
+bindsym --release $sup+0 workspace $WS0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $WS1
-bindsym $mod+Shift+2 move container to workspace $WS2
-bindsym $mod+Shift+3 move container to workspace $WS3
-bindsym $mod+Shift+4 move container to workspace $WS4
-bindsym $mod+Shift+5 move container to workspace $WS5
-bindsym $mod+Shift+6 move container to workspace $WS6
-bindsym $mod+Shift+7 move container to workspace $WS7
-bindsym $mod+Shift+8 move container to workspace $WS8
-bindsym $mod+Shift+9 move container to workspace $WS9
-bindsym $mod+Shift+0 move container to workspace $WS0
+bindsym --release $sup+Shift+1 move container to workspace $WS1
+bindsym --release $sup+Shift+2 move container to workspace $WS2
+bindsym --release $sup+Shift+3 move container to workspace $WS3
+bindsym --release $sup+Shift+4 move container to workspace $WS4
+bindsym --release $sup+Shift+5 move container to workspace $WS5
+bindsym --release $sup+Shift+6 move container to workspace $WS6
+bindsym --release $sup+Shift+7 move container to workspace $WS7
+bindsym --release $sup+Shift+8 move container to workspace $WS8
+bindsym --release $sup+Shift+9 move container to workspace $WS9
+bindsym --release $sup+Shift+0 move container to workspace $WS0
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym --release $sup+Shift+q kill
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym --release $sup+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym --release $sup+Shift+r restart
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -278,33 +273,33 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym --release $sup+r mode "resize"
 
 # Configure os displays externos
 set $mode_display (v) VGA ON || (f) VGA OFF || (h) HDMI ON || (g) HDMI OFF
 mode "$mode_display" {
-    bindsym v exec --no-startup-id "xrandr --output VGA1  --auto --right-of LVDS1", mode "default"
-    bindsym f exec --no-startup-id "xrandr --output VGA1  --auto --off",            mode "default"
-    bindsym h exec --no-startup-id "xrandr --output HDMI1 --auto --right-of LVDS1", mode "default"
-    bindsym g exec --no-startup-id "xrandr --output HDMI1 --auto --off",            mode "default"
+    bindsym v exec --no-startup-id "xrandr --output VGA-1-1  --auto --right-of LVDS-1-1", mode "default"
+    bindsym f exec --no-startup-id "xrandr --output VGA-1-1  --auto --off",            mode "default"
+    bindsym h exec --no-startup-id "xrandr --output HDMI-1-1 --auto --right-of LVDS-1-1", mode "default"
+    bindsym g exec --no-startup-id "xrandr --output HDMI-1-1 --auto --off",            mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+x mode "$mode_display"
+bindsym --release $sup+x mode "$mode_display"
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec --no-startup-id  "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg exit'"
+bindsym --release $sup+Shift+e exec --no-startup-id  "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg exit'"
 
 # Google Chrome
-bindsym $mod+Shift+i exec --no-startup-id google-chrome-stable
+bindsym $sup+Shift+i exec --no-startup-id google-chrome-stable
 
 # Start a terminal
-bindsym $mod+Return exec --no-startup-id termite 
+bindsym $sup+Return exec --no-startup-id termite 
 
 # Start dmenu (a program launcher)
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -l 3 -i" --entry-type="command"
+bindsym --release $sup+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -l 3 -i" --entry-type="command"
 
 # PrintScreen
 bindsym --release Print       exec --no-startup-id "scrot ~/Images/Captura_de_tela_%Y-%m-%d-%T.png"
@@ -324,8 +319,8 @@ bindsym --release XF86AudioMute        exec --no-startup-id "pactl set-sink-mute
 #    Configura Janelas    #
 ###########################
 
-new_window pixel 0
+new_window pixel 1
 hide_edge_borders both
 
-for_window [class="^.*"] border pixel 0
-
+for_window [class="^.*"] border pixel 1
+#for_window [class="[.]*"] floating enable

@@ -1,0 +1,47 @@
+{"key":"connectionLimit","value":"1000","_id":"0C7XPE7xxklPRtBO"}
+{"key":"subtitle_language","value":"pt-br","_id":"3sXQ4NGh24gGGutH"}
+{"key":"version","value":"0.3.10","_id":"6z0BDVNuQk2U4pqN"}
+{"key":"movies_default_quality","value":"720p","_id":"8swsojTjADs1UeSj"}
+{"key":"os","value":"linux","_id":"9LYs3smweHbbybvT"}
+{"key":"bigPicture","value":false,"_id":"BSwapEa9f4AUbrkO"}
+{"key":"OnlineSearchCategory","value":"Movies","_id":"BXm2Z0AZtKR0GQKF"}
+{"key":"totalDownloaded","value":5701465653,"_id":"CW0xHkEWW5K8G9lK"}
+{"key":"releaseName","value":"Popcorn is Love","_id":"J81GFNbuSDVbSEIp"}
+{"key":"ipAddress","value":"192.168.0.102","_id":"KoZ1dk3KxRwzqgL6"}
+{"key":"lastWatchedTitle","value":"Carnage","_id":"MHn5DOc9MkrWffKj"}
+{"key":"moviesShowQuality","value":true,"_id":"MRG3HxJgaVIW4D8U"}
+{"key":"alwaysOnTop","value":false,"_id":"MfaaOynALWEPNuMK"}
+{"key":"language","value":"en","_id":"PTVH6BnbFUtW0d5B"}
+{"key":"onlineSearchEngine","value":"KAT","_id":"PfcKdjGOCaBvsHj9"}
+{"key":"minimizeToTray","value":false,"_id":"PtB755Mn2SDr46L6"}
+{"key":"automaticUpdating","value":true,"_id":"R3HXCroseAYItp4m"}
+{"key":"lastWatchedTime","value":154.539473,"_id":"TBh00dvNmc7RlpZq"}
+{"key":"disclaimerAccepted","value":1,"_id":"Vpy1zXMCD2knuOE0"}
+{"key":"playerVolume","value":"1.0","_id":"WfHLnl7X1Uy0EVM3"}
+{"key":"streamPort","value":"0","_id":"Y6NZJs3jHXmlXloM"}
+{"key":"filters","value":{"movies":{"sorter":"popularity","genre":"All","order":-1},"Favorites":{"sorter":"watched items","genre":"","type":"All","order":-1},"Watchlist":{"order":-1}},"_id":"fIOJFCQqZxF4i9wK"}
+{"key":"arch","value":"x64","_id":"mo5giPn9O6EujgGU"}
+{"key":"showAdvancedSettings","value":true,"_id":"oAsUOF6tAS2xX0X7"}
+{"key":"theme","value":"Official_-_Dark_theme","_id":"rL5sWyjuOpERhv5L"}
+{"key":"dhtLimit","value":"5000","_id":"sLWz3fTCqUWvTnke"}
+{"key":"totalUploaded","value":134574290,"_id":"uGFrWtev8lD3YXb3"}
+{"key":"playNextEpisodeAuto","value":false,"_id":"vcryru7Kd0f07S3n"}
+{"key":"noBigPicture","value":0,"_id":"wlJsGa3QhsXFVUiq"}
+{"key":"subtitle_size","value":"36px","_id":"y0jrF0s5Srt7BG31"}
+{"key":"events","value":true,"_id":"yVV31FXHxnLX7A9a"}
+{"$$indexCreated":{"fieldName":"key","unique":true,"sparse":false}}
+{"key":"version","value":"0.3.10","_id":"6z0BDVNuQk2U4pqN"}
+{"key":"releaseName","value":"Popcorn is Love","_id":"J81GFNbuSDVbSEIp"}
+{"key":"arch","value":"x64","_id":"mo5giPn9O6EujgGU"}
+{"key":"os","value":"linux","_id":"9LYs3smweHbbybvT"}
+{"key":"playerVolume","value":"1.0","_id":"WfHLnl7X1Uy0EVM3"}
+{"key":"lastWatchedTitle","value":"mother!","_id":"MHn5DOc9MkrWffKj"}
+{"key":"lastWatchedTime","value":20.92,"_id":"TBh00dvNmc7RlpZq"}
+{"key":"totalDownloaded","value":5746811844,"_id":"CW0xHkEWW5K8G9lK"}
+{"key":"totalUploaded","value":135033042,"_id":"uGFrWtev8lD3YXb3"}
+{"key":"filters","value":{"movies":{"sorter":"year","genre":"All","order":-1},"Favorites":{"sorter":"watched items","genre":"","type":"All","order":-1},"Watchlist":{"order":-1}},"_id":"fIOJFCQqZxF4i9wK"}
+{"key":"playerVolume","value":"1.0","_id":"WfHLnl7X1Uy0EVM3"}
+{"key":"lastWatchedTime","value":false,"_id":"TBh00dvNmc7RlpZq"}
+{"key":"totalDownloaded","value":6628877155,"_id":"CW0xHkEWW5K8G9lK"}
+{"key":"totalUploaded","value":135131346,"_id":"uGFrWtev8lD3YXb3"}
+{"key":"filters","value":{"movies":{"sorter":"year","genre":"All","order":-1},"Favorites":{"sorter":"watched items","genre":"","type":"All","order":-1},"Watchlist":{"order":-1}},"_id":"fIOJFCQqZxF4i9wK"}

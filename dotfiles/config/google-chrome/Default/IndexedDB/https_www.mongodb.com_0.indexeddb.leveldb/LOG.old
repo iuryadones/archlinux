@@ -1,0 +1,18 @@
+2017/12/04-18:39:50.644 4974 Reusing MANIFEST /home/iury/.config/google-chrome/Default/IndexedDB/https_www.mongodb.com_0.indexeddb.leveldb/MANIFEST-000001
+2017/12/04-18:39:50.644 4974 Recovering log #34
+2017/12/04-18:39:50.644 4974 Reusing old log /home/iury/.config/google-chrome/Default/IndexedDB/https_www.mongodb.com_0.indexeddb.leveldb/000034.log 
+2017/12/04-18:39:53.122 4849 Current memtable full; waiting...
+2017/12/04-18:39:53.135 5448 Level-0 table #39: started
+2017/12/04-18:39:53.146 5448 Level-0 table #39: 738 bytes OK
+2017/12/04-18:39:53.147 5448 Delete type=0 #34
+2017/12/04-18:39:53.148 5448 Level-0 table #41: started
+2017/12/04-18:39:53.148 5448 Level-0 table #41: 0 bytes OK
+2017/12/04-18:39:53.151 5448 Delete type=0 #38
+2017/12/04-18:39:53.152 5448 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at '\x00\x07\x01\x02\x01\x05\x00A\x00u\x00g\x00u\x00r' @ 199 : 1
+2017/12/04-18:39:53.152 5448 Compacting 1@0 + 1@1 files
+2017/12/04-18:39:53.156 5448 Generated table #42@0: 3 keys, 332 bytes
+2017/12/04-18:39:53.156 5448 Compacted 1@0 + 1@1 files => 332 bytes
+2017/12/04-18:39:53.157 5448 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/12/04-18:39:53.157 5448 Delete type=2 #36
+2017/12/04-18:39:53.157 5448 Delete type=2 #39
+2017/12/04-18:39:53.157 5448 Manual compaction at level-0 from '\x00\x07\x01\x02\x01\x05\x00A\x00u\x00g\x00u\x00r' @ 199 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)

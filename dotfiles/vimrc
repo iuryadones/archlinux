@@ -11,10 +11,12 @@
 "	    for OpenVMS:  sys$login:.vimrc
 
 set nocompatible
-filetype off
 
-let mapleader="\<F6>"
-let g:mapleader="\<F6>"
+filetype off
+filetype plugin indent off
+
+let mapleader=" "
+let g:mapleader=" "
 let s:home=$HOME
 let s:vimhome=s:home."/.vim"
 let s:plugdir=s:vimhome."/plugged"
@@ -25,24 +27,35 @@ let s:plugdir=s:vimhome."/plugged"
 
 call plug#begin(s:plugdir)
 
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
-    Plug 'mhinz/vim-startify'
-    Plug 'vim-pandoc/vim-pandoc'
-    Plug 'vim-pandoc/vim-pandoc-syntax'
-    Plug 'mhinz/vim-signify'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+    Plug 'junegunn/seoul256.vim'
+    Plug 'junegunn/vim-easy-align'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'tpope/vim-commentary'
 
-    if has('nvim')
-    
-        Plug 'vim-airline/vim-airline'
-        Plug 'vim-airline/vim-airline-themes'
-        Plug 'scrooloose/nerdtree'
-        Plug 'jistr/vim-nerdtree-tabs'
-        Plug 'ervandew/supertab'
-        Plug 'tommcdo/vim-exchange'
-    
-    endif
+    function! BuildYCM(info)
+      " info is a dictionary with 3 fields
+      " - name:   name of the plugin
+      " - status: 'installed', 'updated', or 'unchanged'
+      " - force:  set on PlugInstall! or PlugUpdate!
+      if a:info.status == 'installed' || a:info.force
+        !./install.py --system-libclang --all
+      endif
+    endfunction
+
+    Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+    Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+    Plug 'davidhalter/jedi-vim' | Plug 'lambdalisue/vim-pyenv'
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    " Plug 'vim-pandoc/vim-pandoc'
+    " Plug 'vim-pandoc/vim-pandoc-syntax'
+    " Plug 'mhinz/vim-startify'
+    " Plug 'tpope/vim-fugitive'
+    " Plug 'tommcdo/vim-exchange'
+    Plug 'ervandew/supertab'
+    " Plug 'vim-scripts/django.vim'
+    " Plug 'lambdalisue/vim-django-support'
 
 call plug#end()
 autocmd VimEnter *
@@ -55,48 +68,23 @@ autocmd VimEnter *
 " Default Config                                                           {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
-" Get the defaults that most users want.
-" Bail out if something that ran earlier, e.g. a system wide vimrc, does not
-" want Vim to use these default values.
-if exists('skip_defaults_vim')
-  finish
-endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-" Avoid side effects when it was already reset.
-if &compatible
-  set nocompatible
-endif
-
-" When the +eval feature is missing, the set command above will be skipped.
-" Use a trick to reset compatible only when the +eval feature is missing.
-silent! while 0
-  set nocompatible
-silent! endwhile
-
 " Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 
-set history=500		" keep 200 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set wildmenu		" display completion matches in a status line
+set history=50     " keep 200 lines of command line history
+set ruler           " show the cursor position all the time
+set showcmd         " display incomplete commands
+set wildmenu        " display completion matches in a status line
 
 set ttimeout		" time out for key codes
-set ttimeoutlen=100	" wait up to 100ms after Esc for special key
+set ttimeoutlen=1	" wait up to 100ms after Esc for special key
 
 " Show @@@ in the last line if it is truncated.
 set display=truncate
 
 " Show a few lines of context around the cursor.  Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5
+set scrolloff=10
 
 " Do incremental searching when it's possible to timeout.
 if has('reltime')
@@ -111,16 +99,7 @@ set nrformats-=octal
 if has('win32')
   set guioptions-=t
 endif
-
-" Don't use Ex mode, use Q for formatting.
-" Revert with ":unmap Q".
-map Q gq
-
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-" Revert with ":iunmap <C-U>".
-inoremap <C-U> <C-G>u<C-U>
-
+  
 " In many terminal emulators the mouse works just fine.  By enabling it you
 " can position the cursor, Visually select and scroll with the mouse.
 if has('mouse')
@@ -131,7 +110,7 @@ endif
 " GUI (which always has colors).
 if &t_Co > 2 || has("gui_running")
   " Revert with ":syntax off".
-  syntax on
+  syntax off
 
   " I like highlighting strings inside C comments.
   " Revert with ":unlet c_comment_strings".
@@ -220,42 +199,46 @@ if has('syntax') && has('eval')
  endif
 endif
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Behavior                                                                 {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set encoding=utf-8
 set fileformats=unix,dos,mac
-set number relativenumber
-if has("nvim")    
-    au TermOpen * setlocal number relativenumber
+
+" Enconding
+set encoding=utf-8
+
+if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
+    set fileencoding=utf-8
+    set fileencodings=utf-8,latin1
 endif
 
-set showtabline=2
-set laststatus=2
+set shell=/bin/sh
 
-set showmatch
-
-set noignorecase
-
-set completeopt=menuone,longest,preview
-
-set exrc
-set secure
+set number relativenumber
+if has("nvim")
+    au TermOpen * setlocal number relativenumber
+endif
 
 " autoread and autowrite
 augroup save
   au!
   au FocusLost * wall
 augroup END
-set nohidden
-set nobackup
-set noswapfile
-set nowritebackup
+
 set autoread
 set autowrite
 set autowriteall
+set exrc
+set laststatus=2
+set nobackup
+set nohidden
+set noignorecase
+set noswapfile
+set nowritebackup
+set secure
+set showmatch
+set showtabline=2
 
 " Unbind the cursor keys in insert, normal and visual modes.
 for prefix in ['n', 'v']
@@ -263,6 +246,29 @@ for prefix in ['n', 'v']
     exe prefix . "noremap " . key . " <Nop>"
   endfor
 endfor
+
+syntax enable
+syntax on
+
+syntime on
+redraw
+
+let @s=":%sort u"
+
+set binary
+set bomb
+set colorcolumn=80
+set columns=80
+set cursorline 
+set lazyredraw
+set ruler
+set number
+set synmaxcol=80
+set ttyfast
+syntax sync minlines=50
+
+set list listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+set list
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clipboard                                                                {{{1
@@ -276,9 +282,6 @@ endif
 " Colorsheme                                                               {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-syntax enable
-syntax on
-
 if has('termguicolors')
     set termguicolors
 endif
@@ -286,28 +289,41 @@ endif
 try
     colorscheme iaxs-i3wm-vim-monokai
 catch
-    try
-        colorscheme molokai
-    catch
-        colorscheme default
-    endtry
+    colorscheme default
 endtry
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Formatting                                                               {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
 set autoindent
 set copyindent
+set expandtab
+set shiftwidth=4
 set smartindent
+set softtabstop=0
+set tabstop=4
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions and Commands                                                   {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" open large files > 10 MB
+let g:LargeFile = 10 * 1024 * 1024
+
+augroup LargeFile
+  " files with filesize too large are recognized too (getfsize = -2)
+  autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
+augroup END
+
+function! LargeFile()
+    set eventignore+=FileType " no syntax highlighting etc
+    setlocal bufhidden=unload " save memory when other file is viewed
+    setlocal undolevels=-1 " no undo possible
+    setlocal foldmethod=manual
+    setlocal noswapfile
+endfunction
 
 " Based on window movement shortcuts by 'nicknisi/dotfiles'
 function! WinCreate(key)
@@ -320,35 +336,100 @@ function! WinCreate(key)
     exec "wincmd ".a:key
   endif
   if isdirectory(s:vimhome)
-    Startify
+      if has('Startify')
+        Startify
+      endif
   endif
 endfunction
+
+" Compile Python, C++ e C
+function! CompileFile()
+    if (match(bufname('%'),'.py$') > 1)
+        term python %
+    endif
+    if (match(bufname('%'),'.cpp$') > 1)
+        term g++ % -o %.o; ./%.o
+    endif
+    if (match(bufname('%'),'.c$') > 1)
+        term gcc % -o %.o; ./%.o
+    endif
+endfunction
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping                                                                  {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Simplify Leader mappings Clipboard
-nnoremap <silent> <Leader>y "+y
-nnoremap <silent> <Leader>p "+p
+" Tabs
+nnoremap <Tab> gt
+nnoremap <S-Tab> gT
+nnoremap <silent> <S-t> :tabnew<CR>
 
-" Simplify shortcut for creating windows
-nnoremap <silent> <C-W>wh :call WinCreate('h')<CR>
-nnoremap <silent> <C-W>wj :call WinCreate('j')<CR>
-nnoremap <silent> <C-W>wk :call WinCreate('k')<CR>
-nnoremap <silent> <C-W>wl :call WinCreate('l')<CR>
+" Simplify Leader mappings Clipboard
+noremap <Leader>y "+y
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
 
 " NERDTreeToggle open/close
-nnoremap <silent> <C-\> <ESC>:NERDTreeToggle<CR>
-inoremap <silent> <C-\> <ESC>:NERDTreeToggle<CR>
+nnoremap <Leader><Leader> <ESC>:NERDTreeToggle<CR>
 
-" Python
-nnoremap <silent> <F5> <ESC>:w<CR><ESC>:term python %<CR>
-inoremap <silent> <F5> <ESC>:w<CR><ESC>:term python %<CR>
-vnoremap <silent> <F5> :!python<CR>
+" Python, C++ e C
+nnoremap <F5> <ESC>:call CompileFile()<CR>
+inoremap <F5> <ESC>:call CompileFile()<CR>
+
+" Visual com Python
+vnoremap <F5> :!python<CR>
 
 " terminal-mode
 tnoremap <Esc> <C-\><C-n>  
+
+" folding short cut
+nnoremap <Leader>o za
+
+" no highlighting
+nnoremap <leader><cr> :noh<cr> 
+
+" Simplify shortcut for creating windows
+nnoremap <Leader>h :call WinCreate('h')<CR>
+nnoremap <Leader>j :call WinCreate('j')<CR>
+nnoremap <Leader>k :call WinCreate('k')<CR>
+nnoremap <Leader>l :call WinCreate('l')<CR>
+
+" Simplify shortcut windows movement 
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+inoremap <A-j> <C-w>j
+inoremap <A-k> <C-w>k
+inoremap <A-h> <C-w>h
+inoremap <A-l> <C-w>l
+vnoremap <A-j> <C-w>j
+vnoremap <A-k> <C-w>k
+vnoremap <A-h> <C-w>h
+vnoremap <A-l> <C-w>l
+
+" move line [down|up], with Alt+Shift+[j|k]
+nnoremap <A-S-j> :m .+1<CR>==
+nnoremap <A-S-k> :m .-2<CR>==
+vnoremap <A-S-j> :m '>+1<CR>gv=gv
+vnoremap <A-S-k> :m '<-2<CR>gv=gv
+
+" move line [down|up], with Control+Shift+[Down|Up]
+nnoremap <C-S-Down> :m .+1<CR>==
+nnoremap <C-S-Up> :m .-2<CR>==
+inoremap <C-S-Down> <Esc>:m .+1<CR>==gi
+inoremap <C-S-Up> <Esc>:m .-2<CR>==gi
+vnoremap <C-S-Down> :m '>+1<CR>gv=gv
+vnoremap <C-S-Up> :m '<-2<CR>gv=gv
+
+map <F7> :if exists("g:syntax_on") <Bar>
+	\   syntax off <Bar>
+	\ else <Bar>
+	\   syntax enable <Bar>
+    \   syntax on <Bar>
+	\ endif <CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configs Vim Plug                                                         {{{1
@@ -359,21 +440,53 @@ let g:NERDTreeShowLineNumbers=1
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
-let g:ycm_key_list_select_completion=[]
+if exists('g:jedi')
+  let g:jedi#popup_on_dot=1
+  let g:jedi#show_call_signatures = 2
+
+  if jedi#init_python()
+    function! s:jedi_auto_force_py_version() abort
+      let major_version = pyenv#python#get_internal_major_version()
+      call jedi#force_py_version(major_version)
+    endfunction
+    augroup vim-pyenv-custom-augroup
+      au! *
+      au User vim-pyenv-activate-post   call s:jedi_auto_force_py_version()
+      au User vim-pyenv-deactivate-post call s:jedi_auto_force_py_version()
+    augroup END
+  endif
+endif
+
+let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_key_list_previous_completion=[]
-
-let g:ycm_server_python_interpreter="python"
-let g:ycm_python_binary_path="python"
-
-let g:ycm_min_num_of_chars_for_completion=1
-
-let g:jedi#popup_on_dot=1
+let g:ycm_key_list_select_completion=[]
 let g:ycm_max_num_candidates=0
 let g:ycm_max_num_identifier_candidates=0
-let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_python_binary_path="python"
+let g:ycm_server_python_interpreter="python"
+
+" multiple cursors
+let g:multi_cursor_start_key='g<C-n>'
+let g:multi_cursor_start_word_key='<C-n>'
+
+" snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsEditSplit="vertical"
+
+" syntastic
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_style_error_symbol = '✗'
+let g:syntastic_style_warning_symbol = '⚠'
+let g:syntastic_auto_loc_list=1
+let g:syntastic_aggregate_errors = 1
 
 " pandoc syntax
 augroup pandoc_syntax
-    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+    au! BufNew etype=markdown.pandoc
 augroup END
 

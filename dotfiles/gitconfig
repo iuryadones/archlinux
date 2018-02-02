@@ -2,7 +2,7 @@
 	name = Iury Adones Xavier dos Santos
 	email = iuryadones@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore-global
 [alias]
 	log-graph = log --decorate --oneline --graph --color
