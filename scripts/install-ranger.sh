@@ -31,7 +31,7 @@ cd ~
 if [ -d .config/ranger ]; then
     rm -r .config/ranger
 fi
-ln -rsf .linux/repo/dotfiles/config/ranger .config/ranger
+ln -rsf .linux/repo/repo-dotfiles/config/ranger .config/ranger
 
 # Deps do ranger
 if [ -f /usr/bin/apt ]; then
