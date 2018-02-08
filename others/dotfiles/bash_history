@@ -1,0 +1,120 @@
+sudo apt install termite
+sudo search install termite
+sudo apt search termite
+sudo apt search i3
+sudo apt install i3
+exit
+texit
+exit
+texit
+exit
+zsh
+exit
+sudo apt intall git
+sudo apt install git
+sudo apt install git-man
+l
+sudo apt zsh
+sudo apt install zsh
+ls
+la
+sudo apt install yandex
+firefox
+ls
+mkdir iury
+ls
+cd iury
+ls
+mkdir archlinux
+cd archlinux/
+ls
+git init
+ls
+git remote add origin https://github.com/iuryxavier/archlinux 
+git pull origin 
+git pull origin master 
+ls
+cd dotfiles/
+ls
+cp gitconfig ~/.gitconfig
+cp gitignore-global ~/.gitignore-global
+ls
+cp -r vim ~/.vim
+cp -r zshrc ~/.zshrc
+sudo apt install grml-zsh
+exit
+zsh
+vim .zshrc 
+exit
+sudo apt search yandex
+echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" | sudo tee -a /etc/apt/sources.list.d/yandex-browser.list
+wget -q https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -O- | sudo apt-key add -
+sudo apt update
+sudo apt install yandex-browser-beta
+sudo apt install neovim
+sudo apt install nvim
+sudo apt install vim
+sudo apt search vim
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apr install curl
+sudo apt install curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+exit
+yandex-browser
+zsh
+vim .zshrc 
+zsh
+sudo apt search xterm
+ls
+cd .config/
+ls
+cd i3/
+ls
+vim config 
+cd ..
+ls
+cd ..
+ls
+cd iury/
+ls
+cd archlinux/
+ls
+cd dotfiles/
+ls
+cd config/
+ls
+cd ..
+ls
+cp bashrc ~/.bashrc 
+cp -r config/i3/* ~/.config/i3/
+reboot
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+pyenv update
+sudo apt-get install software-properties-common
+exit
+sudo apt install pandoc
+exit
+sudo apt install vte
+nvim bashrc
+nvim .bashrc
+exit
+make
+sudo apt-get install build-essential gnome-devel
+sudo apt-get install libgtk-3-dev
+exit
+ls
+cd iury/
+ls
+cd archlinux/
+ls
+cd dotfiles/
+ls
+cd config/
+s
+ls
+cp -r termite ~/.config/
+exit
+exit
+nvim .bash
+nvim .bashrc 
+exit

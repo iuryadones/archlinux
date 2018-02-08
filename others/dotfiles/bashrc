@@ -1,0 +1,33 @@
+#
+# ~/.bashrc
+#
+
+# if [[ $TERM == xterm-termite ]]; then
+#   . /etc/profile.d/vte.sh
+#   __vte_prompt_command
+# fi
+
+export LANG=en_US.UTF-8
+export LC_CTYPE="en_US.utf8"
+export LC_COLLATE="C"
+export LC_MESSAGES="en_US.utf8"
+
+export EDITOR=nvim
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+PS1='[\u@\h \W]\$ '
+
+alias ls='ls --color=auto'
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+eval "$(pandoc --bash-completion)"
+
+set -o vi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
