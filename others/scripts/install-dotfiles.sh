@@ -15,3 +15,4 @@ ln -rsf .linux/others/dotfiles/config/nvim .config/nvim
 ln -rsf .linux/others/dotfiles/config/termite .config/termite
 ln -rsf .linux/others/dotfiles/config/i3 .config/i3
 ln -rsf .linux/others/dotfiles/wallpaper .wallpaper
+
