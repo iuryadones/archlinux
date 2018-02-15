@@ -1,18 +1,16 @@
-if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
-    printf '-!-\n'
-    printf '-!- Looks like you are using the old zshrc layout of grml.\n'
-    printf '-!- Please read the notes in the grml-zsh-refcard, being'
-    printf '-!- available at: http://grml.org/zsh/\n'
-    printf '-!-\n'
-    printf '-!- If you just want to get rid of this warning message execute:\n'
-    printf '-!-        touch ~/.zshrc.local\n'
-    printf '-!-\n'
+
+if [ ! -f ~/.linux_history ]; then
+    ln -rsf ~/.linux/others/dotfiles/linux_history ~/.linux_history
 fi
 
-# if [[ $TERM == xterm-termite ]]; then
-#     . /etc/profile.d/vte.sh
-#     __vte_osc7
-# fi
+cat ~/.zsh_history | awk -F ';' '{print $2}' | sort | uniq >> ~/.linux_history
+cat ~/.linux_history | sort | uniq > ~/.history
+cat ~/.history > ~/.linux_history
+rm ~/.history
+
+export HISTFILE=~/.zsh_history
+export HISTSIZE=999999999
+export SAVEHIST=$HISTSIZE
 
 export LANG=en_US.UTF-8
 export LC_CTYPE="en_US.utf8"

@@ -1,0 +1,440 @@
+
+..
+./configure && make
+./install.sh
+/usr/bin/vim
+\
+bash
+cat .linux_history
+cat .zsh_history
+cat .zsh_history | awk -F '
+cat .zsh_history | cut '
+cat bash_history
+cat bash_history | sort
+cat bash_history | sort | uniq
+cat bash_history | sort | uniq >| sh_history
+cat linux_history | sort | uniq
+cat linux_history | sort | uniq >| history 
+cat linux_history | sort | uniq >| linux_history
+cat zsh_history | awk -F '
+cat ~/.linux_history >>| linux_history
+cd 
+cd ..
+cd .co
+cd .config
+cd .config/
+cd .linux
+cd .local
+cd .others
+cd .tmux
+cd .vim
+cd /opt
+cd Downloads
+cd Images
+cd archlinux
+cd archlinux/
+cd autoload
+cd bin
+cd config
+cd config/
+cd doc
+cd doc/tags
+cd dotfiles
+cd dotfiles/
+cd i3
+cd i3/
+cd intelivix
+cd iury
+cd iury/
+cd iury/archlinux
+cd laboratory
+cd lib
+cd libevent-2.1.8-stable
+cd nerd-fonts-master
+cd node_modules
+cd nvim
+cd others
+cd plugged
+cd robo3t
+cd scraping
+cd scripts
+cd termite
+cd tmux-master
+cd tribunais_scrapy
+cd vendor
+cd vim
+cd vim-pyenv
+cd ~/.fonts && wget https://github.com/google/fonts/archive/master.zip && unzip master.zip
+cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+chmod -x zsh_history
+chsh -s /bin/zsh
+cp -r config/i3/* ~/.config/i3/
+cp -r termite ~/.config/
+cp -r vim ~/.vim
+cp -r wallpaper ~/.wallpaper
+cp -r zshrc ~/.zshrc
+cp -r ~/.config/nvim .
+cp -r ~/.config/termite .
+cp -r ~/.vim .
+cp bashrc ~/.bashrc 
+cp gitconfig ~/.gitconfig
+cp gitignore-global ~/.gitignore-global
+cp wallpaper ~/.wallpaper
+cp ~/.bashrc .
+cp ~/.config/nvim .
+cp ~/.gitconfig .
+cp ~/.gitignore-global .
+cp ~/.tmux.conf .
+cp ~/.vimrc .
+cp ~/.zsh_history .
+cp ~/.zshrc .
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \\
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+df
+df -h
+echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" | sudo tee -a /etc/apt/sources.list.d/yandex-browser.list
+echo $(cat .zsh_history | awk -F '
+exi
+exir
+exit
+extract libevent-2.1.8-stable.tar.gz
+extract nerd-fonts-master.zip
+extract robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
+extract tmux-master.zip
+fc-cache -fv
+feh Captura_de_tela_2018-02-06-14:06:33.png
+feh workflow.jpg
+firefox
+free -h
+fzy
+gem install vimgol
+gem install vimgolf
+git add --all .
+git add .
+git add tags
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
+git commit -m "[master] Add script do termite para o ubuntu"
+git commit -m "[master] Modifica os dotfiles"
+git commit -m "[master] Oganiza os arquivos"
+git init
+git pull origin 
+git pull origin master
+git pull origin master 
+git push origin master 
+git remote add origin https://github.com/intelivix/tribunais 
+git remote add origin https://github.com/intelivix/tribunais .
+git remote add origin https://github.com/iuryxavier/archlinux 
+git statis
+git status
+i3status -c ~/.config/i3/i3status/config
+ifconfg
+ifconfig 
+intelivix
+iury
+k
+ks
+l
+la
+laboratory
+ln -rsf .linux/others/dotfiles/linux_history .linux_history
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+ln -sf .linux/others/dotfiles/config/nvim .config/nvim 
+ln -sf .linux/others/dotfiles/config/termite .config/termite
+ln -sf .linux/others/dotfiles/linux_history .linux_history
+ln -sf .linux/others/dotfiles/vim .vim 
+ln -sf bashrc ~/.bashrc
+ln -sf config/nvim ~/.config/nvim
+ln -sf config/termite ~/.config/termite
+ln -sf gitconfig ~/.gitconfig
+ln -sf gitignore-global ~/.gitignore-global 
+ln -sf tmux.conf ~/.tmux.conf
+ln -sf vim ~/
+ln -sf vim ~/.vim
+ln -sf vimrc ~/.vimrc
+ln -sf zshrc ~/.zshrc
+locale-gen
+ls
+ls -l
+ls\
+make
+mkdir -p ~/.local/share/fonts
+mkdir Imagens
+mkdir Images
+mkdir analytics
+mkdir archlinux
+mkdir config
+mkdir dotfiles
+mkdir engineering
+mkdir install
+mkdir iury
+mkdir others
+mkdir root
+mkdir science
+mkdir scraping
+mkdir scripts
+mkdir tribunais
+mkdir ~/.fonts
+mv -R termite config
+mv -r termite config
+mv .* *
+mv .bashrc bashrc
+mv .gitconfig gitconfig
+mv .gitignore-global gitignore-global
+mv .tmux.conf tmux.conf
+mv .vim .vim.local
+mv .vim vim
+mv .vimrc vimrc
+mv .zshrc zshrc
+mv Downloads/intelivix.png .wallpaper/
+mv config dotfiles
+mv deps_archlinux_i3 archlinux
+mv deps_archlinux_i3 i3
+mv dotfiles archlinux
+mv etc archlinux
+mv etc root
+mv history linux_history
+mv install-termite.sh iury/archlinux/
+mv install-termite.sh ubuntu-install-termite.sh
+mv install_archlinux_201* archlinux
+mv install_archlinux_2016.txt install
+mv install_archlinux_2016.txt_ install_archlinux_2016.txt
+mv install_archlinux_2017_en.txt install
+mv nvim nvim.local
+mv robo3t /opt/
+mv robo3t-1.1.1-linux-x86_64-c93c6b0 robo3t
+mv sh_history history
+mv termite config
+mv termite termite.local
+mv tmux.conf dotfiles
+mv ubuntu-install-termite.sh others
+mv ubuntu-install-termite.sh scripts
+mv usr archlinux
+mv usr root
+mv vim .vim
+mv vim dotfiles
+mv vimrc dotfiles
+nano .tmux.conf
+node_modules
+npm install -g vtop
+npm install vtop
+npm search vtop
+nvim
+nvim .bash
+nvim .bashrc
+nvim .bashrc 
+nvim .config/i3/config
+nvim .config/i3/i3status/config
+nvim .config/nvim/init.vim
+nvim .config/termite/config
+nvim .config/termite/termite.terminfo
+nvim .git/config
+nvim .python-version
+nvim .tmux.conf
+nvim .tmux.conf.local
+nvim .vimrc
+nvim .zsh_history
+nvim .zshrc
+nvim /etc/profile.d/vte-2.91.sh
+nvim bashrc
+nvim install-dotfiles.sh
+nvim install.sh
+nvim termite.terminfo
+nvim test.py
+nvim ubuntu-install-termite.sh
+nvim ~/.zshrc
+nvm install 8.9.4
+pip install --upgrade --force-reinstall neovim
+pip install --upgrade --force-reinstall pip
+pip3 install --upgrade --force-reinstall neovim
+pip3 install --upgrade --force-reinstall pip
+poweroff
+pwd
+pyenv activate
+pyenv activate system
+pyenv update
+python
+reboot
+rm -r .tmux
+rm -r .vim.local
+rm -r Imagens
+rm -r vim-pyenv
+rm -rf .config/nvim/plugged
+rm -rf .vim.local
+rm -rf examples.desktop
+rm -rf termite
+rm -rf vim-pyenv
+rm -rf vte-ng
+rm -rm .tmux
+rm .config.un\~
+rm .init.vim.un
+rm .init.vim.un\~
+rm .netrwhist
+rm .tmux
+rm .tmux.conf
+rm .tmux.conf.local
+rm Captura_de_tela_2018-02-06-14:06:33.png
+rm Images/Captura_de_area_2018-02-06-14:07:02.png
+rm fontes-ttf.txt
+rm fzy_0.9-1_amd64.deb
+rm libstdc++.so.*
+rm npm-debug.log
+rm nvim
+rm robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
+rm termite
+rm termite-install-master.zip
+rm termite.terminfo
+rm vim
+robo3t
+s
+set -o vi
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh autogen.sh
+sl
+source .zshrc
+su
+sudo add-apt-repository \\
+sudo apr install curl
+sudo apt auto-remove
+sudo apt autoremove
+sudo apt install --help
+sudo apt install -y mongodb-org
+sudo apt install curl
+sudo apt install feh scrot
+sudo apt install gem
+sudo apt install git
+sudo apt install git-man
+sudo apt install grml-zsh
+sudo apt install i3
+sudo apt install libenvent
+sudo apt install libevent-dev
+sudo apt install neovim
+sudo apt install npm
+sudo apt install nvim
+sudo apt install pandoc
+sudo apt install pavucontrol
+sudo apt install pulse
+sudo apt install pulseaudio
+sudo apt install pulseaudio 
+sudo apt install rubygem
+sudo apt install rubygems
+sudo apt install scrot
+sudo apt install termite
+sudo apt install tmux
+sudo apt install vim
+sudo apt install vte
+sudo apt install xclip
+sudo apt install yandex
+sudo apt install yandex-browser-beta
+sudo apt install zsh
+sudo apt intall git
+sudo apt purge gem rubygems
+sudo apt purge npm
+sudo apt purge tmux
+sudo apt purge vim
+sudo apt purge vim-runtime
+sudo apt remove npm
+sudo apt search i3
+sudo apt search neovim
+sudo apt search nerd
+sudo apt search robo3t
+sudo apt search termite
+sudo apt search vim
+sudo apt search vtop
+sudo apt search xterm
+sudo apt search yandex
+sudo apt uninstall vim
+sudo apt unstall vim
+sudo apt update
+sudo apt upgrade
+sudo apt zsh
+sudo apt-get install \\
+sudo apt-get install build-essential gnome-devel
+sudo apt-get install docker-ce
+sudo apt-get install exuberant-ctags
+sudo apt-get install libgtk-3-dev
+sudo apt-get install software-properties-common
+sudo apt-get update
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+sudo apt-key fingerprint 0EBFCD88
+sudo chmod 775 install-dotfiles.sh
+sudo deluser --remove-all-file "Libvirt Qemu"
+sudo deluser --remove-all-file Libvirt\ Qemu
+sudo dpkg -i fzy_0.9-1_amd64.deb
+sudo dpkg -l |grep fontconfig
+sudo fc-cache -f -v
+sudo gem install vimgolf
+sudo gem remove vimgolf
+sudo gem uninstall vimgolf
+sudo ln -s /opt/robo3t/bin/robo3t /bin/robo3t
+sudo locale-gen
+sudo make install
+sudo mv robo3t /opt/
+sudo npm install --user -g vtop
+sudo npm install --user vtop
+sudo npm install vtop
+sudo pip install neovim
+sudo pip2 install --upgrade --force-reinstall neovim
+sudo pip2 install -U pip
+sudo pip2 install neovim
+sudo pip2 uninstall neovim
+sudo pip2 unistall neovim
+sudo pip3 install --upgrade --force-reinstall neovim
+sudo pip3 install -U pip
+sudo pip3 install neovim
+sudo search install termite
+sudo service mongod start
+sudo update-alternatives --config vim
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+sudo update-alternatives --install /usr/bin/vim vim /usr/bin/vim 60
+t
+ta
+ta ter
+termite -e tmux
+texit
+tl
+tmux
+tmux -V
+tmux bind -H
+tmux bind -help
+tmux kill-server
+tmux unbind -t vi-copy -h
+tmux unbind -t vi-copy Escape
+tmux-master
+top
+touch test.py
+tribunais
+ts ses
+uptime 
+vi .tmux.conf
+vim
+vim -h
+vim .config/termite/config
+vim .vimrc
+vim .zshrc
+vim .zshrc 
+vim config 
+vimgolf put 55b18bbea9c2c30d04000001
+vimgolf setup
+vimtutor
+vtoo
+vtop
+wc -l .linux_history
+wget -q https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -O- | sudo apt-key add -
+wget https://github.com/jhawthorn/fzy/releases/download/0.9/fzy_0.9-1_amd64.deb
+wget https://raw.githubusercontent.com/thestinger/termite/master/termite.terminfo\
+which python
+which vim
+xclip
+xclip -V
+xit
+xrandr
+yandex
+yandex-browser
+zsh
+~
+~/.fzf/install
+çs
