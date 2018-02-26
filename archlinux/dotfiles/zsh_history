@@ -1,0 +1,1662 @@
+: 1517572972:0;chsh -s /bin/zsh
+: 1517573125:0;yandex
+: 1517573131:0;yandex-browser
+: 1517573992:0;exit
+: 1517586980:0;vim .zshrc
+: 1517587070:0;exit
+: 1517587133:0;wget https://raw.githubusercontent.com/thestinger/termite/master/termite.terminfo\
+tic -x termite.terminfo
+: 1517587144:0;ls
+: 1517587158:0;rm -rf termite
+: 1517587171:0;rm -rf vte-ng
+: 1517587183:0;rm -rf examples.desktop
+: 1517587190:0;ls
+: 1517587197:0;nvim termite.terminfo
+: 1517587216:0;exit
+: 1517587224:0;rm termite.terminfo
+: 1517587224:0;ls
+: 1517587231:0;exit
+: 1517587274:0;nvim /etc/profile.d/vte-2.91.sh
+: 1517587296:0;nvim .zshrc
+: 1517587331:0;exit
+: 1517587366:0;nvim .zshrc
+: 1517587399:0;exit
+: 1517587428:0;bash
+: 1517587452:0;nvim .bashrc
+: 1517587470:0;exit
+: 1517587490:0;nvim /etc/profile.d/vte-2.91.sh
+: 1517587527:0;bash
+: 1517587572:0;nvim .zshrc
+: 1517587599:0;k
+: 1517587604:0;exit
+: 1517587668:0;nvim .zshrc
+: 1517587715:0;exit
+: 1517587741:0;nvim .zshrc
+: 1517587763:0;exit
+: 1517587775:0;nvim .zshrc
+: 1517587836:0;exit
+: 1517587838:0;ls
+: 1517587854:0;nvim .config/i3/config
+: 1517588012:0;exit
+: 1517588032:0;reboot
+: 1517588452:0;ls
+: 1517588465:0;l
+: 1517588490:0;nvim .config/i3/config
+: 1517588575:0;xrandr
+: 1517588676:0;exit
+: 1517588710:0;xrandr
+: 1517588716:0;exit
+: 1517588809:0;sudo apt install scrot
+: 1517588842:0;exit
+: 1517588866:0;mkdir Imagens
+: 1517588883:0;mkdir Images
+: 1517588892:0;rm -r Imagens
+: 1517588893:0;ls
+: 1517588898:0;exit
+: 1517588925:0;ls
+: 1517588933:0;exit
+: 1517589063:0;ls
+: 1517589094:0;nvim .config/i3/config
+: 1517589198:0;locale-gen
+: 1517589214:0;sudo locale-gen
+: 1517589232:0;exit
+: 1517589247:0;nvim .config/i3/i3status/config
+: 1517589387:0;nvim .config/i3/config
+: 1517589422:0;nvim .config/i3/i3status/config
+: 1517589435:0;ifconfg
+: 1517589440:0;ifconfig 
+: 1517589472:0;exit
+: 1517589561:0;nvim .config/i3/config
+: 1517589591:0;i3status -c ~/.config/i3/i3status/config
+: 1517589605:0;nvim .config/i3/i3status/config
+: 1517589629:0;i3status -c ~/.config/i3/i3status/config
+: 1517589633:0;nvim .config/i3/i3status/config
+: 1517589642:0;i3status -c ~/.config/i3/i3status/config
+: 1517589649:0;nvim .config/i3/i3status/config
+: 1517589660:0;i3status -c ~/.config/i3/i3status/config
+: 1517589684:0;exit
+: 1517590485:0;poweroff
+: 1517591475:0;sudo apt install pavucontrol
+: 1517591533:0;sudo apt install pulseaudio
+: 1517591536:0;sudo apt install pulse
+: 1517591541:0;sudo apt install pulseaudio 
+: 1517591609:0;nvim .config/i3/i3status/config
+: 1517591665:0;exit
+: 1517592087:0;sudo apt search robo3t
+: 1517592155:0;exit
+: 1517592157:0;ls
+: 1517592187:0;mv install-termite.sh iury/archlinux/
+: 1517592189:0;ls
+: 1517592195:0;cd iury/archlinux
+: 1517592200:0;ls
+: 1517592246:0;mv install-termite.sh ubuntu-install-termite.sh
+: 1517592247:0;ls
+: 1517592252:0;git add .
+: 1517592311:0;git commit -m "[master] Add script do termite para o ubuntu"
+: 1517592320:0;git push origin master 
+: 1517592337:0;exit
+: 1517592533:0;mkdir -p ~/.local/share/fonts
+: 1517592546:0;cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+: 1517592579:0;ls
+: 1517592635:0;..
+: 1517592636:0;ls
+: 1517592638:0;cd ..
+: 1517592638:0;ls
+: 1517592639:0;cd ..
+: 1517592640:0;ls
+: 1517592648:0;sudo apt search nerd
+: 1517592935:0;sudo fc-cache -f -v
+: 1517593030:0;exit
+: 1517593250:0;nvim .config/i3/config
+: 1517593404:0;exit
+: 1517593737:0;sudo deluser --remove-all-file "Libvirt Qemu"
+: 1517593769:0;sudo deluser --remove-all-file Libvirt\ Qemu
+: 1517593831:0;su
+: 1517593968:0;exit
+: 1517594018:0;su
+: 1517594358:0;sudo apt update
+: 1517594408:0;sudo apt upgrade
+: 1517594416:0;reboot
+: 1517594546:0;exit
+: 1517594597:0;vtop
+: 1517594600:0;exit
+: 1517594636:0;sudo apt install npm
+: 1517594684:0;sudo apt search vtop
+: 1517594724:0;npm install vtop
+: 1517594737:0;exit
+: 1517594768:0;npm search vtop
+: 1517594780:0;npm install -g vtop
+: 1517594797:0;sudo npm install --user vtop
+: 1517594804:0;sudo npm install --user -g vtop
+: 1517594809:0;sudo npm install vtop
+: 1517594829:0;sudo apt purge npm
+: 1517594850:0;sudo apt remove npm
+: 1517594888:0;curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+: 1517594915:0;nvim .zshrc
+: 1517594936:0;exit
+: 1517594957:0;nvm install 8.9.4
+: 1517595128:0;wget https://github.com/jhawthorn/fzy/releases/download/0.9/fzy_0.9-1_amd64.deb
+: 1517595138:0;sudo dpkg -i fzy_0.9-1_amd64.deb
+: 1517595149:0;fzy
+: 1517595266:0;git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+: 1517595279:0;~/.fzf/install
+: 1517595302:0;exit
+: 1517595396:0;nvim .vimrc
+: 1517596651:0;which vim
+: 1517596661:0;/usr/bin/vim
+: 1517596729:0;exit
+: 1517596742:0;nvim .vimrc
+: 1517596829:0;sudo update-alternatives --install /usr/bin/vim vim /usr/bin/vim 60
+: 1517596845:0;sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
+: 1517596872:0;sudo update-alternatives --config vim
+: 1517596885:0;vim
+: 1517596904:0;vim .vimrc
+: 1517596924:0;nvim .vimrc
+: 1517596931:0;exit
+: 1517596988:0;nvim .vimrc
+: 1517597003:0;vim .vimrc
+: 1517597334:0;exit
+: 1517597341:0;nvim .vimrc
+: 1517597476:0;exit
+: 1517597489:0;nvim .vimrc
+: 1517597493:0;exit
+: 1517597496:0;nvim
+: 1517597503:0;exi
+: 1517597504:0;exit
+: 1517597511:0;poweroff
+: 1517828720:0;sudo apt update
+: 1517828742:0;sudo apt upgrade
+: 1517828755:0;sudo apt autoremove
+: 1517828953:0;exit
+: 1517829047:0;vtop
+: 1517829049:0;top
+: 1517829062:0;free -h
+: 1517829202:0;top
+: 1517829220:0;exit
+: 1517829252:0;npm install -g vtop
+: 1517829261:0;vtop
+: 1517829942:0;free -h
+: 1517829946:0;exit
+: 1517831695:0;free -h
+: 1517831706:0;vtop
+: 1517831720:0;exit
+: 1517831900:0;vtop
+: 1517832002:0;exit
+: 1517832018:0;vtop
+: 1517832176:0;exit
+: 1517832333:0;sudo apt-get install \\
+    apt-transport-https \\
+    ca-certificates \\
+    curl \\
+    software-properties-common
+: 1517832368:0;curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+: 1517832383:0;sudo apt-key fingerprint 0EBFCD88
+: 1517832408:0;sudo add-apt-repository \\
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \\
+   $(lsb_release -cs) \\
+   stable"
+: 1517832421:0;sudo apt-get update
+: 1517832605:0;sudo apt-get install docker-ce
+: 1517832733:0;sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+: 1517832746:0;echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+: 1517832759:0;sudo apt update
+: 1517832781:0;sudo apt install -y mongodb-org
+: 1517832849:0;sudo service mongod start
+: 1517833158:0;cd Downloads
+: 1517833158:0;ls
+: 1517833167:0;extract robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
+: 1517833169:0;ls
+: 1517833184:0;mv robo3t-1.1.1-linux-x86_64-c93c6b0 robo3t
+: 1517833185:0;ls
+: 1517833229:0;mv robo3t /opt/
+: 1517833233:0;sudo mv robo3t /opt/
+: 1517833235:0;ls
+: 1517833247:0;rm termite-install-master.zip
+: 1517833249:0;rm robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
+: 1517833258:0;extract nerd-fonts-master.zip
+: 1517833267:0;ls
+: 1517833270:0;cd nerd-fonts-master
+: 1517833270:0;ls
+: 1517833273:0;cd nerd-fonts-master
+: 1517833273:0;ls
+: 1517833293:0;./install.sh
+: 1517833560:0;ls
+: 1517833609:0;cd /opt
+: 1517833611:0;ls
+: 1517833615:0;cd robo3t
+: 1517833615:0;ls
+: 1517833620:0;cd bin
+: 1517833621:0;ls
+: 1517833623:0;cd ..
+: 1517833624:0;ls
+: 1517833626:0;cd lib
+: 1517833626:0;ls
+: 1517833638:0;cd ..
+: 1517833639:0;ls
+: 1517833675:0;sudo ln -s /opt/robo3t/bin/robo3t /bin/robo3t
+: 1517833695:0;robo3t
+: 1517833804:0;ls
+: 1517833816:0;cd lib
+: 1517833816:0;ls
+: 1517833851:0;rm libstdc++.so.*
+: 1517833852:0;ls
+: 1517833858:0;exit
+: 1517833860:0;robo3t
+: 1517833895:0;exit
+: 1517833926:0;vtoo
+: 1517833928:0;vtop
+: 1517833950:0;ls
+: 1517833962:0;cd iury
+: 1517833963:0;ls
+: 1517833965:0;cd archlinux
+: 1517833966:0;ls
+: 1517833984:0;cd dotfiles
+: 1517833984:0;ls
+: 1517834007:0;cp wallpaper ~/.wallpaper
+: 1517834016:0;cp -r wallpaper ~/.wallpaper
+: 1517834017:0;ls
+: 1517834022:0;cd ..
+: 1517834025:0;cd 
+: 1517834026:0;ls
+: 1517834048:0;sudo apt install feh scrot
+: 1517834093:0;ls
+: 1517834113:0;mv Downloads/intelivix.png .wallpaper/
+: 1517834122:0;nvim .config/i3/config
+: 1517834247:0;xit
+: 1517834250:0;exit
+: 1517834769:0;vtop
+: 1517834879:0;exit
+: 1517834892:0;intelivix
+: 1517834893:0;ls
+: 1517834910:0;iury
+: 1517834910:0;ls
+: 1517834914:0;cd intelivix
+: 1517834914:0;ls
+: 1517834921:0;mkdir scraping
+: 1517834929:0;mkdir analytics
+: 1517834938:0;mkdir science
+: 1517835003:0;mkdir engineering
+: 1517835004:0;ls
+: 1517835008:0;cd scraping
+: 1517835010:0;ls
+: 1517835020:0;mkdir tribunais
+: 1517835020:0;ls
+: 1517835026:0;tribunais
+: 1517835027:0;ls
+: 1517835091:0;git remote add origin https://github.com/intelivix/tribunais .
+: 1517835098:0;git init
+: 1517835102:0;git remote add origin https://github.com/intelivix/tribunais .
+: 1517835108:0;git remote add origin https://github.com/intelivix/tribunais 
+: 1517835121:0;git pull origin 
+: 1517835147:0;ls
+: 1517835162:0;git pull origin master 
+: 1517835176:0;ls
+: 1517835186:0;feh workflow.jpg
+: 1517835190:0;ls
+: 1517835220:0;la
+: 1517835234:0;nvim .git/config
+: 1517835264:0;git pull origin 
+: 1517835282:0;git pull origin master
+: 1517835305:0;ls
+: 1517835313:0;cd tribunais_scrapy
+: 1517835314:0;ls
+: 1517835629:0;la
+: 1517835648:0;exit
+: 1517835653:0;ls
+: 1517835680:0;cd ..
+: 1517835681:0;ls
+: 1517835698:0;nvim .python-version
+: 1517835820:0;pip install aws awscli
+: 1517835868:0;export AWS_ACCESS_KEY_ID='AKIAIVM4ZFOOKJ3DP6NQ'
+: 1517835879:0;export AWS_SECRET_ACCESS_KEY='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'
+: 1517835886:0;export EC2_REGION='us-east-1'
+: 1517835908:0;aws ecr get-login --region us-east-1
+: 1517836033:0;docker login -u AWS -p eyJwYXlsb2FkIjoiRU5SN3Rud2N5bHdBTjEzbnRjcTVSYjh3TWlTLzBMRWpQMFFWWWtCdXNxS1QzOU9xS0JqT1ZDWmlRRXVYVW5Rd3ZvZTlBS09OZEQvVlhuSXhMQXQ1UTJtVTBOU0t2c2lwcDJUNk12OHJCRllIUC9QRmFTQ2xYbkF1OVpYT3BBd1dFazhJb2NvK21QNXJKOTlFcDNxSWUwQTBQZEdrbisvekIzMHNMRVFjZTlxOWVBcThqWGw3dVlRS3V1NzMyVTNxR2x1bGkxZ1M0UG9nTnl1VDlHQU55SjRSd3ZaRjVaY3FqSVVDZ2RveFRHQnAyaWNMTWp5ci84alJ0UEZzQjJZYytLR0IrdmVoazQ2d2I1TjVCeGFrS1g1UkNmNVVaWVYzN2ptdUVlQThNcnVOYUcxRlUvdC92N2R0SHR3cHdzMFpYdGdQMkFsTDc4OGV3R3dETjRJRGd3SVdlaXBCZUE3K3NpNTFDRUF3Tm13MC9pYnFhTVQrSXVUb3Jzb2ZGbEVYYXpzT0dEL3VWb3hoL05adElRS0xqczhpclFMN0JrcWs1cmJySzliOGp1dVI5TE9pMFA4a0N4c20xOTN0TG5jaUgraEdSL2tLcG5TNXRyeFlFbUtwZnZLNVBGTG9EdWR3WkhaVE1qd3c3dDFveHNSOUV6cGVodDUzYlp2bzI5U0hsbTV5bFhWN1J4S3NQN29qb0c0Zjdrb0NPcFovV3p3QTQzNk1IdnUrYmRmSW51dVNLbHRQcDEwVFVnRWhBZTJFKzhVd0c0ZzBvK2MyMnY4c2ZTWE9jVGtNN1V1L3NCSllSUVZiRkdtazNNQUF3bkV6WURMVEVBZmRDb0dTNXcwb1FMcDFsY0szQkxtVWMwZE1RdUduRUZ3Njd4UC9NbXlTL2xHSkhCU2JLQUZWNEdpemR3Z0RsdkhGbzBPN0xseUZvS0x0ZjBsWGlvZFE5OUZzMTV4cTkrOE85N3dTYTdmM0FRdmRNTVFOay80Ti92dHMrTDZ6K1BzdFVlN0xhelNkZXR5Mmx2eUdCd2tiSVVTVktHNFQyVXVWWlRDOFdJN1lDYjlsdWxsWmpvWlNYR2NDOTJTbkovY2hsZHhYRUdoZlphbEZoN2wrR0ZoZWYzYnJhWlJod2MxbmRlMkYzRllNTzRJbnlrRnRNWWRhT3RsOTZIemZsUnFmVFhkRHk5WjVoVjFPUnRibmVoUFBXU0hzdS9Dc0hlNE9pNGNjeDF3MlhwVDZxYkdSaTdPeXgwWGRndnVJRVlDMFNBd3lEZ28vUDY0blp6QjlXSDhvQWZSblkrcW14SEliSFhuemNNa2poVGYvNVBybXFSKyt0ZzRWN0VFMXJWYUpvbU9OSHdmUWxLaUJPbnVHNTV6Q0p0N3FOQVdBVXhteGc4Wk1Ka0VvNkZDdVd0VVpKWTRnNmRoMkVOQ2dhbWlJK3RKY2pSUzZ6SEFSWjFGcjJzQTNNeWdBS2haZ0JtL25ncjQ0K3I0c1NnNUhSZm1YIiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURIdnNmWDJTYW03TTJBNFpPZ0lCRUlBN1JseW9ycmdLWFNFWGlobGxtbUxsWURIM2VsMC9VTUdIR3N6alZ5dnJMWEw3bWdKZkZzWWx6d3hIVGpTMHdzdUZLVklraGFhMXhySDFMdnc9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTE3ODc5MTEwfQ== https://120409133518.dkr.ecr.us-east-1.amazonaws.com
+: 1517836044:0;aws ecr get-login --region us-east-1
+: 1517836061:0;docker login -u AWS -p eyJwYXlsb2FkIjoiOGh5MklXdVpoZksxVC93QUVsdVNoNVplYUVJczFSb0N2eFUvUU9wZkhRNnJoVFFyZzRNY0RRZE11RXVYUlh2ZDA2NEtva2ZFNDdPK1BtUWdIZERTZVM1ZXJaVTZDZW01MnFidHF5ci9CS05LbzBTbFI2RDAybURzVnpUQWVjUjhkdS9XaXVlQ3EyZ29pSUhacFJoelFpU08wMEJpWjZ3cmlSVnpuM0NRRmdnUUF3WS9FNVBjRWh4SHpoeVBLclBkTEt1UDNqbnZZRkcyQmVGZWNqbnliaFZFN003R0tIYnFpNnN1OVRPT1play9GYlplN2p0YUpkYTFKZHVBamQvNlIzazl3VlVldzV3SDYydFBMQmNYcTFXOEgvclRnNUV3NzA1WGZ0R2xYNGRRWWFSMmxHUG05VkVvNlhxOEF6QnpHTU9QNVJlUWRiQTZzand6dnhBU0RVVGhKcFc2SWFOTjdpNFN1cC8yaHY3bi8zUWNUaGx2TnM2RzBFZjYvTW1XTXdXRFcvQmxFV0NzZUoxSUd1ZEtya0FZUmR1eUxCQXhNUTRFR1F5SktVa3JNRUJxVWltL3hZZ0lkdnA5VkhCOVBHTjRFUjlqSjJBdjBOeFlpSVowT1FnQ0ppMURyVm9pWXNLQjFFTCt4WmJFSXdiSklCc0REbm5hSys3TittQ3ovem9mci9GVzl5aFVLN2xBOE9QZmd5VGs5VUxWV2pBaVUyRm94Z1NJUnkrN2NVNUsxemw2NWk5NW0xbE4veis4NGZLWVNtTGJKNmV3d3BlOVRmQnptejdZY3Z0Ni9FQS9YcytPNkpXTzRsbmRXdGxsOGxxdmluMWlBRnVVTC9IcXB0U0djMk1KQzNmc0lMTFY3UVhLUzFaVjIzMm51M3dnQkNFbFE0OC9CWGR6cXRQL0lzMW45dFMzcHRkNEVQZEpOd0tDdU9CTUZETkx3d2pmS0VxbmxFZ09mVkJDdzd6ZWYzSEtVTVdZdUFzNVB6eWpKenJ3cFV1L3FLc0JCVTJXSTV0NUlDVnhHYytuZlZrelZTekZlQ0hBMGlyV0lseWRObG13cjdjejlYTFRCbWlkWUN2MWdHeGgrQkhtMnVlQStQVWMzbzFTRWZlMk5HRllKckJEaFkzWnJDK1BJM29meDNzZWRndCtIQTVDSXU1aVQ0MnJMem1qekxZaWVreFo5a2ovR2NOaFUxbzM1UUxiUCtuYTdMRWl1SHp5Y0s2VHRHOGliV3FiZ3gveFduaXowMzNDU1ExWE5nWkJhYXhrc0FuZWpQTllmaEFIMkM2eXBxTDYzWk1DblB0anpjODhPSHVGQ3hFaWpaMXpmTys0QVp3blhjeDVPVE82UjJ4eXpFL1hwQnd0NEFsUHdIY3MrSlhqak8zNmQrMUc4bGE2V3BkSm1oOFhhSzV2MlB2WUpGU1R2UHJPendNUlpXb0JsejJYY1ZHNzVDKzdNQmcvZTlPL1VyK1JOZElNWG1hcmVaZUZRNXF3IiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURLUTB5bExtSGNMdDhvVzlrd0lCRUlBN1hRUU1GTVlxL1NrRk83TTh2N090cHkraktyaE1YeUNoUmsyQ1BpbDZTZ1psQUJpRWJ1RTVhclR1KzlrL1VWSFAvMEc2Z3lMdVBKN1VzdWM9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTE3ODc5MjQ1fQ== -e none https://120409133518.dkr.ecr.us-east-1.amazonaws.com
+: 1517836076:0;docker login -u AWS -p eyJwYXlsb2FkIjoiOGh5MklXdVpoZksxVC93QUVsdVNoNVplYUVJczFSb0N2eFUvUU9wZkhRNnJoVFFyZzRNY0RRZE11RXVYUlh2ZDA2NEtva2ZFNDdPK1BtUWdIZERTZVM1ZXJaVTZDZW01MnFidHF5ci9CS05LbzBTbFI2RDAybURzVnpUQWVjUjhkdS9XaXVlQ3EyZ29pSUhacFJoelFpU08wMEJpWjZ3cmlSVnpuM0NRRmdnUUF3WS9FNVBjRWh4SHpoeVBLclBkTEt1UDNqbnZZRkcyQmVGZWNqbnliaFZFN003R0tIYnFpNnN1OVRPT1play9GYlplN2p0YUpkYTFKZHVBamQvNlIzazl3VlVldzV3SDYydFBMQmNYcTFXOEgvclRnNUV3NzA1WGZ0R2xYNGRRWWFSMmxHUG05VkVvNlhxOEF6QnpHTU9QNVJlUWRiQTZzand6dnhBU0RVVGhKcFc2SWFOTjdpNFN1cC8yaHY3bi8zUWNUaGx2TnM2RzBFZjYvTW1XTXdXRFcvQmxFV0NzZUoxSUd1ZEtya0FZUmR1eUxCQXhNUTRFR1F5SktVa3JNRUJxVWltL3hZZ0lkdnA5VkhCOVBHTjRFUjlqSjJBdjBOeFlpSVowT1FnQ0ppMURyVm9pWXNLQjFFTCt4WmJFSXdiSklCc0REbm5hSys3TittQ3ovem9mci9GVzl5aFVLN2xBOE9QZmd5VGs5VUxWV2pBaVUyRm94Z1NJUnkrN2NVNUsxemw2NWk5NW0xbE4veis4NGZLWVNtTGJKNmV3d3BlOVRmQnptejdZY3Z0Ni9FQS9YcytPNkpXTzRsbmRXdGxsOGxxdmluMWlBRnVVTC9IcXB0U0djMk1KQzNmc0lMTFY3UVhLUzFaVjIzMm51M3dnQkNFbFE0OC9CWGR6cXRQL0lzMW45dFMzcHRkNEVQZEpOd0tDdU9CTUZETkx3d2pmS0VxbmxFZ09mVkJDdzd6ZWYzSEtVTVdZdUFzNVB6eWpKenJ3cFV1L3FLc0JCVTJXSTV0NUlDVnhHYytuZlZrelZTekZlQ0hBMGlyV0lseWRObG13cjdjejlYTFRCbWlkWUN2MWdHeGgrQkhtMnVlQStQVWMzbzFTRWZlMk5HRllKckJEaFkzWnJDK1BJM29meDNzZWRndCtIQTVDSXU1aVQ0MnJMem1qekxZaWVreFo5a2ovR2NOaFUxbzM1UUxiUCtuYTdMRWl1SHp5Y0s2VHRHOGliV3FiZ3gveFduaXowMzNDU1ExWE5nWkJhYXhrc0FuZWpQTllmaEFIMkM2eXBxTDYzWk1DblB0anpjODhPSHVGQ3hFaWpaMXpmTys0QVp3blhjeDVPVE82UjJ4eXpFL1hwQnd0NEFsUHdIY3MrSlhqak8zNmQrMUc4bGE2V3BkSm1oOFhhSzV2MlB2WUpGU1R2UHJPendNUlpXb0JsejJYY1ZHNzVDKzdNQmcvZTlPL1VyK1JOZElNWG1hcmVaZUZRNXF3IiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURLUTB5bExtSGNMdDhvVzlrd0lCRUlBN1hRUU1GTVlxL1NrRk83TTh2N090cHkraktyaE1YeUNoUmsyQ1BpbDZTZ1psQUJpRWJ1RTVhclR1KzlrL1VWSFAvMEc2Z3lMdVBKN1VzdWM9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTE3ODc5MjQ1fQ== https://120409133518.dkr.ecr.us-east-1.amazonaws.com
+: 1517836106:0;sudo service mongod status
+: 1517836133:0;aws ecr get-login --region us-east-1
+: 1517836147:0;docker login -u AWS -p eyJwYXlsb2FkIjoid29wNHQ4R0VzcWM3QlFYUk9NOVZ3MWFRUU1hdnBic01uZ05qOGdvck1TckVyaHdSRm1GZXhJdTRNakgvUm44WUpXY1lVNHpkVEhzQnV0ZWRubzllTVp2L2xUNFBCYTNHT2VuTThBVmZsYTNaZnVsUS82OXR4L1lSVzZZT1g5ajcxNHJtalppNmYvUHROTFlGdG1LOVhXVnlRUHozL3Y2SG1uRmZjUThjeEgwMi95K29pUEVZVGl1UklBVVpiMXFrMENDcS9WTmxFeGI2eVZLR1p0aTlSUFIvSGo3VjZQNWx6TktNTUt2UEdpdU53SkI4aGNqZ0FBN09JY29NRlZLd2RoU0V1RndYNkJ3UXpOQjRQRWYzcU1Vb3ppV2kzdkFhR1pkOGFTNU41TUoxd2hQK3ZTTitkMDdSL2lmclV3SHBDakJqS1JqOUNVeHEzTVpxRGFmWUdNZi9pZlB5dUVESkRWMWVWYzRyMVZpMEt5aFh2eVZsK0Y2SHZUSjlrQWxFQXhUVHlTL1hzaUhxTFJoNWlxYWdhMmNKS0VFcXEzUndna082SFV2L0kzT01vc08rc2tvdHExMFBXdFdGVDJkcXN3UysydTlVdkYzNkg2c1dNdVoya2VxZGNFNUxaZUkzQllUYUZXQklEaVdFdGs0L2wvZGw1ZXM3WmJvaWhWb0xwSkVWcy9Hem9ZNGg1U2prVFZVTG5rTHFVWmd0TERoSFczM1owSzF0L2VlZmVZUVdyWHhkVlRDbVlOejhoQ0dWeExNM2d6enoxbG45eVhselh3QUtGVHc4Z1dlRHRuR28wY2RuMXcrODFTRW5mZks0N0QxckRBbllyMXd6Um16cUhKbkROOFYwK0daMkJ0Zzc3TUZGTlpjU3g3UytxckJaL2liQ0VaUHN1N0orWlhicHUzaXBDYmZBTFFBQmVEMUlQOXJnNWpidUsvd1VPeTdDUEl0VW1CZVE3TlNxRXVpK1IrMUR1a1VYb1d5MDlDZHgvOWdDdWszaW9tb0hQTmdyRExzclh1UE5kaVVmWmVSZ0F6ZlBmaktydlNZS1hKYUV0V1p1SWpVREJTd3EyQkFETzVCWkswSm5aMW9mc1lKcVFMWHdWTVBjY3BvMXNlMW5odkRuY01RRFFyeXdYVEZpa1cxOE1OSWdQUnIvMzgzeDFSTDR1QTNYUDlFdXNXY25KVm11ZU9ISGdGeWVHRXF1amQrZ01aV3dsM3RSOXRNR1BzK09WQitzUXU0aFNkYlU5NmJFdWhDR3dSdkU5ang5NHZkVXhoS0Y0TnJtdzAvM3dFNFFCbElWdk1KLytyaTJCVkdhOXZSYUhYbE4xUURTdFNtWUVDSWxTZ0RzN3VtVUZGU3ljUDRyM1NjWGhvdUw1eE9HK3RIUllEV3RNQSs5aFhwUmRUNVZTOWlvaHhhcGdrWmJFWjhsSVNxbi8xWHZ0Tlp5bk5xNnlhSGFQVHQ2SWFra216ZnNKU0JUTUJmcm5rQys3RjBzIiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURKd2FCeVdvczZVcTk0U2w4d0lCRUlBNzRlNkhzK282aUFFbktoL1JmZWxBZkp0UE90UXZPbmNVNnhFUmwvS0FoSGovTkllaWlyQ1RaN0thbjFNNVY5VUZoNGdHRlo3MEdUVENENTA9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTE3ODc5MzM0fQ== -e none https://120409133518.dkr.ecr.us-east-1.amazonaws.com
+: 1517836153:0;docker login -u AWS -p eyJwYXlsb2FkIjoid29wNHQ4R0VzcWM3QlFYUk9NOVZ3MWFRUU1hdnBic01uZ05qOGdvck1TckVyaHdSRm1GZXhJdTRNakgvUm44WUpXY1lVNHpkVEhzQnV0ZWRubzllTVp2L2xUNFBCYTNHT2VuTThBVmZsYTNaZnVsUS82OXR4L1lSVzZZT1g5ajcxNHJtalppNmYvUHROTFlGdG1LOVhXVnlRUHozL3Y2SG1uRmZjUThjeEgwMi95K29pUEVZVGl1UklBVVpiMXFrMENDcS9WTmxFeGI2eVZLR1p0aTlSUFIvSGo3VjZQNWx6TktNTUt2UEdpdU53SkI4aGNqZ0FBN09JY29NRlZLd2RoU0V1RndYNkJ3UXpOQjRQRWYzcU1Vb3ppV2kzdkFhR1pkOGFTNU41TUoxd2hQK3ZTTitkMDdSL2lmclV3SHBDakJqS1JqOUNVeHEzTVpxRGFmWUdNZi9pZlB5dUVESkRWMWVWYzRyMVZpMEt5aFh2eVZsK0Y2SHZUSjlrQWxFQXhUVHlTL1hzaUhxTFJoNWlxYWdhMmNKS0VFcXEzUndna082SFV2L0kzT01vc08rc2tvdHExMFBXdFdGVDJkcXN3UysydTlVdkYzNkg2c1dNdVoya2VxZGNFNUxaZUkzQllUYUZXQklEaVdFdGs0L2wvZGw1ZXM3WmJvaWhWb0xwSkVWcy9Hem9ZNGg1U2prVFZVTG5rTHFVWmd0TERoSFczM1owSzF0L2VlZmVZUVdyWHhkVlRDbVlOejhoQ0dWeExNM2d6enoxbG45eVhselh3QUtGVHc4Z1dlRHRuR28wY2RuMXcrODFTRW5mZks0N0QxckRBbllyMXd6Um16cUhKbkROOFYwK0daMkJ0Zzc3TUZGTlpjU3g3UytxckJaL2liQ0VaUHN1N0orWlhicHUzaXBDYmZBTFFBQmVEMUlQOXJnNWpidUsvd1VPeTdDUEl0VW1CZVE3TlNxRXVpK1IrMUR1a1VYb1d5MDlDZHgvOWdDdWszaW9tb0hQTmdyRExzclh1UE5kaVVmWmVSZ0F6ZlBmaktydlNZS1hKYUV0V1p1SWpVREJTd3EyQkFETzVCWkswSm5aMW9mc1lKcVFMWHdWTVBjY3BvMXNlMW5odkRuY01RRFFyeXdYVEZpa1cxOE1OSWdQUnIvMzgzeDFSTDR1QTNYUDlFdXNXY25KVm11ZU9ISGdGeWVHRXF1amQrZ01aV3dsM3RSOXRNR1BzK09WQitzUXU0aFNkYlU5NmJFdWhDR3dSdkU5ang5NHZkVXhoS0Y0TnJtdzAvM3dFNFFCbElWdk1KLytyaTJCVkdhOXZSYUhYbE4xUURTdFNtWUVDSWxTZ0RzN3VtVUZGU3ljUDRyM1NjWGhvdUw1eE9HK3RIUllEV3RNQSs5aFhwUmRUNVZTOWlvaHhhcGdrWmJFWjhsSVNxbi8xWHZ0Tlp5bk5xNnlhSGFQVHQ2SWFra216ZnNKU0JUTUJmcm5rQys3RjBzIiwiZGF0YWtleSI6IkFRRUJBSGh3bTBZYUlTSmVSdEptNW4xRzZ1cWVla1h1b1hYUGU1VUZjZTlScTgvMTR3QUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURKd2FCeVdvczZVcTk0U2w4d0lCRUlBNzRlNkhzK282aUFFbktoL1JmZWxBZkp0UE90UXZPbmNVNnhFUmwvS0FoSGovTkllaWlyQ1RaN0thbjFNNVY5VUZoNGdHRlo3MEdUVENENTA9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTE3ODc5MzM0fQ== https://120409133518.dkr.ecr.us-east-1.amazonaws.com
+: 1517837499:0;reboot
+: 1517837632:0;set -o vi
+: 1517838367:0;nvim .zshrc
+: 1517838396:0;nvim .bashrc
+: 1517838764:0;sudo apt install tmux
+: 1517838978:0;tmux
+: 1517839177:0;exit
+: 1517839197:0;t
+: 1517839208:0;exit
+: 1517839296:0;tmux -V
+: 1517839360:0;exit
+: 1517839657:0;nvim .config/termite/config
+: 1517839816:0;ls
+: 1517839878:0;termite -e tmux
+: 1517839884:0;exit
+: 1517839994:0;nvim .config/termite/termite.terminfo
+: 1517840010:0;ls
+: 1517840239:0;sudo fc-cache -f -v
+: 1517840537:0;exit
+: 1517841368:0;git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
+: 1517841386:0;ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+: 1517841390:0;exit
+: 1517841401:0;tmux
+: 1517841524:0;exit
+: 1517841546:0;nvim .config/i3/config
+: 1517841590:0;exit
+: 1517841667:0;ls
+: 1517841872:0;sudo apt update
+: 1517841899:0;intelivix
+: 1517841903:0;nvim .zshrc
+: 1517842246:0;vim .config/termite/config
+: 1517842262:0;nvim .config/termite/config
+: 1517842364:0;exit
+: 1517842610:0;nvim .zshrc
+: 1517842625:0;exit
+: 1517843968:0;reboot
+: 1517844328:0;nvim .zshrc
+: 1517844398:0;ls
+: 1517844962:0;nvim .tmux.conf
+: 1517845287:0;exit
+: 1517845290:0;ls
+: 1517845383:0;exit
+: 1517845396:0;nvim .tmux.conf
+: 1517846065:0;ls
+: 1517846073:0;free -h
+: 1517846219:0;ls\
+
+: 1517846264:0;exit
+: 1517846285:0;nvim .tmux.conf
+: 1517846386:0;ta
+: 1517846401:0;ta ter
+: 1517846418:0;ts ses
+: 1517846427:0;tl
+: 1517846558:0;exit
+: 1517846566:0;tl
+: 1517846591:0;exit
+: 1517846629:0;la
+: 1517846631:0;exit
+: 1517846658:0;tmux kill-server
+: 1517846703:0;exit
+: 1517846891:0;ls
+: 1517847207:0;tmux -V
+: 1517847220:0;exit
+: 1517847242:0;sudo apt purge tmux
+: 1517847283:0;exit
+: 1517847375:0;cd Downloads
+: 1517847375:0;ls
+: 1517847382:0;extract tmux-master.zip
+: 1517847386:0;cd tmux-master
+: 1517847387:0;ls
+: 1517847389:0;cd tmux-master
+: 1517847389:0;ls
+: 1517847399:0;./configure && make
+: 1517847411:0;ls
+: 1517847431:0;sh autogen.sh
+: 1517847451:0;./configure && make
+: 1517847488:0;sudo apt install libenvent
+: 1517847526:0;cd ..
+: 1517847526:0;ls
+: 1517847527:0;cd ..
+: 1517847528:0;ls
+: 1517847533:0;extract libevent-2.1.8-stable.tar.gz
+: 1517847538:0;cd libevent-2.1.8-stable
+: 1517847538:0;ls
+: 1517847549:0;sh autogen.sh
+: 1517847567:0;./configure && make
+: 1517847634:0;cd ..
+: 1517847635:0;ls
+: 1517847640:0;cd tmux-master
+: 1517847640:0;ls
+: 1517847648:0;tmux-master
+: 1517847649:0;ls
+: 1517847654:0;./configure && make
+: 1517847671:0;~
+: 1517847675:0;source .zshrc
+: 1517847682:0;cd Downloads
+: 1517847682:0;ls
+: 1517847687:0;cd tmux-master
+: 1517847688:0;ls
+: 1517847689:0;cd tmux-master
+: 1517847690:0;ls
+: 1517847694:0;./configure && make
+: 1517847707:0;exit
+: 1517847717:0;cd Downloads
+: 1517847717:0;ls
+: 1517847720:0;cd libevent-2.1.8-stable
+: 1517847723:0;ls
+: 1517847726:0;./configure && make
+: 1517847750:0;exit
+: 1517847758:0;cd Downloads
+: 1517847759:0;ls
+: 1517847761:0;cd tmux-master
+: 1517847762:0;ls
+: 1517847765:0;cd tmux-master
+: 1517847765:0;ks
+: 1517847766:0;ls
+: 1517847787:0;./configure && make
+: 1517847811:0;sh autogen.sh
+: 1517847818:0;./configure && make
+: 1517848038:0;sudo apt install libevent-dev
+: 1517848068:0;./configure && make
+: 1517848109:0;exit
+: 1517848121:0;tmux
+: 1517848127:0;ls
+: 1517848131:0;cd Downloads
+: 1517848131:0;ls
+: 1517848135:0;cd tmux-master
+: 1517848135:0;ls
+: 1517848137:0;cd tmux-master
+: 1517848137:0;ls
+: 1517848156:0;tmux
+: 1517848182:0;sudo make install
+: 1517848199:0;~
+: 1517848203:0;source .zshrc
+: 1517848207:0;tmux
+: 1517848249:0;t
+: 1517848251:0;exit
+: 1517848482:0;ls
+: 1517848499:0;exit
+: 1517848576:0;free -h
+: 1517848608:0;k
+: 1517848908:0;exit
+: 1517848912:0;ls
+: 1517848922:0;rm fzy_0.9-1_amd64.deb
+: 1517848922:0;ls
+: 1517848927:0;rm npm-debug.log
+: 1517848930:0;ls
+: 1517848935:0;rm npm-debug.log
+: 1517848938:0;ls
+: 1517848944:0;rm fontes-ttf.txt
+: 1517848944:0;ls
+: 1517848949:0;cd node_modules
+: 1517848950:0;ls
+: 1517848955:0;cd ..
+: 1517848955:0;sl
+: 1517848956:0;ls
+: 1517849133:0;sudo dpkg -l |grep fontconfig
+: 1517849159:0;mkdir ~/.fonts
+: 1517849182:0;cd ~/.fonts && wget https://github.com/google/fonts/archive/master.zip && unzip master.zip
+: 1517849303:0;fc-cache -fv
+: 1517849408:0;exit
+: 1517850245:0;vimtutor
+: 1517850652:0;vtop
+: 1517850662:0;exit
+: 1517850860:0;reboot
+: 1517851197:0;nvim .config/i3/i3status/config
+: 1517851308:0;exit
+: 1517851321:0;nvim .config/i3/i3status/config
+: 1517851377:0;exit
+: 1517851417:0;poweroff
+: 1517918792:0;vim .vimrc
+: 1517918818:0;nvim .vimrc
+: 1517918905:0;vim .vimrc
+: 1517918947:0;nvim .tmux.conf
+: 1517918981:0;sudo apt install xclip
+: 1517919000:0;nvim .tmux.conf
+: 1517919136:0;exit
+: 1517919169:0;vtop
+: 1517919201:0;exit
+: 1517919208:0;ls
+: 1517919231:0;node_modules
+: 1517919235:0;cd ..
+: 1517919239:0;exit
+: 1517919243:0;ls
+: 1517919282:0;nvim .tmux.conf
+: 1517919339:0;xclip -V
+: 1517919343:0;xclip
+: 1517919371:0;\
+de_modules
+: 1517919430:0;tmux kill-server
+: 1517919439:0;ls
+: 1517919472:0;exit
+: 1517919767:0;nvim .vimrc
+: 1517920011:0;vim .vimrc
+: 1517920304:0;nvim .vimrc
+: 1517920398:0;vim .vimrc
+: 1517920621:0;exit
+: 1517920709:0;nano .tmux.conf
+: 1517920733:0;vi .tmux.conf
+: 1517921104:0;vtop
+: 1517921118:0;free -h
+: 1517921387:0;top
+: 1517921395:0;vtop
+: 1517921472:0;exit
+: 1517921480:0;nvim .vimrc
+: 1517921501:0;which python
+: 1517921506:0;python
+: 1517921518:0;nvim .zshrc
+: 1517921593:0;source .zshrc
+: 1517921597:0;nvim .zshrc
+: 1517921604:0;source .zshrc
+: 1517921611:0;nvim .zshrc
+: 1517921720:0;pyenv activate
+: 1517921724:0;pyenv activate system
+: 1517921744:0;nvim .python-version
+: 1517921752:0;exit
+: 1517921767:0;sudo pip install neovim
+: 1517921789:0;sudo pip3 install neovim
+: 1517921798:0;sudo pip2 install neovim
+: 1517921813:0;sudo pip2 install -U pip
+: 1517921971:0;sudo pip3 install -U pip
+: 1517921983:0;nvim .vimrc
+: 1517922009:0;vim .vimrc
+: 1517922185:0;nvim .config/nvim/init.vim
+: 1517922278:0;sudo apt install --help
+: 1517922446:0;sudo apt search vim
+: 1517922527:0;sudo apt install vim
+: 1517922538:0;sudo apt install neovim
+: 1517922549:0;sudo apt search neovim
+: 1517922643:0;curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \\
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+: 1517922652:0;nvim .vimrc
+: 1517922820:0;exit
+: 1517922826:0;nvim .vimrc
+: 1517923055:0;exit
+: 1517923067:0;pip3 install --upgrade --force-reinstall neovim
+: 1517923083:0;sudo pip3 install --upgrade --force-reinstall neovim
+: 1517923115:0;sudo pip2 unistall neovim
+: 1517923120:0;sudo pip2 uninstall neovim
+: 1517923137:0;nvim .vimrc
+: 1517923153:0;sudo pip2 install --upgrade --force-reinstall neovim
+: 1517923162:0;nvim .vimrc
+: 1517923186:0;intelivix
+: 1517923187:0;ls
+: 1517923190:0;cd laboratory
+: 1517923190:0;ls
+: 1517923197:0;touch test.py
+: 1517923198:0;ls
+: 1517923214:0;nvim test.py
+: 1517923250:0;pip3 install --upgrade --force-reinstall neovim
+: 1517923258:0;pip3 install --upgrade --force-reinstall pip
+: 1517923265:0;pip install --upgrade --force-reinstall pip
+: 1517923271:0;pip install --upgrade --force-reinstall neovim
+: 1517923280:0;nvim test.py
+: 1517923405:0;cd ..
+: 1517923405:0;ls
+: 1517923407:0;cd ..
+: 1517923407:0;ls
+: 1517923415:0;cd ..
+: 1517923415:0;ls
+: 1517923427:0;nvim .vimrc
+: 1517923589:0;rm -rf .config/nvim/plugged
+: 1517923605:0;ls
+: 1517923621:0;vim .vimrc
+: 1517923670:0;exit
+: 1517923675:0;nvim .vimrc
+: 1517924746:0;ls
+: 1517924751:0;la
+: 1517924759:0;cd .tmux
+: 1517924761:0;ls
+: 1517924780:0;nvim install.sh
+: 1517924808:0;ls
+: 1517924811:0;cd vendor
+: 1517924812:0;ls
+: 1517924815:0;cd ..
+: 1517924815:0;ls
+: 1517924819:0;cd ..
+: 1517924820:0;ls
+: 1517924839:0;nvim .tmux.conf.local
+: 1517924941:0;rm .tmux.conf
+: 1517924949:0;rm .tmux
+: 1517924953:0;rm -rm .tmux
+: 1517924956:0;rm -r .tmux
+: 1517924994:0;tmux kill-server
+: 1517925022:0;nvim .tmux.conf
+: 1517925322:0;exit
+: 1517925375:0;tmux kill-server
+: 1517925385:0;ls
+: 1517925435:0;exit
+: 1517925480:0;sudo apt purge vim
+: 1517925502:0;sudo apt purge vim-runtime
+: 1517925538:0;sudo apt install neovim
+: 1517925557:0;sudo apt auto-remove
+: 1517925588:0;exit
+: 1517925594:0;nvim .vimrc
+: 1517926105:0;ls -l
+: 1517926115:0;l
+: 1517926207:0;rm .tmux.conf.local
+: 1517926215:0;nvim .tmux.conf
+: 1517926269:0;tmux kill-server
+: 1517926292:0;nvim .tmux.conf
+: 1517926303:0;exit
+: 1517926315:0;l
+: 1517926742:0;tmux unbind -t vi-copy Escape
+: 1517926776:0;nvim .tmux.conf
+: 1517926837:0;exit
+: 1517926841:0;l
+: 1517926894:0;nvim .tmux.conf
+: 1517927129:0;tmux unbind -t vi-copy -h
+: 1517927138:0;tmux bind -H
+: 1517927143:0;tmux bind -help
+: 1517927461:0;ls
+: 1517927465:0;exit
+: 1517927478:0;tmux kill-server
+: 1517927493:0;uptime 
+: 1517927582:0;exit
+: 1517927600:0;intelivix
+: 1517927601:0;ls
+: 1517927603:0;cd laboratory
+: 1517927603:0;ls
+: 1517927607:0;nvim test.py
+: 1517927760:0;~
+: 1517927761:0;ls
+: 1517927765:0;nvim .vimrc
+: 1517927849:0;intelivix
+: 1517927850:0;ls
+: 1517927851:0;cd laboratory
+: 1517927852:0;ls
+: 1517927855:0;nvim test.py
+: 1517928514:0;exit
+: 1517928515:0;nvim .vimrc
+: 1517928663:0;exit
+: 1517928670:0;intelivix
+: 1517928670:0;ls
+: 1517928673:0;cd laboratory
+: 1517928673:0;ls
+: 1517928676:0;nvim test.py
+: 1517928717:0;~
+: 1517928718:0;ls
+: 1517928721:0;nvim .vimrc
+: 1517928748:0;exit
+: 1517928751:0;intelivix
+: 1517928752:0;ls
+: 1517928754:0;cd laboratory
+: 1517928754:0;ls
+: 1517928757:0;nvim test.py
+: 1517928820:0;~
+: 1517928821:0;ls
+: 1517936102:0;nvim .vimrc
+: 1517936272:0;exit
+: 1517936296:0;intelivix
+: 1517936297:0;ls
+: 1517936299:0;cd laboratory
+: 1517936299:0;ls
+: 1517936302:0;nvim test.py
+: 1517936432:0;sudo apt-get install exuberant-ctags
+: 1517936450:0;nvim test.py
+: 1517936758:0;exit
+: 1517936785:0;ls
+: 1517936797:0;cd Images
+: 1517936797:0;ls
+: 1517936801:0;feh Captura_de_tela_2018-02-06-14:06:33.png
+: 1517936810:0;rm Captura_de_tela_2018-02-06-14:06:33.png
+: 1517936811:0;ls
+: 1517936812:0;cd ..
+: 1517936813:0;ls
+: 1517936832:0;rm Images/Captura_de_area_2018-02-06-14:07:02.png
+: 1517936833:0;ls
+: 1517936843:0;intelivix
+: 1517936844:0;çs
+: 1517936845:0;ls
+: 1517936849:0;cd laboratory
+: 1517936849:0;ls
+: 1517936852:0;nvim test.py
+: 1517939064:0;ls
+: 1517939068:0;~
+: 1517939068:0;ls
+: 1517939070:0;exit
+: 1517939076:0;vtop
+: 1517939099:0;nvim .vimrc
+: 1517939418:0;exit
+: 1517939423:0;ls
+: 1517939426:0;intelivix
+: 1517939427:0;ls
+: 1517939429:0;laboratory
+: 1517939430:0;ls
+: 1517939433:0;nvim test.py
+: 1517939648:0;~
+: 1517939652:0;nvim .vimrc
+: 1517939985:0;intelivix
+: 1517939986:0;ls
+: 1517939990:0;laboratory
+: 1517939991:0;ls
+: 1517939994:0;nvim test.py
+: 1517942659:0;ls
+: 1517942662:0;exit
+: 1517943123:0;gem install vimgol
+: 1517943132:0;sudo apt install gem
+: 1517943325:0;gem install vimgol
+: 1517943334:0;exit
+: 1517943337:0;gem install vimgol
+: 1517943437:0;gem install vimgolf
+: 1517943443:0;sudo gem install vimgolf
+: 1517943563:0;sudo apt install rubygem
+: 1517943566:0;sudo apt install rubygems
+: 1517943596:0;gem install vimgolf
+: 1517943612:0;sudo gem install vimgolf
+: 1517943632:0;vimgolf setup
+: 1517943833:0;vimgolf put 55b18bbea9c2c30d04000001
+: 1517943943:0;sudo apt install vim
+: 1517943958:0;ls
+: 1517943962:0;vimgolf put 55b18bbea9c2c30d04000001
+: 1517943975:0;exit
+: 1517943979:0;vimgolf put 55b18bbea9c2c30d04000001
+: 1517943986:0;vim -h
+: 1517944123:0;sudo apt unstall vim
+: 1517944130:0;sudo apt uninstall vim
+: 1517944137:0;sudo apt purge vim
+: 1517944168:0;sudo gem remove vimgolf
+: 1517944179:0;sudo gem uninstall vimgolf
+: 1517944220:0;sudo apt purge gem rubygems
+: 1517944244:0;ls
+: 1517944254:0;exit
+: 1517944258:0;df
+: 1517944260:0;df -h
+: 1517944274:0;free -h
+: 1517944280:0;exit
+: 1517944306:0;free -h
+: 1517944312:0;exit
+: 1517944323:0;free -h
+: 1517944495:0;exit
+: 1517944518:0;poweroff
+: 1518091322:0;ls
+: 1518091327:0;cd iury
+: 1518091327:0;ls
+: 1518091329:0;cd archlinux
+: 1518091331:0;ls
+: 1518091358:0;git status
+: 1518091366:0;ls
+: 1518091430:0;mkdir others
+: 1518091432:0;ls
+: 1518091444:0;mv ubuntu-install-termite.sh others
+: 1518091445:0;ls
+: 1518091448:0;cd others
+: 1518091450:0;ls
+: 1518091466:0;cp ~/.tmux.conf .
+: 1518091476:0;cp ~/.vimrc .
+: 1518091484:0;cp -r ~/.vim .
+: 1518091500:0;ls
+: 1518091502:0;la
+: 1518091522:0;mv .tmux.conf tmux.conf
+: 1518091524:0;ls
+: 1518091530:0;mv .vim vim
+: 1518091539:0;mv .vimrc vimrc
+: 1518091540:0;ls
+: 1518091592:0;cp -r ~/.config/termite .
+: 1518091593:0;ls
+: 1518091625:0;mkdir config
+: 1518091626:0;ls
+: 1518091636:0;mv -r termite config
+: 1518091641:0;mv -R termite config
+: 1518091645:0;ls
+: 1518091650:0;mv termite config
+: 1518091651:0;ls
+: 1518091666:0;mkdir dotfiles
+: 1518091674:0;mv config dotfiles
+: 1518091675:0;ls
+: 1518091682:0;mv tmux.conf dotfiles
+: 1518091682:0;ls
+: 1518091689:0;mv vim dotfiles
+: 1518091690:0;ls
+: 1518091700:0;mv vimrc dotfiles
+: 1518091700:0;ls
+: 1518091701:0;la
+: 1518091704:0;cd dotfiles
+: 1518091705:0;ls
+: 1518091709:0;cd ..
+: 1518091710:0;ls
+: 1518091711:0;cd ..
+: 1518091712:0;ls
+: 1518091718:0;cd others
+: 1518091719:0;ls
+: 1518091722:0;cd dotfiles
+: 1518091722:0;ls
+: 1518091766:0;cp ~/.bashrc .
+: 1518091772:0;cp ~/.zshrc .
+: 1518091775:0;ls
+: 1518091781:0;mv .zshrc zshrc
+: 1518091792:0;mv .bashrc bashrc
+: 1518091793:0;ls
+: 1518091794:0;la
+: 1518091807:0;cd ..
+: 1518091808:0;ls
+: 1518091811:0;cd ..
+: 1518091811:0;ls
+: 1518091849:0;mkdir archlinux
+: 1518091850:0;ls
+: 1518091861:0;mv deps_archlinux_i3 archlinux
+: 1518091861:0;ls
+: 1518091867:0;mv dotfiles archlinux
+: 1518091867:0;ls
+: 1518091872:0;mv etc archlinux
+: 1518091872:0;ls
+: 1518091881:0;mv install_archlinux_201* archlinux
+: 1518091882:0;ls
+: 1518091888:0;mv usr archlinux
+: 1518091889:0;ls
+: 1518091890:0;cd archlinux
+: 1518091891:0;ls
+: 1518091903:0;mkdir root
+: 1518091903:0;ls
+: 1518091910:0;mv etc root
+: 1518091911:0;ls
+: 1518091919:0;mv usr root
+: 1518091920:0;ls
+: 1518091961:0;mv install_archlinux_2016.txt_ install_archlinux_2016.txt
+: 1518091962:0;ls
+: 1518092019:0;mkdir install
+: 1518092020:0;ls
+: 1518092025:0;mv install_archlinux_2016.txt install
+: 1518092026:0;ls
+: 1518092032:0;mv install_archlinux_2017_en.txt install
+: 1518092033:0;ls
+: 1518092058:0;mv deps_archlinux_i3 i3
+: 1518092058:0;ls
+: 1518092065:0;cd i3
+: 1518092066:0;ls
+: 1518092068:0;cd ..
+: 1518092069:0;ls
+: 1518092073:0;cd ..
+: 1518092073:0;ls
+: 1518092087:0;git add .
+: 1518092107:0;git status
+: 1518092131:0;git add .
+: 1518092134:0;git status
+: 1518092148:0;git add --all .
+: 1518092151:0;git statis
+: 1518092153:0;git status
+: 1518092179:0;ls
+: 1518092180:0;cd others
+: 1518092180:0;ls
+: 1518092185:0;cd dotfiles
+: 1518092186:0;ls
+: 1518092188:0;cd config
+: 1518092189:0;ls
+: 1518092218:0;cp ~/.config/nvim .
+: 1518092223:0;cp -r ~/.config/nvim .
+: 1518092224:0;ls
+: 1518092235:0;cd ..
+: 1518092236:0;ls
+: 1518092241:0;cd vim
+: 1518092241:0;ls
+: 1518092245:0;cd plugged
+: 1518092246:0;ls
+: 1518092251:0;cd vim-pyenv
+: 1518092252:0;ls
+: 1518092257:0;git status
+: 1518092276:0;cd doc/tags
+: 1518092277:0;ls
+: 1518092281:0;cd doc
+: 1518092281:0;ls
+: 1518092285:0;git status
+: 1518092295:0;git add tags
+: 1518092296:0;ls
+: 1518092298:0;git status
+: 1518092300:0;cd ..
+: 1518092300:0;ls
+: 1518092303:0;la
+: 1518092308:0;git add .
+: 1518092311:0;git status
+: 1518092332:0;cd ..
+: 1518092341:0;git status
+: 1518092354:0;ls
+: 1518092371:0;la
+: 1518092376:0;cd vim-pyenv
+: 1518092377:0;ls
+: 1518092377:0;la
+: 1518092391:0;cd ..
+: 1518092391:0;ls
+: 1518092394:0;cd ..
+: 1518092394:0;ls
+: 1518092398:0;cd plugged
+: 1518092403:0;ls
+: 1518092418:0;rm -r vim-pyenv
+: 1518092448:0;rm -rf vim-pyenv
+: 1518092450:0;ls
+: 1518092452:0;cd ..
+: 1518092452:0;ls
+: 1518092454:0;cd ..
+: 1518092454:0;ls
+: 1518092461:0;git status
+: 1518092467:0;cd ..
+: 1518092467:0;ls
+: 1518092469:0;cd ..
+: 1518092469:0;l
+: 1518092474:0;cd others
+: 1518092475:0;ls
+: 1518092481:0;mkdir scripts
+: 1518092481:0;ls
+: 1518092488:0;mv ubuntu-install-termite.sh scripts
+: 1518092489:0;ls
+: 1518092490:0;cd ..
+: 1518092491:0;ls
+: 1518092495:0;git add .
+: 1518092496:0;ls
+: 1518092499:0;git status
+: 1518092543:0;git commit -m "[master] Oganiza os arquivos"
+: 1518092721:0;git push origin master 
+: 1518092752:0;ls
+: 1518092758:0;cd others
+: 1518092758:0;ls
+: 1518092761:0;cd dotfiles
+: 1518092761:0;ls
+: 1518092786:0;ln -sf bashrc ~/.bashrc
+: 1518092811:0;ln -sf tmux.conf ~/.tmux.conf
+: 1518092813:0;ls
+: 1518092826:0;ln -sf vim ~/.vim
+: 1518092844:0;ls
+: 1518092856:0;ln -sf zshrc ~/.zshrc
+: 1518092857:0;ls
+: 1518092884:0;ln -sf config/termite ~/.config/termite
+: 1518092886:0;ls
+: 1518092901:0;ln -sf config/nvim ~/.config/nvim
+: 1518092902:0;ls
+: 1518092906:0;cd config
+: 1518092906:0;ls
+: 1518092908:0;cd ..
+: 1518092908:0;ls
+: 1518092917:0;cd ..
+: 1518092918:0;ls
+: 1518092920:0;..
+: 1518092922:0;ls
+: 1518092924:0;git status
+: 1518092926:0;cd ..
+: 1518092927:0;ls
+: 1518092928:0;cd ..
+: 1518092928:0;ls
+: 1518092931:0;la
+: 1518092995:0;ls
+: 1518092999:0;cd iury
+: 1518092999:0;ls
+: 1518093001:0;cd archlinux
+: 1518093001:0;ls
+: 1518093004:0;cd others
+: 1518093005:0;ls
+: 1518093008:0;cd dotfiles
+: 1518093008:0;ls
+: 1518093029:0;cp ~/.gitconfig .
+: 1518093040:0;cp ~/.gitignore-global .
+: 1518093041:0;ls
+: 1518093049:0;mv .* *
+: 1518093050:0;ls
+: 1518093061:0;mv .gitconfig gitconfig
+: 1518093062:0;ls
+: 1518093095:0;mv .gitignore-global gitignore-global
+: 1518093096:0;ls
+: 1518093137:0;ln -sf gitconfig ~/.gitconfig
+: 1518093141:0;ls
+: 1518093146:0;la
+: 1518093660:0;ls
+: 1518093691:0;ln -sf gitignore-global ~/.gitignore-global 
+: 1518093692:0;ls
+: 1518093702:0;la
+: 1518093741:0;ln -sf vimrc ~/.vimrc
+: 1518093754:0;ln -sf vim ~/.vim
+: 1518093758:0;la
+: 1518093767:0;cd .vim
+: 1518093768:0;ls
+: 1518093770:0;la
+: 1518093777:0;cd autoload
+: 1518093778:0;la
+: 1518093781:0;cd ..
+: 1518093781:0;ls
+: 1518093783:0;cd ..
+: 1518093783:0;ls
+: 1518094017:0;exit
+: 1518094088:0;~
+: 1518094088:0;la
+: 1518094168:0;cd .config
+: 1518094169:0;ls
+: 1518094170:0;la
+: 1518094175:0;cd termite
+: 1518094175:0;ls
+: 1518094198:0;cd termite
+: 1518094199:0;la
+: 1518094202:0;pwd
+: 1518094212:0;ls
+: 1518094221:0;cd termite
+: 1518094222:0;ls
+: 1518094224:0;pwd
+: 1518094232:0;rm termite
+: 1518094233:0;ls
+: 1518094235:0;cd ..
+: 1518094236:0;ls
+: 1518094239:0;cd nvim
+: 1518094239:0;ls
+: 1518094242:0;rm nvim
+: 1518094242:0;ls
+: 1518094244:0;cd ..
+: 1518094244:0;ls
+: 1518094248:0;cd ..
+: 1518094249:0;ls
+: 1518094252:0;cd .vim
+: 1518094252:0;ls
+: 1518094256:0;rm vim
+: 1518094257:0;ls
+: 1518094258:0;cd ..
+: 1518094258:0;ls
+: 1518094263:0;cd iury
+: 1518094263:0;ls
+: 1518094269:0;cd archlinux
+: 1518094270:0;ls
+: 1518094274:0;cd others
+: 1518094275:0;ls
+: 1518094278:0;cd dotfiles
+: 1518094278:0;ls
+: 1518094338:0;ln -sf vim ~/
+: 1518094341:0;~
+: 1518094343:0;ls
+: 1518094349:0;mv vim .vim
+: 1518094349:0;ls
+: 1518094350:0;la
+: 1518094362:0;cd .vim
+: 1518094363:0;ls
+: 1518094367:0;rm vim
+: 1518094369:0;cd ..
+: 1518094369:0;ls
+: 1518094400:0;mv .vim .vim.local
+: 1518094401:0;ls
+: 1518094505:0;la
+: 1518095274:0;ls
+: 1518095275:0;la
+: 1518095285:0;cd .config
+: 1518095285:0;ls
+: 1518095301:0;mv termite termite.local
+: 1518095324:0;mv nvim nvim.local
+: 1518095325:0;ls
+: 1518095336:0;cd ..
+: 1518095337:0;ls
+: 1518095338:0;la
+: 1518095343:0;cd iury
+: 1518095344:0;ls
+: 1518095351:0;cd archlinux
+: 1518095353:0;ls
+: 1518095355:0;cd others
+: 1518095356:0;ls
+: 1518095359:0;cd dotfiles
+: 1518095359:0;ls
+: 1518095380:0;ln -sf vim ~/.vim
+: 1518095403:0;ln -sf config/nvim ~/.config/nvim
+: 1518095442:0;ln -sf config/termite ~/.config/termite
+: 1518095443:0;ls
+: 1518095504:0;cp ~/.zsh_history .
+: 1518096271:0;ln -sf .linux/others/dotfiles/vim .vim 
+: 1518096295:0;ln -sf .linux/others/dotfiles/config/nvim .config/nvim 
+: 1518096307:0;ln -sf .linux/others/dotfiles/config/termite .config/termite
+: 1518096342:0;cd .linux
+: 1518096344:0;ls
+: 1518096363:0;cd .others
+: 1518096367:0;cd others
+: 1518096367:0;ls
+: 1518096370:0;cd scripts
+: 1518096370:0;ls
+: 1518096409:0;nvim install-dotfiles.sh
+: 1518096433:0;ls
+: 1518096438:0;nvim ubuntu-install-termite.sh
+: 1518096460:0;nvim install-dotfiles.sh
+: 1518096472:0;ls
+: 1518096477:0;la
+: 1518096500:0;sudo chmod 775 install-dotfiles.sh
+: 1518096505:0;la
+: 1518096517:0;cd ..
+: 1518096517:0;ls
+: 1518096522:0;cd ..
+: 1518096522:0;ls
+: 1518096556:0;cd others
+: 1518096557:0;ls
+: 1518096559:0;cd scripts
+: 1518096559:0;ls
+: 1518096563:0;nvim install-dotfiles.sh
+: 1518096991:0;ls
+: 1518096995:0;~
+: 1518096997:0;ls
+: 1518096999:0;la
+: 1518097019:0;ls
+: 1518097037:0;cd .linux
+: 1518097040:0;git status
+: 1518097057:0;git add .
+: 1518097060:0;git status
+: 1518097095:0;git commit -m "[master] Modifica os dotfiles"
+: 1518097098:0;git status
+: 1518097114:0;git push origin master 
+: 1518097127:0;ls
+: 1518097130:0;git status
+: 1518097134:0;cd ..
+: 1518097134:0;ls
+: 1518097156:0;nvim .zsh_history
+: 1518097212:0;ls
+: 1518097213:0;la
+: 1518097222:0;cd .vim
+: 1518097222:0;ls
+: 1518097224:0;la
+: 1518097238:0;cd plugged
+: 1518097238:0;ls
+: 1518097246:0;~
+: 1518097247:0;ls
+: 1518097251:0;nvim .vimrc
+: 1518097272:0;ls
+: 1518097273:0;la
+: 1518097336:0;cd .local
+: 1518097337:0;ls
+: 1518097337:0;la
+: 1518097339:0;cd ..
+: 1518097339:0;ls
+: 1518097342:0;la
+: 1518097358:0;nvim .vimrc
+: 1518097397:0;ls
+: 1518097400:0;la
+: 1518097436:0;rm -r .vim.local
+: 1518097445:0;rm -rf .vim.local
+: 1518097446:0;la
+: 1518097562:0;exit
+: 1518097724:0;la
+: 1518097728:0;ls
+: 1518097733:0;cd .co
+: 1518097735:0;cd .config
+: 1518097735:0;ls
+: 1518097755:0;cd nvim
+: 1518097756:0;la
+: 1518097768:0;rm .init.vim.un
+: 1518097773:0;rm .init.vim.un\~
+: 1518097774:0;ls
+: 1518097776:0;la
+: 1518097781:0;rm .netrwhist
+: 1518097782:0;ls
+: 1518097784:0;cd ..
+: 1518097785:0;ls
+: 1518097788:0;cd termite
+: 1518097789:0;la
+: 1518097793:0;rm .config.un\~
+: 1518097795:0;la
+: 1518097797:0;cd ..
+: 1518097797:0;ls
+: 1518097799:0;cd ..
+: 1518097799:0;ls
+: 1518097814:0;nvim
+: 1518098315:0;ls
+: 1518098317:0;exit
+: 1518098318:0;ls
+: 1518098325:0;la
+: 1518098329:0;exit
+: 1518098331:0;ls
+: 1518098342:0;cd .linux
+: 1518098343:0;ls
+: 1518098345:0;cd others
+: 1518098345:0;ls
+: 1518098372:0;cd dotfiles
+: 1518098372:0;ls
+: 1518098376:0;cd config
+: 1518098377:0;ls
+: 1518098394:0;mv ~/.config/i3 .
+: 1518098396:0;ls
+: 1518098402:0;cd ..
+: 1518098402:0;ls
+: 1518098407:0;cd ..
+: 1518098407:0;ls
+: 1518098410:0;cd scripts
+: 1518098411:0;ls
+: 1518098414:0;nvim install-dotfiles.sh
+: 1518098565:0;ln -rsf .linux/others/dotfiles/config/i3 .config/i3
+: 1518098576:0;exit
+: 1518098603:0;ls
+: 1518098605:0;cd ..
+: 1518098606:0;ls
+: 1518098608:0;cd dotfiles
+: 1518098609:0;ls
+: 1518098620:0;git status
+: 1518098623:0;cd ..
+: 1518098624:0;ls
+: 1518098625:0;cd ..
+: 1518098625:0;ls
+: 1518098634:0;git add .
+: 1518098636:0;git status
+: 1518098684:0;git commit -m "[master] Config i3 other linux"
+: 1518098689:0;git push origin master 
+: 1518098708:0;ls
+: 1518098710:0;git status
+: 1518098712:0;ls
+: 1518098718:0;cd ..
+: 1518098718:0;ls
+: 1518098720:0;la
+: 1518098733:0;ls
+: 1518098738:0;cd .linux
+: 1518098738:0;ls
+: 1518098740:0;cd others
+: 1518098740:0;ls
+: 1518098744:0;cd dotfiles
+: 1518098744:0;ls
+: 1518098770:0;mv ~/.wallpaper .
+: 1518098783:0;mv .wallpaper wallpaper
+: 1518098784:0;ls
+: 1518098796:0;cd ..
+: 1518098797:0;ls
+: 1518098800:0;cd scripts
+: 1518098800:0;ls
+: 1518098816:0;nvim install-dotfiles.sh
+: 1518098892:0;ln -rsf .linux/others/dotfiles/wallpaper .wallpaper
+: 1518098893:0;ls
+: 1518098893:0;la
+: 1518098898:0;exit
+: 1518098901:0;ls
+: 1518098902:0;cd ..
+: 1518098903:0;ls
+: 1518098906:0;cd ..
+: 1518098906:0;ls
+: 1518098910:0;git status
+: 1518098923:0;git add .
+: 1518098926:0;git status
+: 1518098934:0;~
+: 1518098934:0;la
+: 1518098935:0;ls
+: 1518098937:0;la
+: 1518098943:0;ls
+: 1518098948:0;cd .linux
+: 1518098948:0;ls
+: 1518098954:0;cd others
+: 1518098955:0;ls
+: 1518098958:0;cd dotfiles
+: 1518098958:0;ls
+: 1518099001:0;nvim zsh_history
+: 1518099088:0;git add .
+: 1518099091:0;cd ..
+: 1518099092:0;ls
+: 1518099093:0;cd ..
+: 1518099093:0;ls
+: 1518099096:0;git add .
+: 1518099097:0;ls
+: 1518099114:0;git commit -m "[master] corrigido"
+: 1518099123:0;git push origin master 
+: 1518099141:0;ls
+: 1518099173:0;cd ..
+: 1518099173:0;ls
+: 1518099175:0;la
+: 1518099277:0;ls
+: 1518099302:0;cd .linux
+: 1518099302:0;ls
+: 1518099331:0;cd others
+: 1518099333:0;ls
+: 1518099342:0;cd dotfiles
+: 1518099342:0;ls
+: 1518099357:0;git log
+: 1518099375:0;git log-graph
+: 1518099443:0;git checkout 2bc1cfe
+: 1518099447:0;git status
+: 1518099469:0;git log-graph
+: 1518099477:0;git checkout master 
+: 1518099487:0;git log-graph
+: 1518099524:0;git checkout d396dc3
+: 1518099531:0;git status
+: 1518099536:0;cd ..
+: 1518099536:0;ls
+: 1518099537:0;cd ..
+: 1518099538:0;ls
+: 1518099543:0;git status
+: 1518099552:0;cd others
+: 1518099552:0;ls
+: 1518099555:0;cd dotfiles
+: 1518099555:0;ls
+: 1518099557:0;cd ..
+: 1518099558:0;ls
+: 1518099569:0;git push origin master -f
+: 1518099587:0;git add .
+: 1518099601:0;git commit -m "[master] Organiza"
+: 1518099614:0;git status
+: 1518099617:0;cd ..
+: 1518099618:0;ls
+: 1518099620:0;git add .
+: 1518099632:0;git commit -m "[master] Organiza"
+: 1518099664:0;git config --global user.email "iuryadones@gmail.com"
+: 1518099684:0;git config --global user.name "Iury Xavier"
+: 1518099691:0;git push origin master -f
+: 1518099727:0;git status
+: 1518099731:0;git add .
+: 1518099737:0;git commit -m "[master] Organiza"
+: 1518099743:0;git push origin master -f
+: 1518099753:0;ls
+: 1518099756:0;git status
+: 1518099762:0;git checkout master 
+: 1518099767:0;ls
+: 1518099782:0;git status
+: 1518099806:0;ls
+: 1518099862:0;cd others
+: 1518099862:0;ls
+: 1518099865:0;cd dotfiles
+: 1518099866:0;ls
+: 1518099941:0;git checkout -b DEV
+: 1518099943:0;ls
+: 1518099952:0;nvim zsh_history
+: 1518099988:0;git push origin DEV
+: 1518100031:0;ls
+: 1518100032:0;cd ..
+: 1518100032:0;ls
+: 1518100036:0;git checkout master 
+: 1518100043:0;git pull origin master 
+: 1518100049:0;git pull origin master -f
+: 1518100052:0;la
+: 1518100053:0;ls
+: 1518100055:0;cd ..
+: 1518100055:0;ls
+: 1518100056:0;la
+: 1518100062:0;git pull origin
+: 1518100066:0;git pull origin master
+: 1518100068:0;la
+: 1518100093:0;ls
+: 1518100124:0;git log-graph
+: 1518100165:0;ls
+: 1518100179:0;la
+: 1518100193:0;nvim README.md
+: 1518100298:0;git add .
+: 1518100311:0;git commit -m "[master] README.md"
+: 1518100319:0;git push origin master 
+: 1518100345:0;lw
+: 1518100347:0;ls
+: 1518100362:0;git push origin master -f
+: 1518100374:0;ls
+: 1518100440:0;git checkout -b DEV
+: 1518100454:0;git checkout -b dev
+: 1518100455:0;ls
+: 1518100465:0;git push origin dev
+: 1518100487:0;cd ..
+: 1518100488:0;ls
+: 1518100491:0;cd .linux
+: 1518100491:0;ls
+: 1518100496:0;git checkout master 
+: 1518100506:0;git log-graph
+: 1518100521:0;git checkout e603a25
+: 1518100525:0;git status
+: 1518100531:0;ls
+: 1518100551:0;rm archlinux
+: 1518100555:0;rm -rfarchlinux
+: 1518100557:0;rm -rf archlinux
+: 1518100567:0;rm -rf others
+: 1518100568:0;ls
+: 1518100574:0;git add .
+: 1518100576:0;git status
+: 1518100589:0;git commit -m "[master] init"
+: 1518100646:0;git config --global user.email "iuryadones@gmail.com"
+: 1518100656:0;ls
+: 1518100659:0;la
+: 1518100668:0;ls
+: 1518100684:0;git checkout master 
+: 1518100689:0;ls
+: 1518100690:0;la
+: 1518100717:0;git log-graph
+: 1518100757:0;git reset e603a25 
+: 1518100760:0;ls
+: 1518100782:0;git reset origin e603a25
+: 1518100787:0;git reset origin master e603a25
+: 1518100792:0;git reset origin e603a25
+: 1518100794:0;ls
+: 1518100843:0;git reset --hard HEAD~5
+: 1518100847:0;git status
+: 1518100849:0;ls
+: 1518100860:0;git reset --hard HEAD~9
+: 1518100863:0;git status
+: 1518100866:0;git add .
+: 1518100871:0;git status
+: 1518100876:0;git stash
+: 1518100879:0;ls
+: 1518100894:0;git log-graph
+: 1518100901:0;git log
+: 1518100904:0;ls
+: 1518100917:0;git status
+: 1518100928:0;rm -r others
+: 1518100929:0;ls
+: 1518100935:0;git push origin master -f
+: 1518100953:0;ls
+: 1518101011:0;git diff master..dev 
+: 1518101049:0;git diff master..dev >| ~/git-apply.txt
+: 1518101072:0;git apply ~/git-apply.txt
+: 1518101075:0;ls
+: 1518101236:0;mv ~/git-apply.txt ~/git-apply.patch
+: 1518101246:0;git apply ~/git-apply.patch
+: 1518101354:0;git apply --stat ~/git-apply.patch
+: 1518101386:0;git apply --check ~/git-apply.patch
+: 1518101440:0;git am --signoff < ~/git-apply.patch
+: 1518101469:0;git config --global user.email "iuryadones@gmail.com"
+: 1518101480:0;ls
+: 1518101489:0;nvim .git/config
+: 1518101535:0;ls
+: 1518101735:0;git status
+: 1518101745:0;git checkout dev 
+: 1518101750:0;ls
+: 1518101759:0;git checkout master 
+: 1518101769:0;git apply --check ~/git-apply.patch
+: 1518101786:0;ls
+: 1518101839:0;git checkout master -- dev 
+: 1518101895:0;git checkout dev -- others
+: 1518101896:0;ls
+: 1518101900:0;tree
+: 1518101903:0;cd others
+: 1518101904:0;ls
+: 1518101905:0;cd ..
+: 1518101906:0;ls
+: 1518101914:0;git checkout dev -- archlinux
+: 1518101919:0;ls
+: 1518101923:0;cd others
+: 1518101923:0;ls
+: 1518101928:0;cd dotfiles
+: 1518101929:0;ls
+: 1518101935:0;nvim zsh_history
+: 1518101962:0;git add .
+: 1518101980:0;git commit -m "[master] Patterns"
+: 1518101995:0;ls
+: 1518101998:0;cd ..
+: 1518101999:0;ls
+: 1518102000:0;cd ..
+: 1518102000:0;ls
+: 1518102006:0;git status
+: 1518102017:0;git push origin master 
+: 1518102032:0;ls
+: 1518102039:0;git push origin master 
+: 1518102057:0;nvim .git/config
+: 1518102067:0;git push origin master 
+: 1518102205:0;ls
+: 1518102218:0;git log
+: 1518102243:0;git reset HEAD~1
+: 1518102246:0;git status
+: 1518102248:0;ls
+: 1518102255:0;git add .
+: 1518102260:0;git status
+: 1518102267:0;git stash
+: 1518102269:0;ls
+: 1518102277:0;git status
+: 1518102279:0;cd others
+: 1518102280:0;ls
+: 1518102281:0;cd dotfiles
+: 1518102281:0;ls
+: 1518102283:0;cd vim
+: 1518102283:0;ls
+: 1518102286:0;cd plugged
+: 1518102287:0;ls
+: 1518102288:0;cd ..
+: 1518102289:0;ls
+: 1518102290:0;cd ..
+: 1518102290:0;ls
+: 1518102292:0;cd ..
+: 1518102293:0;ls
+: 1518102294:0;cd ..
+: 1518102295:0;ls
+: 1518102299:0;rm -r others
+: 1518102300:0;ls
+: 1518102312:0;git branch -D dev 
+: 1518102316:0;git push origin master 
+: 1518102351:0;git checkout dev
+: 1518102366:0;git reset HEAD~9
+: 1518102369:0;git log
+: 1518102373:0;git reset HEAD~9
+: 1518102383:0;git statu
+: 1518102384:0;git status
+: 1518102386:0;ls
+: 1518102398:0;git add .
+: 1518102411:0;git commit -m "[master]"
+: 1518102417:0;git push origin dev -f
+: 1518102454:0;cd ..
+: 1518102455:0;ls
+: 1518102475:0;cd .linux
+: 1518102475:0;ls
+: 1518102480:0;git checkout master 
+: 1518102485:0;git branch -D dev 
+: 1518102486:0;ls
+: 1518102492:0;rm -r others
+: 1518102493:0;ls
+: 1518102501:0;git stash apply 
+: 1518102511:0;git status
+: 1518102522:0;ls
+: 1518106983:0;git status
+: 1518107142:0;git reset HEAD -- archlinux
+: 1518107145:0;git status
+: 1518107153:0;git reset HEAD -- others
+: 1518107154:0;ls
+: 1518107156:0;git status
+: 1518107160:0;git log
+: 1518107163:0;ls
+: 1518107165:0;cd archlinux
+: 1518107166:0;ls
+: 1518107170:0;cd i3
+: 1518107171:0;ls
+: 1518107174:0;cd ..
+: 1518107175:0;sl
+: 1518107176:0;ls
+: 1518107178:0;cd dotfiles
+: 1518107179:0;ls
+: 1518107192:0;cd config
+: 1518107192:0;ls
+: 1518107206:0;rm -r 3T
+: 1518107207:0;ls
+: 1518107221:0;rm -r Atom 
+: 1518107222:0;ls
+: 1518107229:0;rm Trolltech.conf
+: 1518107230:0;ls
+: 1518107234:0;rm Popcorn-Time
+: 1518107248:0;rm -r Popcorn-Time 
+: 1518107248:0;ls
+: 1518107252:0;rm QtProject.conf
+: 1518107267:0;mv termite ..
+: 1518107268:0;ls
+: 1518107274:0;mv nvim ..
+: 1518107274:0;ls
+: 1518107281:0;cd ranger
+: 1518107281:0;ls
+: 1518107294:0;cd ..
+: 1518107294:0;ls
+: 1518107312:0;mv ranger ..
+: 1518107313:0;ls
+: 1518107325:0;la
+: 1518107340:0;mv i3 ..
+: 1518107340:0;ls
+: 1518107351:0;rm -r *
+: 1518107359:0;ls
+: 1518107360:0;la
+: 1518107361:0;cd ..
+: 1518107362:0;ls
+: 1518107367:0;mv i3 config
+: 1518107376:0;mv ranger config
+: 1518107397:0;mv nvim config
+: 1518107398:0;ls
+: 1518107403:0;mv termite config
+: 1518107404:0;ls
+: 1518107409:0;cd tmux
+: 1518107409:0;ls
+: 1518107416:0;cd ..
+: 1518107416:0;ls
+: 1518107424:0;rm -r tmux
+: 1518107425:0;ls
+: 1518107442:0;cd config
+: 1518107443:0;ls
+: 1518107479:0;cd ..
+: 1518107479:0;ls
+: 1518107486:0;cd ..
+: 1518107486:0;ls
+: 1518107489:0;cd ..
+: 1518107490:0;ls
+: 1518107492:0;git status
+: 1518107538:0;ls
+: 1518107544:0;cd archlinux
+: 1518107544:0;ls
+: 1518107547:0;cd dotfiles
+: 1518107548:0;ls
+: 1518107698:0;la
+: 1518107704:0;cd config
+: 1518107704:0;la
+: 1518107707:0;tree
+: 1518107717:0;sudo apt install tree
+: 1518107731:0;tree
+: 1518107739:0;ls
+: 1518107742:0;cd ..
+: 1518107742:0;ls
+: 1518107745:0;cd ..
+: 1518107746:0;ls
+: 1518107754:0;cd ..
+: 1518107755:0;ls
+: 1518107756:0;la
+: 1518107759:0;cd others
+: 1518107759:0;ls
+: 1518107762:0;tree
+: 1518107777:0;ls
+: 1518107779:0;cd dotfiles
+: 1518107780:0;ls
+: 1518107787:0;cd vim
+: 1518107788:0;ls
+: 1518107792:0;cd vim
+: 1518107793:0;ls
+: 1518107796:0;cd ..
+: 1518107796:0;ls
+: 1518107806:0;rm -r vim
+: 1518107806:0;ls
+: 1518107811:0;cd colors
+: 1518107811:0;ls
+: 1518107816:0;rm iaxs-i3wm-vim-monokai.vim~
+: 1518107817:0;ls
+: 1518107818:0;cd ..
+: 1518107819:0;la
+: 1518107825:0;cd colors
+: 1518107827:0;la
+: 1518107834:0;rm .iaxs-i3wm-vim-monokai.vim.un\~
+: 1518107835:0;ls
+: 1518107837:0;cd ..
+: 1518107837:0;ls
+: 1518107842:0;cd autoload/
+: 1518107842:0;ls
+: 1518107855:0;nvim plug.vim
+: 1518107865:0;ls
+: 1518107866:0;cd ..
+: 1518107866:0;ls
+: 1518107870:0;cd ..
+: 1518107870:0;ls
+: 1518107877:0;nvim zsh_history
+: 1518107897:0;ls
+: 1518107909:0;cd ..
+: 1518107910:0;ls
+: 1518107916:0;cd ..
+: 1518107916:0;ls
+: 1518107918:0;cd ..
+: 1518107919:0;ls
+: 1518107920:0;la
+: 1518107932:0;cd .vim
+: 1518107932:0;ls
+: 1518107947:0;cd ..
+: 1518107948:0;ls
+: 1518107994:0;rm git-apply.patch
+: 1518107995:0;ls
+: 1518108134:0;la
+: 1518108141:0;ls
+: 1518108145:0;cd .linux
+: 1518108145:0;ls
+: 1518108148:0;cd others
+: 1518108148:0;ls
+: 1518108151:0;cd dotfiles
+: 1518108151:0;ls
+: 1518108177:0;nvim bash_history
+: 1518108202:0;ls
+: 1518108227:0;nvim zsh_history
+: 1518108238:0;ls
+: 1518108243:0;cd ..
+: 1518108243:0;ls
+: 1518108247:0;..
+: 1518108248:0;ls
+: 1518108249:0;la
+: 1518108252:0;tree
+: 1518108260:0;ls
+: 1518108263:0;cd archlinux
+: 1518108263:0;ls
+: 1518108265:0;tree
+: 1518108269:0;..
+: 1518108270:0;ls
+: 1518108278:0;cd archlinux
+: 1518108278:0;ls
+: 1518108280:0;cd dotfiles
+: 1518108281:0;ls
+: 1518108318:0;cp ~/.zsh_history .
