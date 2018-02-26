@@ -1,8 +1,0 @@
-base-devel
-base
-linux-tools
-i3
-texlive-most
-xorg-drivers
-xorg
-xorg-apps
