@@ -75,6 +75,7 @@ autocmd VimEnter *
 
 filetype plugin indent on
 
+
 set autoindent
 set autoread
 set autowrite
@@ -84,6 +85,7 @@ set binary
 set bomb
 set colorcolumn=81
 set columns=80
+set completeopt=menu,menuone
 set copyindent
 set cursorline 
 set display=truncate
@@ -105,6 +107,7 @@ set noswapfile
 set nowritebackup
 set nrformats-=octal
 set number relativenumber
+set pumheight=20
 set ruler
 set scrolloff=20
 set secure
@@ -372,20 +375,36 @@ map <F7> :if exists("g:syntax_on") <Bar>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:deoplete#enable_at_startup=1
+let g:deoplete#auto_complete_delay=0
+let g:deoplete#auto_complete_start_length=1
 
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsExpandTrigger='<cr>'
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
 
+let g:SuperTabDefaultCompletionType='<C-n>'
+
+let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_key_list_previous_completion=[]
-let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
 let g:ycm_max_num_candidates=0
 let g:ycm_max_num_identifier_candidates=0
 let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_python_binary_path="python"
-let g:ycm_server_python_interpreter="python"
+let g:ycm_python_binary_path='python'
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_server_python_interpreter='python'
+let g:ycm_use_ultisnips_completer=1
+
+let g:jedi#auto_initialization=1
+let g:jedi#auto_vim_configuration=0
+let g:jedi#completions_command=""
+let g:jedi#completions_enabled=0
+let g:jedi#popup_on_dot=1
+let g:jedi#show_call_signatures="1"
+let g:jedi#show_call_signatures_delay=0
+let g:jedi#smart_auto_mappings=0
 
 autocmd FileType nerdtree setlocal number relativenumber
 
@@ -394,9 +413,6 @@ augroup filetypedetect
 augroup END
 
 if exists('g:jedi')
-  let g:jedi#popup_on_dot=1
-  let g:jedi#show_call_signatures = 2
-
   if jedi#init_python()
     function! s:jedi_auto_force_py_version() abort
       let major_version = pyenv#python#get_internal_major_version()
