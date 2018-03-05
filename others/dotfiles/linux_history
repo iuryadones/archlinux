@@ -3,6 +3,7 @@
 ..
 ...
 \
+ara o ubuntu"
 bash
 ./bin/z.zsh 
 bin/z.zsh 
@@ -60,6 +61,7 @@ cd doc/tags
 cd dotfiles
 cd dotfiles/
 cd Downloads
+cd experiments
 cd ~/.fonts && wget https://github.com/google/fonts/archive/master.zip && unzip master.zip
 cd i
 cd i3
@@ -137,15 +139,18 @@ cp -r ~/.config/nvim .
 cp -r ~/.config/termite .
 cp -r termite ~/.config/
 cp -r ~/.vim .
+cp -R vim/spell ~/.vim/
 cp -r vim ~/.vim
 cp -r wallpaper ~/.wallpaper
 cp -r zshrc ~/.zshrc
 cp share/applications/z.desktop /usr/share/applications/z.desktop
 cp ~/.tmux.conf .
 cp /usr/share/applications/robo3t.desktop .
+cp vim/
 cp ~/.vimrc .
 cp vimrc ../../others/dotfiles/vimrc 
 cp vimrc ~/.vimrc
+cp vim/spell ~/.vim/
 cp wallpaper ~/.wallpaper
 cp ~/.zsh_history .
 cp ~/.zshrc .
@@ -189,14 +194,18 @@ git checkout share/applications
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
 git commit -m "[master] Add script do termite para o ubuntu"
+git commit -m "[master] Add script do termite ppt-get install exuberant-ctags
 git commit -m "[master] Atualiza other"
 git commit -m "[master] Atualiza version other vimrc"
 git commit -m "[master] history modifica"
 git commit -m "[master] linux_history e vimrc"
 git commit -m "[master] Modifica os dotfiles"
 git commit -m "[master] Oganiza os arquivos"
+git commit -m "[master] organiza ArchLinux files vim"
 git commit -m "[share/applications] Adiciona app para desktop linux"
 git init
+git log
+git log-graph
 git pull origin
 git pull origin 
 git pull origin master
@@ -217,6 +226,7 @@ ifconfig
 ./install.sh
 ./install.zsh
 intelivix
+ipython
 iury
 iury/intelivix/analytics
 jupyter-notebook
@@ -262,6 +272,7 @@ mkdir csv
 mkdir custos
 mkdir dotfiles
 mkdir engineering
+mkdir experiments
 mkdir ~/.fonts
 mkdir Imagens
 mkdir Images
@@ -278,7 +289,9 @@ mkdir stderr
 mkdir tribunais
 mkdir z
 mv .* *
+mv * ../
 mv .bashrc bashrc
+mv colors ..
 mv config dotfiles
 mv * custos
 mv deps_archlinux_i3 archlinux
@@ -294,6 +307,7 @@ mv esmongo_py.py esmongo.py
 mv etc archlinux
 mv etc root
 mv extracted-collection_name-extracao_nextel_base_civel.csv extracted-collection_name-extracao_nextel_base_civel-stables.csv
+mv -f colors ../
 mv .gitconfig gitconfig
 mv .gitignore-global gitignore-global
 mv harvest_estadual.csv csv
@@ -305,6 +319,11 @@ mv install_archlinux_201* archlinux
 mv install-termite.sh iury/archlinux/
 mv install-termite.sh ubuntu-install-termite.sh
 mv nvim nvim.local
+mv -r * ../
+mv -R * ../
+mv -r colors ../
+mv -R colors ../
+mv -Rd colors ../
 mv robo3t-1.1.1-linux-x86_64-c93c6b0 robo3t
 mv robo3t.desktop z.desktop
 mv robo3t /opt/
@@ -348,11 +367,13 @@ nvim .config/i3/i3status/config
 nvim .config/nvim/init.vim
 nvim .config/termite/config
 nvim .config/termite/termite.terminfo
+nvim constants.py
 nvim csv/harvest_estadual.csv
 nvim elasticsearch.
 nvim elasticsearch.critical.log
 nvim elasticsearch.trace.critical.log
 nvim environment.zsh
+nvim esmongo
 nvim esmongo-fields.py
 nvim esmongo.py
 nvim /etc/mongod.conf
@@ -365,6 +386,7 @@ nvim .gitignore
 nvim install-dotfiles.sh
 nvim install.sh
 nvim install.zsh
+nvim .ipython/profile_default/ipython_config.py
 nvim .python-version
 nvim qt.conf
 nvim robo3t
@@ -404,6 +426,10 @@ python
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index outro --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 0
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping False
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping --mapping 0
 python esmongo.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python find_termos.py --colls extracao_nextel_base_civel --csv csv/harvest_estadual.csv
@@ -411,6 +437,7 @@ reboot
 rm *
 rm bash_history
 rm Captura_de_tela_2018-02-06-14:06:33.png
+rm colors
 rm .config.un\~
 rm fontes-ttf.txt
 rm fzy_0.9-1_amd64.deb
@@ -423,11 +450,14 @@ rm .netrwhist
 rm npm-debug.log
 rm nvim
 rm -rf ./*
+rm -rf colors
 rm -rf .config/nvim/plugged
 rm -rf examples.desktop
 rm -rf logs/*
+rm -rf __pycache__
 rm -rf stderr/*
 rm -rf termite
+rm -rf vim
 rm -rf .vim.local
 rm -rf vim-pyenv
 rm -rf vte-ng
@@ -463,6 +493,7 @@ source install.zsh
 source .zshrc
 source z.zsh
 su
+sudo a
 sudo add-apt-repository \\
 sudo apr install curl
 sudo apt autoremove
@@ -561,6 +592,7 @@ sudo pip install neovim
 sudo rm z
 sudo search install termite
 sudo service mongod start
+sudo systemctl enable mongod.service
 sudo systemctl start mongod.service
 sudo systemctl status mongod.service
 sudo update-alternatives --config vim

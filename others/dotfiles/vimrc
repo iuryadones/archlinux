@@ -33,7 +33,7 @@ call plug#begin(s:plugdir)
       " - status: 'installed', 'updated', or 'unchanged'
       " - force:  set on PlugInstall! or PlugUpdate!
       if a:info.status == 'installed' || a:info.force
-        !./install.py --all
+        !./install.py --system-libclang --all
       endif
     endfunction
 
@@ -236,7 +236,8 @@ let g:LargeFile = 10 * 1024 * 1024
 
 augroup LargeFile
   " files with filesize too large are recognized too (getfsize = -2)
-  autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
+  autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile ||
+    \ f == -2 | call LargeFile() | endif
 augroup END
 
 function! LargeFile()
@@ -406,6 +407,7 @@ autocmd FileType nerdtree setlocal number relativenumber
 
 augroup filetypedetect
     au! BufRead,BufNewFile *.tex setfiletype context
+    au BufEnter *.tex setl spell spelllang=pt-BR,en
 augroup END
 
 if exists('g:jedi')
