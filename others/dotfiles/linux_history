@@ -6,6 +6,12 @@
 bash
 ./bin/z.zsh 
 bin/z.zsh 
+car esmongo.info.20180301132654.log
+car esmongo.info.20180301141656.log
+cat *
+cat 595a686f4060d2999d8312bd.extracao_estacio.error.log
+cat 595a68704060d2999d8312d6.extracao_estacio.error.log
+cat 595a68714060d2999d8312e8.extracao_estacio.error.log
 cat bash_history
 cat bash_history | sort
 cat bash_history | sort | uniq
@@ -17,13 +23,16 @@ cat elasticsearch.
 cat elasticsearch.critical.log
 cat elasticsearch.trace.critical.log
 cat esmongo.info.20180222102729.log
+cat esmongo.info.20180301141656.log
 cat esmongo.info.log
+cat esmongo.info.log 
 cat .linux_history
 cat linux_history
 cat ~/.linux_history >>| linux_history
 cat linux_history | sort | uniq
 cat linux_history | sort | uniq >| history 
 cat linux_history | sort | uniq >| linux_history
+cat stderr/595a686f4060d2999d8312bd.extracao_estacio.error.log
 cat .zsh_history
 cat .zsh_history | awk -F '
 cat zsh_history | awk -F '
@@ -35,6 +44,7 @@ cd analytics/
 cd applications
 cd archlinux
 cd archlinux/
+cd archlinux/dotfiles/
 cd autoload
 cd bin
 cd browser-beta
@@ -62,6 +72,7 @@ cd iury
 cd iury/
 cd iury/archlinux
 cd iury/intelivix
+cd iury/intelivix/
 cd iury/intelivix/analytics
 cd laboratory
 cd lib
@@ -92,6 +103,7 @@ cd scripts
 cd share
 cd share/applications
 cd src
+cd stderr
 cd termite
 cd .tmux
 cd tmux-master
@@ -114,6 +126,7 @@ chsh -s /bin/zsh
 cp ~/.bashrc .
 cp bashrc ~/.bashrc 
 cp ~/.config/nvim .
+cp esmongo-fields.py esmongo-fields.py.bkp
 cp ~/.gitconfig .
 cp gitconfig ~/.gitconfig
 cp ~/.gitignore-global .
@@ -131,6 +144,8 @@ cp share/applications/z.desktop /usr/share/applications/z.desktop
 cp ~/.tmux.conf .
 cp /usr/share/applications/robo3t.desktop .
 cp ~/.vimrc .
+cp vimrc ../../others/dotfiles/vimrc 
+cp vimrc ~/.vimrc
 cp wallpaper ~/.wallpaper
 cp ~/.zsh_history .
 cp ~/.zshrc .
@@ -148,6 +163,7 @@ echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" | sud
 exi
 exir
 exit
+EXIT
 extract libevent-2.1.8-stable.tar.gz
 extract nerd-fonts-master.zip
 extract robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
@@ -174,11 +190,13 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
 git commit -m "[master] Add script do termite para o ubuntu"
 git commit -m "[master] Atualiza other"
+git commit -m "[master] Atualiza version other vimrc"
 git commit -m "[master] history modifica"
 git commit -m "[master] Modifica os dotfiles"
 git commit -m "[master] Oganiza os arquivos"
 git commit -m "[share/applications] Adiciona app para desktop linux"
 git init
+git pull origin
 git pull origin 
 git pull origin master
 git pull origin master 
@@ -188,6 +206,7 @@ git remote add origin https://github.com/intelivix/tribunais
 git remote add origin https://github.com/intelivix/tribunais .
 git remote add origin https://github.com/iuryxavier/archlinux 
 git remote add origin https://github.com/victorfsf/z
+git reset -- HEAD .
 git statis
 git status
 head csv/harvest_estadual.csv
@@ -210,6 +229,7 @@ ll
 lll
 ln -rsf .linux/others/dotfiles/bash_history .bash_history
 ln -rsf .linux/others/dotfiles/linux_history .linux_history
+ln -rsf .linux/others/dotfiles/vimrc ~/.vimrc
 ln -sf bashrc ~/.bashrc
 ln -sf config/nvim ~/.config/nvim
 ln -sf config/termite ~/.config/termite
@@ -253,6 +273,7 @@ mkdir science
 mkdir scraping
 mkdir scripts
 mkdir share
+mkdir stderr
 mkdir tribunais
 mkdir z
 mv .* *
@@ -313,6 +334,7 @@ npm install -g vtop
 npm install vtop
 npm search vtop
 nvim
+nvim 595a68714060d2999d8312e8.extracao_estacio.error.log
 nvim .bash
 nvim bash_history
 nvim bashrc
@@ -353,6 +375,7 @@ nvim test.zsh
 nvim .tmux.conf
 nvim .tmux.conf.local
 nvim ubuntu-install-termite.sh
+nvim vimrc
 nvim .vimrc
 nvim z.desktop
 nvim .zsh_history
@@ -384,6 +407,7 @@ python esmongo.py --coll extracao_estacio --es-host http://search-scraping-mongo
 python esmongo.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python find_termos.py --colls extracao_nextel_base_civel --csv csv/harvest_estadual.csv
 reboot
+rm *
 rm bash_history
 rm Captura_de_tela_2018-02-06-14:06:33.png
 rm .config.un\~
@@ -397,8 +421,11 @@ rm libstdc++.so.*
 rm .netrwhist
 rm npm-debug.log
 rm nvim
+rm -rf ./*
 rm -rf .config/nvim/plugged
 rm -rf examples.desktop
+rm -rf logs/*
+rm -rf stderr/*
 rm -rf termite
 rm -rf .vim.local
 rm -rf vim-pyenv
