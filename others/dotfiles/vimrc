@@ -1,7 +1,7 @@
 " .vimrc of Iury Adones  {iuryadones@gmail.com}                            {{{1
 " vim: set foldmethod=marker:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer:	Iury Adones <iuryadones@gmail.com>
+" Maintainer: Iury Adones <iuryadones@gmail.com>
 " Last change:	2017 Set 27
 "
 " To use it, copy it to
@@ -13,7 +13,6 @@
 set nocompatible
 
 syntax off
-filetype off
 filetype plugin indent off
 
 let mapleader=" "
@@ -21,7 +20,6 @@ let g:mapleader=" "
 let s:home=$HOME
 let s:vimhome=s:home."/.vim"
 let s:plugdir=s:vimhome."/plugged"
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim Plug                                                                 {{{1
@@ -35,33 +33,34 @@ call plug#begin(s:plugdir)
       " - status: 'installed', 'updated', or 'unchanged'
       " - force:  set on PlugInstall! or PlugUpdate!
       if a:info.status == 'installed' || a:info.force
-        !./install.py --all
+        !./install.py --system-libclang --all
       endif
     endfunction
 
-    Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-    Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
-    Plug 'davidhalter/jedi-vim' | Plug 'lambdalisue/vim-pyenv'
-    Plug 'ervandew/supertab'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/seoul256.vim'
-    Plug 'junegunn/vim-easy-align'
-    Plug 'majutsushi/tagbar'
-    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-    Plug 'scrooloose/syntastic'
-    Plug 'terryma/vim-multiple-cursors'
+    if has('nvim')
+      Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+      Plug 'Shougo/neosnippet'
+      Plug 'Shougo/neosnippet-snippets'
+    else
+      Plug 'Shougo/deoplete.nvim'
+      Plug 'Shougo/neosnippet'
+      Plug 'Shougo/neosnippet-snippets'
+      Plug 'roxma/nvim-yarp'
+      Plug 'roxma/vim-hug-neovim-rpc'
+    endif
+
     Plug 'tpope/vim-commentary'
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
+    Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+    Plug 'davidhalter/jedi-vim'
+    Plug 'lambdalisue/vim-pyenv'
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-
-    " Plug 'vim-scripts/taglist.vim'
-    " Plug 'vim-pandoc/vim-pandoc'
-    " Plug 'vim-pandoc/vim-pandoc-syntax'
-    " Plug 'mhinz/vim-startify'
-    " Plug 'tpope/vim-fugitive'
-    " Plug 'tommcdo/vim-exchange'
-    " Plug 'vim-scripts/django.vim'
-    " Plug 'lambdalisue/vim-django-support'
+    Plug 'mhinz/vim-startify'
+    Plug 'ervandew/supertab'
+    Plug 'iuryxavier/vim-simple-tex-fold'
 
 call plug#end()
 autocmd VimEnter *
@@ -70,220 +69,148 @@ autocmd VimEnter *
      \ | endif
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Default Config                                                           {{{1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Default Config                                                            {{{1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Allow backspacing over everything in insert mode.
+filetype plugin indent on
+
+set autoindent
+set autoread
+set autowrite
+set autowriteall
 set backspace=indent,eol,start
+set binary
+set bomb
+set colorcolumn=81
+set columns=80
+set completeopt=menu,menuone
+set copyindent
+set cursorline
+set display=truncate
+set encoding=utf-8
+set expandtab
+set exrc
+set fileformats=unix,dos,mac
+set foldmethod=marker
+set history=2000
+set hlsearch
+set laststatus=2
+set lazyredraw
+set list
+set list listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+set nobackup
+set nohidden
+set noignorecase
+set noswapfile
+set nowritebackup
+set nrformats-=octal
+set number relativenumber
+set pumheight=20
+set ruler
+set scrolloff=20
+set secure
+set shell=/bin/sh
+set shiftwidth=4
+set showcmd
+set showmatch
+set showtabline=2
+set smartindent
+set softtabstop=0
+set synmaxcol=81
+set tabstop=4
+set textwidth=80
+set ttimeout
+set ttimeoutlen=0
+set ttyfast
+set wildmenu
 
-set history=50     " keep 200 lines of command line history
-set ruler           " show the cursor position all the time
-set showcmd         " display incomplete commands
-set wildmenu        " display completion matches in a status line
+redraw
 
-set ttimeout		" time out for key codes
-set ttimeoutlen=1	" wait up to 100ms after Esc for special key
+syntax enable
+syntax on
+syntax sync minlines=1
+syntime on
 
-" Show @@@ in the last line if it is truncated.
-if has('nvim')
-    set display=truncate
-endif
-
-" Show a few lines of context around the cursor.  Note that this makes the
-" text scroll if you mouse-click near the start or end of the window.
-set scrolloff=10
-
-" Do incremental searching when it's possible to timeout.
 if has('reltime')
   set incsearch
 endif
 
-" Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
-" confusing.
-set nrformats-=octal
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries.
 if has('win32')
   set guioptions-=t
 endif
-  
-" In many terminal emulators the mouse works just fine.  By enabling it you
-" can position the cursor, Visually select and scroll with the mouse.
+
 if has('mouse')
   set mouse=a
 endif
 
-" Switch syntax highlighting on when the terminal has colors or when using the
-" GUI (which always has colors).
-if &t_Co > 2 || has("gui_running")
-  " Revert with ":syntax off".
-  syntax off
-
-  " I like highlighting strings inside C comments.
-  " Revert with ":unlet c_comment_strings".
-  let c_comment_strings=1
-endif
-
-" Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  " Revert with ":filetype off".
   filetype plugin indent on
-
-  " Put these in an autocmd group, so that you can revert them with:
-  " ":augroup vimStartup | au! | augroup END"
   augroup vimStartup
     au!
-
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid, when inside an event handler
-    " (happens when dropping a file on gvim) and for a commit message (it's
-    " likely a different one than last time).
     autocmd BufReadPost *
       \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
       \ |   exe "normal! g`\""
       \ | endif
-
   augroup END
+endif
 
-endif " has("autocmd")
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-" Revert with: ":delcommand DiffOrig".
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+    \ | wincmd p | diffthis
 endif
 
 if has('langmap') && exists('+langremap')
-  " Prevent that the langmap option applies to characters that result from a
-  " mapping.  If set (default), this may break plugins (but it's backward
-  " compatible).
   set nolangremap
 endif
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file (restore to previous version)
-  if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
-  endif
+if has('persistent_undo')
+  set undofile
 endif
 
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
-endif
-
-" Only do this part when compiled with support for autocommands.
 if has("autocmd")
-  " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
-  " For all text files set 'textwidth' to 79 characters.
-  autocmd FileType text setlocal textwidth=79
+  autocmd FileType text setlocal textwidth=80
   augroup END
 else
-  set autoindent		" always set autoindenting on
-endif " has("autocmd")
-
-" Add optional packages.
-"
-" The matchit plugin makes the % command work better, but it is not backwards
-" compatible.
-if has('syntax') && has('eval')
-  if has('nvim')
-   runtime! macros/matchit.vim
- else
-   packadd! matchit
- endif
+  set autoindent
 endif
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Behavior                                                                 {{{1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set fileformats=unix,dos,mac
-
-" Enconding
-set encoding=utf-8
+if has('syntax') && has('eval')
+  if has('nvim')
+    runtime! macros/matchit.vim
+  else
+    packadd! matchit
+  endif
+endif
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
     set fileencoding=utf-8
     set fileencodings=utf-8,latin1
 endif
 
-set shell=/bin/sh
-
-set number relativenumber
 if has("nvim")
     au TermOpen * setlocal number relativenumber
 endif
 
-" autoread and autowrite
 augroup save
   au!
   au FocusLost * wall
 augroup END
 
-set autoread
-set autowrite
-set autowriteall
-set exrc
-set laststatus=2
-set nobackup
-set nohidden
-set noignorecase
-set noswapfile
-set nowritebackup
-set secure
-set showmatch
-set showtabline=2
-
-" Unbind the cursor keys in insert, normal and visual modes.
 for prefix in ['n', 'v']
   for key in ['<Up>', '<Down>', '<Left>', '<Right>']
     exe prefix . "noremap " . key . " <Nop>"
   endfor
 endfor
 
-syntax enable
-syntax on
-
-syntime on
-redraw
-
-let @s=":%sort u"
-
-set binary
-set bomb
-set colorcolumn=80
-set columns=80
-set cursorline 
-set lazyredraw
-set ruler
-set number
-set synmaxcol=80
-set ttyfast
-syntax sync minlines=50
-
-set list listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
-set list
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clipboard                                                                {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has('unamedplus')
-    set clipboard=unnamed,unamedplus
+  set clipboard=unnamed,unamedplus
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -299,19 +226,6 @@ try
 catch
     colorscheme default
 endtry
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Formatting                                                               {{{1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-set autoindent
-set copyindent
-set expandtab
-set shiftwidth=4
-set smartindent
-set softtabstop=0
-set tabstop=4
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions and Commands                                                   {{{1
@@ -361,17 +275,28 @@ function! CompileFile()
     if (match(bufname('%'),'.c$') > 1)
         term gcc % -o %.o; ./%.o
     endif
+    if (match(bufname('%'),'.tex$') > 1)
+        term pdflatex -synctex=1 -interaction=nonstopmode %
+    endif
 endfunction
 
+let g:ulti_expand_or_jump_res=0
+function! Ulti_ExpandOrJump_and_getRes()
+    call UltiSnips#ExpandSnippetOrJump()
+    return g:ulti_expand_or_jump_res
+endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping                                                                  {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Sorting lines
+let @s=":%sort u"
+
 " Tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
-nnoremap <silent> <S-t> :tabnew<CR>
+nnoremap <silent> <Leader>tt :tabnew<CR>
 
 " Simplify Leader mappings Clipboard
 noremap <Leader>y "+y
@@ -381,9 +306,6 @@ nnoremap <Leader>P "+P
 " NERDTreeToggle open/close
 nnoremap <Leader><Leader> <ESC>:NERDTreeToggle<CR>
 
-" tagbar
-nnoremap <Leader>t <ESC>:TagbarToggle<CR>
-
 " Python, C++ e C
 nnoremap <F5> <ESC>:call CompileFile()<CR>
 inoremap <F5> <ESC>:call CompileFile()<CR>
@@ -392,9 +314,7 @@ inoremap <F5> <ESC>:call CompileFile()<CR>
 vnoremap <F5> :!python<CR>
 
 " terminal-mode
-if has("nvim")
-    tnoremap <Esc> <C-\><C-n>  
-endif
+tnoremap <Esc> <C-\><C-n>  
 
 " folding short cut
 nnoremap <Leader>o za
@@ -437,26 +357,58 @@ vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 vnoremap <C-S-Up> :m '<-2<CR>gv=gv
 
 map <F7> :if exists("g:syntax_on") <Bar>
-	\   syntax off <Bar>
-	\ else <Bar>
-	\   syntax enable <Bar>
+    \   syntax off <Bar>
+    \ else <Bar>
+    \   syntax enable <Bar>
     \   syntax on <Bar>
-	\ endif <CR>
+    \ endif <CR>
 
+" UtilSnips Trigger
+inoremap <CR> <C-R>=(Ulti_ExpandOrJump_and_getRes() > 0)?"":"\n"<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configs Vim Plug                                                         {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" enable line numbers
-let g:NERDTreeShowLineNumbers=1
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
+let g:deoplete#enable_at_startup=1
+let g:deoplete#auto_complete_delay=0
+let g:deoplete#auto_complete_start_length=1
+
+let g:UltiSnipsEditSplit='vertical'
+let g:UltiSnipsExpandTrigger='<C-R>'
+let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+let g:UltiSnipsJumpForwardTrigger='<C-j>'
+
+let g:SuperTabDefaultCompletionType='<C-n>'
+
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+let g:ycm_max_num_candidates=0
+let g:ycm_max_num_identifier_candidates=0
+let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_python_binary_path='python'
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_server_python_interpreter='python'
+let g:ycm_use_ultisnips_completer=1
+
+let g:jedi#auto_initialization=1
+let g:jedi#auto_vim_configuration=0
+let g:jedi#completions_command=""
+let g:jedi#completions_enabled=0
+let g:jedi#popup_on_dot=1
+let g:jedi#show_call_signatures="1"
+let g:jedi#show_call_signatures_delay=0
+let g:jedi#smart_auto_mappings=0
+
+autocmd FileType nerdtree setlocal number relativenumber
+
+augroup filetypedetect
+    au! BufRead,BufNewFile *.tex setfiletype context
+augroup END
 
 if exists('g:jedi')
-  let g:jedi#popup_on_dot=1
-  let g:jedi#show_call_signatures = 2
-
   if jedi#init_python()
     function! s:jedi_auto_force_py_version() abort
       let major_version = pyenv#python#get_internal_major_version()
@@ -469,37 +421,4 @@ if exists('g:jedi')
     augroup END
   endif
 endif
-
-let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_key_list_previous_completion=[]
-let g:ycm_key_list_select_completion=[]
-let g:ycm_max_num_candidates=0
-let g:ycm_max_num_identifier_candidates=0
-let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_python_binary_path='python'
-let g:ycm_server_python_interpreter='/usr/bin/python'
-
-" multiple cursors
-let g:multi_cursor_start_key='g<C-n>'
-let g:multi_cursor_start_word_key='<C-n>'
-
-" snippets
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<tab>'
-let g:UltiSnipsJumpBackwardTrigger='<c-b>'
-let g:UltiSnipsEditSplit='vertical'
-
-" syntastic
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-let g:syntastic_auto_loc_list=1
-let g:syntastic_aggregate_errors = 1
-
-" pandoc syntax
-augroup pandoc_syntax
-    au! BufNew etype=markdown.pandoc
-augroup END
 

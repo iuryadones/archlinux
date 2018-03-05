@@ -1,8 +1,11 @@
 
 ~
 ..
+...
 \
 bash
+./bin/z.zsh 
+bin/z.zsh 
 cat bash_history
 cat bash_history | sort
 cat bash_history | sort | uniq
@@ -29,10 +32,12 @@ cd
 cd ..
 cd analytics
 cd analytics/
+cd applications
 cd archlinux
 cd archlinux/
 cd autoload
 cd bin
+cd browser-beta
 cd .co
 cd collection_to_kibana
 cd config
@@ -66,29 +71,43 @@ cd local
 cd .local
 cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 cd logs
+cd man
 cd menu
+cd middlewares
 cd nerd-fonts-master
 cd node_modules
 cd nvim
+cd opt
 cd /opt
+cd /opt/
 cd others
 cd .others
 cd platforms
 cd plugged
+cd py3
 cd robo3t
 cd science
 cd scraping
 cd scripts
 cd share
+cd share/applications
+cd src
 cd termite
 cd .tmux
 cd tmux-master
 cd tribunais_scrapy
 cd usr
+cd usr/
+cd /usr/bin/
+cd /usr/local
+cd /usr/share/applications
 cd vendor
 cd vim
 cd .vim
 cd vim-pyenv
+cd yandex
+cd z
+cd .z
 chmod -x zsh_history
 chsh -s /bin/zsh
 ./configure && make
@@ -99,6 +118,7 @@ cp ~/.gitconfig .
 cp gitconfig ~/.gitconfig
 cp ~/.gitignore-global .
 cp gitignore-global ~/.gitignore-global
+cp .linux/archlinux/dotfiles/vimrc .vimrc.arch
 cp -r config/i3/* ~/.config/i3/
 cp -r ~/.config/nvim .
 cp -r ~/.config/termite .
@@ -107,7 +127,9 @@ cp -r ~/.vim .
 cp -r vim ~/.vim
 cp -r wallpaper ~/.wallpaper
 cp -r zshrc ~/.zshrc
+cp share/applications/z.desktop /usr/share/applications/z.desktop
 cp ~/.tmux.conf .
+cp /usr/share/applications/robo3t.desktop .
 cp ~/.vimrc .
 cp wallpaper ~/.wallpaper
 cp ~/.zsh_history .
@@ -142,20 +164,30 @@ gem install vimgolf
 git add .
 git add --all .
 git add tags
+git checkout -b share/applications
+git checkout dev 
+git checkout -- install.zsh
+git checkout master 
+git checkout origin share/applications  
+git checkout share/applications  
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
 git commit -m "[master] Add script do termite para o ubuntu"
+git commit -m "[master] Atualiza other"
 git commit -m "[master] history modifica"
 git commit -m "[master] Modifica os dotfiles"
 git commit -m "[master] Oganiza os arquivos"
+git commit -m "[share/applications] Adiciona app para desktop linux"
 git init
 git pull origin 
 git pull origin master
 git pull origin master 
 git push origin master 
+git push origin share/applications 
 git remote add origin https://github.com/intelivix/tribunais 
 git remote add origin https://github.com/intelivix/tribunais .
 git remote add origin https://github.com/iuryxavier/archlinux 
+git remote add origin https://github.com/victorfsf/z
 git statis
 git status
 head csv/harvest_estadual.csv
@@ -163,6 +195,7 @@ i3status -c ~/.config/i3/i3status/config
 ifconfg
 ifconfig 
 ./install.sh
+./install.zsh
 intelivix
 iury
 iury/intelivix/analytics
@@ -172,6 +205,9 @@ ks
 l
 la
 laboratory
+las
+ll
+lll
 ln -rsf .linux/others/dotfiles/bash_history .bash_history
 ln -rsf .linux/others/dotfiles/linux_history .linux_history
 ln -sf bashrc ~/.bashrc
@@ -188,6 +224,7 @@ ln -sf vim ~/
 ln -sf vimrc ~/.vimrc
 ln -sf vim ~/.vim
 ln -sf zshrc ~/.zshrc
+ln -s /home/intelivix/.z/bin/z.zsh z
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 locale-gen
 ls
@@ -196,6 +233,7 @@ ls | grep robo3t
 ls -l
 make
 mkdir analytics
+mkdir applications
 mkdir archlinux
 mkdir collection_to_kibana
 mkdir config
@@ -214,7 +252,9 @@ mkdir root
 mkdir science
 mkdir scraping
 mkdir scripts
+mkdir share
 mkdir tribunais
+mkdir z
 mv .* *
 mv .bashrc bashrc
 mv config dotfiles
@@ -244,6 +284,7 @@ mv install-termite.sh iury/archlinux/
 mv install-termite.sh ubuntu-install-termite.sh
 mv nvim nvim.local
 mv robo3t-1.1.1-linux-x86_64-c93c6b0 robo3t
+mv robo3t.desktop z.desktop
 mv robo3t /opt/
 mv -r termite config
 mv -R termite config
@@ -262,7 +303,10 @@ mv .vimrc vimrc
 mv .vim vim
 mv vim .vim
 mv .vim .vim.local
+mv z ..
+mv z ../
 mv .zshrc zshrc
+mv z .z
 nano .tmux.conf
 node_modules
 npm install -g vtop
@@ -274,6 +318,8 @@ nvim bash_history
 nvim bashrc
 nvim .bashrc
 nvim .bashrc 
+nvim bin
+nvim bin/z.zsh
 nvim .config/i3/config
 nvim .config/i3/i3status/config
 nvim .config/nvim/init.vim
@@ -283,6 +329,7 @@ nvim csv/harvest_estadual.csv
 nvim elasticsearch.
 nvim elasticsearch.critical.log
 nvim elasticsearch.trace.critical.log
+nvim environment.zsh
 nvim esmongo-fields.py
 nvim esmongo.py
 nvim /etc/mongod.conf
@@ -291,19 +338,29 @@ nvim extracted-collection_name-extracao_nextel_base_civel.csv
 nvim find_termos.py
 nvim found-extracted-collection_name-extracao_nextel_base_civel.csv
 nvim .git/config
+nvim .gitignore
 nvim install-dotfiles.sh
 nvim install.sh
+nvim install.zsh
 nvim .python-version
+nvim qt.conf
+nvim robo3t
+nvim robo3t.desktop
+nvim share/applications/z.desktop
 nvim termite.terminfo
 nvim test.py
+nvim test.zsh
 nvim .tmux.conf
 nvim .tmux.conf.local
 nvim ubuntu-install-termite.sh
 nvim .vimrc
+nvim z.desktop
 nvim .zsh_history
 nvim ~/.zshrc
 nvim .zshrc
+nvim z.zsh
 nvm install 8.9.4
+opt
 pip3 install --upgrade --force-reinstall neovim
 pip3 install --upgrade --force-reinstall pip
 pip install elasticsearch pymongo
@@ -335,6 +392,7 @@ rm fzy_0.9-1_amd64.deb
 rm Images/Captura_de_area_2018-02-06-14:07:02.png
 rm .init.vim.un
 rm .init.vim.un\~
+rm install.zsh
 rm libstdc++.so.*
 rm .netrwhist
 rm npm-debug.log
@@ -358,7 +416,10 @@ rm .tmux
 rm .tmux.conf
 rm .tmux.conf.local
 rm vim
+rm .vimrc.arch
+rm z
 rm zsh_history
+rm z.zsh\~
 robo3t
 s
 set -o vi
@@ -370,7 +431,9 @@ SHUTDOWN\
 shutdown -c
 shutdown now
 sl
+source install.zsh
 source .zshrc
+source z.zsh
 su
 sudo add-apt-repository \\
 sudo apr install curl
@@ -436,7 +499,10 @@ sudo apt unstall vim
 sudo apt update
 sudo apt upgrade
 sudo apt zsh
+sudo ./bin/z.zsh 
 sudo chmod 775 install-dotfiles.sh
+sudo cp nvim.desktop robo3t.desktop
+sudo cp share/applications/z.desktop /usr/share/applications/z.desktop
 sudo deluser --remove-all-file "Libvirt Qemu"
 sudo deluser --remove-all-file Libvirt\ Qemu
 sudo docker system prune -a
@@ -446,6 +512,7 @@ sudo fc-cache -f -v
 sudo gem install vimgolf
 sudo gem remove vimgolf
 sudo gem uninstall vimgolf
+sudo ln -s /home/intelivix/.z/bin/z.zsh z
 sudo ln -s /opt/robo3t/bin/robo3t /bin/robo3t
 sudo locale-gen
 sudo make install
@@ -453,6 +520,7 @@ sudo mv robo3t /opt/
 sudo npm install --user -g vtop
 sudo npm install --user vtop
 sudo npm install vtop
+sudo nvim robo3t.desktop
 sudo pip2 install neovim
 sudo pip2 install --upgrade --force-reinstall neovim
 sudo pip2 install -U pip
@@ -462,6 +530,7 @@ sudo pip3 install neovim
 sudo pip3 install --upgrade --force-reinstall neovim
 sudo pip3 install -U pip
 sudo pip install neovim
+sudo rm z
 sudo search install termite
 sudo service mongod start
 sudo systemctl start mongod.service
@@ -516,4 +585,24 @@ xit
 xrandr
 yandex
 yandex-browser
+z
+_z_check_for_updates
+z exit
+z -h
+z -H
+z ls
+z ls -l
+z make py3
+z make testing
+_z_print_color
+_z_print_color ola
+_z_print_color "ola"
 zsh
+zsh z.zsh
+_z_usage
+z use
+z use py3
+z use testing
+z version
+z version 1.0
+./z.zsh
