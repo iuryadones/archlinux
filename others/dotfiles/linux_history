@@ -76,6 +76,7 @@ cd iury/archlinux
 cd iury/intelivix
 cd iury/intelivix/
 cd iury/intelivix/analytics
+cd iury/intelivix/analytics/collection_to_kibana/
 cd laboratory
 cd lib
 cd libevent-2.1.8-stable
@@ -202,6 +203,7 @@ git commit -m "[master] linux_history e vimrc"
 git commit -m "[master] Modifica os dotfiles"
 git commit -m "[master] Oganiza os arquivos"
 git commit -m "[master] organiza ArchLinux files vim"
+git commit -m "[master] update others"
 git commit -m "[share/applications] Adiciona app para desktop linux"
 git init
 git log
@@ -373,6 +375,7 @@ nvim elasticsearch.
 nvim elasticsearch.critical.log
 nvim elasticsearch.trace.critical.log
 nvim environment.zsh
+nvim es-mapping.py
 nvim esmongo
 nvim esmongo-fields.py
 nvim esmongo.py
