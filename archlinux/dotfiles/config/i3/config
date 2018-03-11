@@ -213,10 +213,10 @@ bindsym $sup+space floating toggle
 #bindsym $mod+d focus child
 
 # WorkSpace customizada
-set $WS1 1.
-set $WS2 2.
-set $WS3 3.
-set $WS4 4.
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
 set $WS5 5
 set $WS6 6
 set $WS7 7
@@ -296,7 +296,7 @@ bindsym --release $sup+Shift+e exec --no-startup-id  "i3-nagbar -t warning -m 'P
 bindsym $sup+Shift+i exec --no-startup-id google-chrome-stable
 
 # Start a terminal
-bindsym $sup+Return exec --no-startup-id termite 
+bindsym $sup+Return exec --no-startup-id "termite -e 'tmux -u'"
 
 # Start dmenu (a program launcher)
 bindsym --release $sup+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -l 3 -i" --entry-type="command"
