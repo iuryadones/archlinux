@@ -15,9 +15,19 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 
 export LANG=en_US.UTF-8
-export LC_CTYPE="en_US.utf8"
-export LC_COLLATE="C"
-export LC_MESSAGES="en_US.utf8"
+export LC_CTYPE=en_US.UTF-8
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_PAPER="en_US.UTF-8"
+export LC_NAME="en_US.UTF-8"
+export LC_ADDRESS="en_US.UTF-8"
+export LC_TELEPHONE="en_US.UTF-8"
+export LC_MEASUREMENT="en_US.UTF-8"
+export LC_IDENTIFICATION="en_US.UTF-8"
+export LC_ALL=
 
 # Restore grml-zsh ###
 autoload -Uz promptinit
@@ -163,7 +173,7 @@ alias -s pl='perl -S'
 stty erase "^?"
 
 ## you want to automatically use a bigger font on big terminals?
-if [[ "$TERM" == "xterm" ]] && [[ "$LINES" -ge 50 ]] && [[ "$COLUMNS" -ge 100 ]] && [[ -z "$SSH_CONNECTION" ]] ; then
+if [[ "$TERM" == "xterm" ]] && [[ "$LINES" -ge 50 ]] && [[ "$COLUMNS" -ge 80 ]] && [[ -z "$SSH_CONNECTION" ]]; then
     large
 fi
 
@@ -191,7 +201,9 @@ if [[ -d $HOME/.pyenv ]]; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
-export EDITOR=nvim 
+export EDITOR=nvim
+
+set -o vi
 
 alias aulas="cd $HOME/Personal/GIT/aulas"
 alias vision="cd $HOME/Personal/UFRPE/Mestrado_IA/VISAO"
@@ -199,5 +211,3 @@ alias lab="cd $HOME/Personal/Intelivix/data-science/lab"
 alias intelivix="cd $HOME/Personal/Intelivix"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#bindkey -s "^[Oo" "/"
