@@ -427,7 +427,8 @@ autocmd FileType nerdtree setlocal number relativenumber
 
 augroup filetypedetect
     au! BufRead,BufNewFile *.tex setfiletype context
-    au BufEnter *.tex setl spell spelllang=pt-BR,en
+    au BufEnter *.tex setl spell
+    au BufEnter *.tex setl spelllang=pt-BR,en
 augroup END
 
 if exists('g:jedi')
