@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/iury/Personal/UFRPE/Mestrado_IA/projeto/msc/report/section-2'
+let g:netrw_dirhist_2='/home/iury/Personal/GIT/vim-tex-fold'
+let g:netrw_dirhist_3='/home/iury/Personal/GIT/vim-iaxs'
+let g:netrw_dirhist_4='/home/iury/Personal/GIT/vim-iaxs/colors'
+let g:netrw_dirhist_5='/home/iury/Personal/GIT/vim-iaxs'
+let g:netrw_dirhist_6='/home/iury/Personal/GIT/vim-iaxs/colors'

@@ -217,171 +217,293 @@ depois
 # systemctl enable net-auto-wireless.service
 ```
 
-[###] configurar os repositórios pacman para 32bits e 64bits
-# nano /etc/pacman.conf 
+## configurar os repositórios pacman para 32bits e 64bits
 
-[###] descomentar [multilib]
+```bash
+# nano /etc/pacman.conf 
+```
+
+## descomentar [multilib]
+
+```
 [multilib]
 Include = /etc/pacman.d/mirrorlist
+```
 
-[###] sincronizar os repositorios
-pacman -Sy
+## sincronizar os repositorios
 
-[###] criar senha do root
-passwd
+```bash
+# pacman -Sy
+```
 
-[###] criar usuário e definir senha
-useradd -m -g users -G wheel,storage,power -s /bin/bash nameUser
-passwd nameUser
+## criar senha do root
 
-[###] instalar sudo
-pacman -S sudo
+```bash
+# passwd
+```
 
-[###] editar os propriedades de sudo
-[###] descomentar a linha que mostra
+## criar usuário e definir senha
+
+```bash
+# useradd -m -g users -G wheel,storage,power -s /bin/bash nameUser
+# passwd nameUser
+```
+
+## instalar sudo
+
+```bash
+# pacman -S sudo
+```
+
+## editar os propriedades de sudo
+
+### descomentar a linha que mostra
+
+```bash
 # EDITOR=nano visudo
-#%wheel ALL=(ALL) ALL -> %wheel ALL=(ALL) ALL
+```
 
-########### Importante caso de erro ao reiniciar #############
+```
+%wheel ALL=(ALL) ALL
+```
 
-[###] baixar e instalar grub
+# Importante caso de erro ao reiniciar
+
+## baixar e instalar grub
+
+```bash
 # pacman -S grub
 # grub-install --target=i386-pc --recheck /dev/sda
+```
 
-[###] criar o arquivo de configuracao do grub
+## criar o arquivo de configuracao do grub
+
+```bash
 # grub-mkconfig -o /boot/grub/grub.cfg
---------------------------------------------------------------
-[###] caso de erro mount as partições novamente e instale este programa
+```
+
+## caso de erro mount as partições novamente e instale este programa
+
+```bash
 # pacman -S grub
 # grub-install /dev/sda
 # grub-mkconfig -o /boot/grub/grub.cfg
+```
 
-##############################################################
+## Se estiver fazendo dualboot com Windows:
 
-[###] Se estiver fazendo dualboot com Windows:
+```bash
 # pacman -S os-prober
+```
 
-[###] Initramfs configurando o linux do /
+## Initramfs configurando o linux do /
+
+```bash
 # mkinitcpio -p linux
+```
 
-[###] Sair do arch-chroot
+## Sair do arch-chroot
+```bash
 # exit
+```
 
-[###] Desmontar as particoes
+## Desmontar as particoes
+
+```bash
 # umount /mnt/home
 # umount /mnt/boot
 # umount /mnt
+```
 
-[###] Outra forma de desmontar as partições
+## Outra forma de desmontar as partições
+
+```bash
 # umount /mnt/{home,boot,}
+```
 
-[###] Reiniciar
+## Reiniciar
+
+```bash
 # reboot
+```
 
-#####################################
-# COMEÇAR A CONFIGURAR O ARCH LINUX #
-#####################################
+# COMEÇAR A CONFIGURAR O ARCH LINUX
 
-[###] Conectar o computador a internet
+## Conectar o computador a internet
+
+```bash
 $ dhcpcd
 $ ping -c 3 www.google.com
+```
 
-[###] configurar o som
+## configurar o som
+
+```bash
 $ sudo pacman -S alsa alsa-utils alsamixer
+```
 
-[###] instalar xorg
+## instalar xorg
+
+```bash
 $ sudo pacman -S xorg-xinit xorg-server xorg-server-utils xorg-utils
+```
 
-[###] instalar algumas ferramentas drives graficos 2D
+## instalar algumas ferramentas drives graficos 2D
+
+```bash
 $ sudo pacman -S xf86-video-vesa
 $ sudo pacman -S mesa mesa-demos 
+```
 
-[###] instalar fonts
+## instalar fonts
+
+```bash
 $ sudo pacman -S ttf-dejavu
+```
 
-[###] Caso seu mouse e teclados sejam especiais:
+## Caso seu mouse e teclados sejam especiais:
+
+```bash
 $ sudo pacman -S xf86-input-synaptics xf86-input-mouse xf86-input-keyboard
+```
 
-[###] instalar configurações da internet 
+## instalar configurações da internet 
+
+```bash
 $ sudo pacman -S networkmanager networkmanager-vpnc vpnc 
 $ sudo pacman -S networkmanager-pptp networkmanager-openconnect 
 $ sudo pacman -S network-manager-applet
+```
 
-[###] ativar o gerenciador de rede automaticamente
+## ativar o gerenciador de rede automaticamente
+
+```bash
 $ sudo systemctl enable NetworkManager.service
 $ sudo systemctl start NetworkManager.service
+```
 
-[###] instalar um firewall simples UFW
+## instalar um firewall simples UFW
+
+```bash
 $ sudo pacman -S ufw
 $ sudo systemctl enable ufw.service
+```
 
-[###]  Saber ver qual a chipset de vídeo do pc 
+##  Saber ver qual a chipset de vídeo do pc 
+
+```bash
 $ lspci | grep VGA
+```
 
-[###] instalar driver de video
-[###] instalar o que for o seu: 
+## instalar driver de video
+
+### instalar o que for o seu: 
+
+```bash
 $ sudo pacman -S virtualbox-guest-utils   - para o virtualbox
 $ sudo pacman -S nvidia && nvidia-xconfig - para placas nvidia
 $ sudo pacman -S xf86-video-ati           - para placas amd-radeon
 $ sudo pacman -S xf86-video-intel         - para drivers da intel
+```
 
-[###] Caso esteja no virtualbox
+### Caso esteja no virtualbox
+
+```bash
 $ sudo pacman -S virtualbox-guest-utils
+```
 
-########## Interface Gráfica ####################
-# Uma instalação básica do Gnome no Arch Linux. #
-#################################################
+# Interface Gráfica
 
+## Uma instalação básica do Gnome no Arch Linux
+
+```bash
 $ mkinitcpio -p linux
-
 $ sudo pacman -S gnome gnome-shell gnome-extra
-
 $ sudo systemctl enable gdm
+```
 
+### Configurando diretórios
+
+```bash
 $ sudo pacman -S xdg-user-dirs
 $ xdg-user-dirs-update
+```
 
-[###] configurar teclado abnt2 no ambiente X:
+## configurar teclado abnt2 no ambiente X:
+
+```bash
 $ localectl set-x11-keymap br-abnt2
+```
 
+## screenfetch
+
+```bash
 $ sudo pacman -S screenfetch
-
 $ screenfetch
+```
 
-$ sudo pacman -S gedit gedit-plugins
+# instalar AUR
 
-[###] instalar AUR
-$ sudo gedit /etc/pacman.conf
+```bash
+$ sudo nano /etc/pacman.conf
+```
 
-[###] escrever abaixo de [custom]:
+## escrever abaixo de [custom]:
+
+```
 [archlinuxfr]
 SigLevel = Never
 Server = http://repo.archlinux.fr/$arch
-[###] Podemos instalar também o [archstrike] e o [blackarch] no repositório
+```
 
-[###] Sincronizando com a base de dados dos repositórios novos
+Podemos instalar
+ - [archstrike]
+ - [blackarch]
+
+# Sincronizando com a base de dados dos repositórios novos
+
+```bash
 $ sudo pacman -Syy
+```
 
-[###] checar se tem atualizações e atualizar
+## checar se tem atualizações e atualizar
+
+```bash
 $ sudo pacman -Syu
+```
 
-[###] Instalando o gerenciador yaourt
+## Instalando o gerenciador yaourt
+
+```bash
 $ sudo pacman -S yaourt
+```
 
-[###] Reniciando o sistema e faça um bom uso
+## Reniciando o sistema e faça um bom uso
+
+```bash
 $ sudo reboot
+```
 
-[###] Sobre o gerenciador local [yaourt]
+# Sobre o gerenciador local [yaourt]
+
+```
 $ yaourt -Ss <programa> ### Procurar
 $ yaourt -S <programa>  ### Instalar
 $ yaourt -Qem           ### Programas que já foram instalados localmente
+```
 
-[###] Sobre o gerenciador global [pacman]
+# Sobre o gerenciador global [pacman]
+
+```
 $ sudo pacman -Ss <programa> ### Procurar
 $ sudo pacman -S <programa>  ### Instalar
 $ sudo pacman -Qem           ### Programas que já foram instalados com [yaourt]
+```
 
-[###]programas a serem instalados
+
+# programas a serem instalados
+
+```bash
 $ sudo pacman -S firefox firefox-i18n-pt-br flashplayer unrar unzip tar gzip bzip2 p7zip alsa-lib alsa-tools alsa-utils alsa-oss pulseaudio-alsa pulseaudio pamixer cmus vlc
-
 $ sudo pacman -S gstreamer0.10 gstreamer0.10-plugins gstreamer0.10-base gstreamer0.10-good gstreamer0.10-python gstreamer0.10-ugly
+```
