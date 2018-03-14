@@ -52,6 +52,7 @@ call plug#begin(s:plugdir)
       Plug 'roxma/nvim-yarp'
       Plug 'roxma/vim-hug-neovim-rpc'
     endif
+
     Plug 'iuryxavier/python-syntax'
     Plug 'tpope/vim-commentary'
     Plug 'SirVer/ultisnips'
@@ -105,8 +106,6 @@ set hlsearch
 set laststatus=1
 set lazyredraw
 set linespace=0
-set list
-set listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
 set magic
 set modeline
 set nobackup
@@ -149,6 +148,15 @@ redraw
 syntax sync minlines=2000
 syntime on
 
+if has('gui_running')
+  set list
+  set listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+  let &showbreak='↳'
+else
+  set list
+  set listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:$
+  let &showbreak='^'
+endif
 
 if has('nvim')
   set inccommand=split
@@ -234,7 +242,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 try
-    colorscheme iaxs-i3wm-vim-monokai
+    colorscheme iaxs-monokai
 catch
     colorscheme default
 endtry
@@ -376,10 +384,11 @@ vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 vnoremap <C-S-Up> :m '<-2<CR>gv=gv
 
 map <F7> :if exists("g:syntax_on") <Bar>
+    \   highlight clear <Bar>
+    \   syntax clear <Bar>
     \   syntax off <Bar>
     \ else <Bar>
-    \   syntax enable <Bar>
-    \   syntax on <Bar>
+    \   colorscheme iaxs-monokai <Bar>
     \ endif <CR>
 
 " UtilSnips Trigger
