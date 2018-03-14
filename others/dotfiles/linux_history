@@ -51,6 +51,7 @@ cd bin
 cd browser-beta
 cd .co
 cd collection_to_kibana
+cd collection_to_kibana/
 cd config
 cd .config
 cd .config/
@@ -187,6 +188,7 @@ git add .
 git add --all .
 git add tags
 git checkout -b share/applications
+git checkout -b ubuntu
 git checkout dev 
 git checkout -- install.zsh
 git checkout master 
@@ -426,6 +428,7 @@ pyenv activate
 pyenv activate system
 pyenv update
 python
+python es-mapping.py
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index outro --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
