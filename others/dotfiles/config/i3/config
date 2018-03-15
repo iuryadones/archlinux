@@ -296,7 +296,7 @@ bindsym --release $sup+Shift+e exec --no-startup-id  "i3-nagbar -t warning -m 'P
 bindsym $sup+Shift+i exec --no-startup-id yandex-browser
 
 # Start a terminal
-bindsym $sup+Return exec --no-startup-id termite -e tmux
+bindsym $sup+Return exec --no-startup-id "termite -e 'tmux -u'"
 
 # Start dmenu (a program launcher)
 bindsym --release $sup+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -l 3 -i" --entry-type="command"
