@@ -211,8 +211,10 @@ git checkout share/applications
 git checkout sistema-solar 
 git checkout thiagoufrpe
 git checkout thiagoufrpe-1 
+git checkout ubuntu 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
+git commit
 git commit -m "[master] Add script do termite para o ubuntu"
 git commit -m "[master] Add script do termite ppt-get install exuberant-ctags
 git commit -m "[master] Atualiza o README"
@@ -239,6 +241,7 @@ git log-graph
 git merge --no-ff sistema-solar
 git merge --no-ff thiagoufrpe 
 git merge --no-ff thiagoufrpe-1 
+git merge --no-ff ubuntu
 git merge --no-ff ubuntu 
 git pull
 git pull origin
