@@ -155,6 +155,7 @@ cp share/applications/z.desktop /usr/share/applications/z.desktop
 cp ~/.tmux.conf .
 cp /usr/share/applications/robo3t.desktop .
 cp vim/
+cp vim/colors/iaxs-monokai.vim ~/.vim/colors
 cp ~/.vimrc .
 cp vimrc ../../others/dotfiles/vimrc 
 cp vimrc ~/.vimrc
@@ -462,6 +463,7 @@ nvim termite.terminfo
 nvim test.py
 nvim test.zsh
 nvim .tmux.conf
+nvim tmux.conf
 nvim .tmux.conf.local
 nvim ubuntu-install-termite.sh
 nvim .vim/colors/iaxs-i3wm-vim-monokai.vim
