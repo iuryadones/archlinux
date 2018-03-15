@@ -53,19 +53,19 @@ call plug#begin(s:plugdir)
       Plug 'roxma/vim-hug-neovim-rpc'
     endif
 
-    Plug 'iuryxavier/python-syntax'
-    Plug 'tpope/vim-commentary'
     Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
     Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
     Plug 'davidhalter/jedi-vim'
+    Plug 'ervandew/supertab'
+    Plug 'honza/vim-snippets'
+    Plug 'iuryxavier/python-syntax'
+    Plug 'iuryxavier/vim-simple-tex-fold'
     Plug 'lambdalisue/vim-pyenv'
+    Plug 'mhinz/vim-startify'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'tpope/vim-commentary'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'mhinz/vim-startify'
-    Plug 'ervandew/supertab'
-    Plug 'iuryxavier/vim-simple-tex-fold'
 
 call plug#end()
 autocmd VimEnter *

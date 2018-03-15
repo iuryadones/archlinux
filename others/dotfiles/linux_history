@@ -216,6 +216,7 @@ git checkout ubuntu
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
 git commit
+git commit 
 git commit -m "[master] Add script do termite para o ubuntu"
 git commit -m "[master] Add script do termite ppt-get install exuberant-ctags
 git commit -m "[master] Atualiza o README"
