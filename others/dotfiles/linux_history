@@ -50,6 +50,7 @@ cd autoload
 cd bin
 cd browser-beta
 cd .co
+cd codes
 cd collection_to_kibana
 cd collection_to_kibana/
 cd config
@@ -79,6 +80,7 @@ cd iury/intelivix/
 cd iury/intelivix/analytics
 cd iury/intelivix/analytics/collection_to_kibana/
 cd laboratory
+cd ladc
 cd lib
 cd libevent-2.1.8-stable
 cd .linux
@@ -100,6 +102,9 @@ cd .others
 cd platforms
 cd plugged
 cd py3
+cd python
+cd python2
+cd rascunhos
 cd robo3t
 cd science
 cd scraping
@@ -126,6 +131,7 @@ cd z
 cd .z
 chmod -x zsh_history
 chsh -s /bin/zsh
+cmake
 ./configure && make
 cp ~/.bashrc .
 cp bashrc ~/.bashrc 
@@ -149,6 +155,7 @@ cp share/applications/z.desktop /usr/share/applications/z.desktop
 cp ~/.tmux.conf .
 cp /usr/share/applications/robo3t.desktop .
 cp vim/
+cp vim/colors/iaxs-monokai.vim ~/.vim/colors
 cp ~/.vimrc .
 cp vimrc ../../others/dotfiles/vimrc 
 cp vimrc ~/.vimrc
@@ -187,39 +194,80 @@ gem install vimgolf
 git add .
 git add --all .
 git add tags
+git branch
+git branch -D sistema-solar 
+git branch -D thiagoufrpe
+git branch -D thiagoufrpe 
+git branch -D thiagoufrpe-1 
+git branch -D ubuntu 
 git checkout -b share/applications
 git checkout -b ubuntu
+git checkout d
 git checkout dev 
+git checkout DEV 
 git checkout -- install.zsh
 git checkout master 
 git checkout origin share/applications  
 git checkout share/applications  
+git checkout sistema-solar 
+git checkout thiagoufrpe
+git checkout thiagoufrpe-1 
+git checkout ubuntu 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
+git commit
+git commit 
 git commit -m "[master] Add script do termite para o ubuntu"
 git commit -m "[master] Add script do termite ppt-get install exuberant-ctags
+git commit -m "[master] Atualiza o README"
 git commit -m "[master] Atualiza other"
 git commit -m "[master] Atualiza version other vimrc"
+git commit -m "[master] Corrigi README"
 git commit -m "[master] history modifica"
 git commit -m "[master] linux_history e vimrc"
+git commit -m "[master] Make install requeriments and pyenv"
 git commit -m "[master] Modifica os dotfiles"
 git commit -m "[master] Oganiza os arquivos"
 git commit -m "[master] organiza ArchLinux files vim"
+git commit -m "[master] Outra version de python 2.7.14"
 git commit -m "[master] update others"
+git commit -m "[master] Update README"
 git commit -m "[share/applications] Adiciona app para desktop linux"
+git commit -m "[thiagoufrpe-1] Move os arquivos para python2"
+git commit -m "[thiagoufrpe] Move codigos python2"
+git commit -m "[thiagoufrpe] Renomeia a pasta python -> python2"
+git commit -m "[ubuntu] workstation"
 git init
 git log
 git log-graph
+git merge --no-ff sistema-solar
+git merge --no-ff thiagoufrpe 
+git merge --no-ff thiagoufrpe-1 
+git merge --no-ff ubuntu
+git merge --no-ff ubuntu 
+git pull
 git pull origin
 git pull origin 
+git pull origin DEV
 git pull origin master
 git pull origin master 
+git push origin 
 git push origin master 
 git push origin share/applications 
+git push origin thiagoufrpe 
+git push origin thiagoufrpe-1 
+git push origin ubuntu 
+git remote add origin https://github.com/intelivix/data-science-lab
+git remote add origin https://github.com/intelivix/data-science-lab .
+git remote add origin https://github.com/intelivix/tribunais
 git remote add origin https://github.com/intelivix/tribunais 
 git remote add origin https://github.com/intelivix/tribunais .
+git remote add origin https://github.com/intelivix/tribunais.git .
 git remote add origin https://github.com/iuryxavier/archlinux 
+git remote add origin https://github.com/iuryxavier/LADC
 git remote add origin https://github.com/victorfsf/z
+git remote origin https://github.com/intelivix/tribunais
+git remote origin origin https://github.com/intelivix/tribunais
 git reset -- HEAD .
 git statis
 git status
@@ -282,6 +330,8 @@ mkdir Imagens
 mkdir Images
 mkdir install
 mkdir iury
+mkdir laboratory
+mkdir ladc
 mkdir others
 mkdir -p ~/.local/share/fonts
 mkdir root
@@ -289,19 +339,23 @@ mkdir science
 mkdir scraping
 mkdir scripts
 mkdir share
+mkdir stable
 mkdir stderr
 mkdir tribunais
 mkdir z
 mv .* *
 mv * ../
+mv Barreira_de_potencial.dat codes/python2
 mv .bashrc bashrc
 mv colors ..
 mv config dotfiles
 mv * custos
+mv Densidade_de_probabilidade.dat codes/python2
 mv deps_archlinux_i3 archlinux
 mv deps_archlinux_i3 i3
 mv dotfiles archlinux
 mv ~/Downloads/ece_ecer.ipynb .
+mv ~/Downloads/esmongo.ev 
 mv ~/Downloads/esmongo.py .
 mv ~/Downloads/esmongo_py.py .
 mv ~/Downloads/harvest_estadual.csv .
@@ -312,6 +366,7 @@ mv etc archlinux
 mv etc root
 mv extracted-collection_name-extracao_nextel_base_civel.csv extracted-collection_name-extracao_nextel_base_civel-stables.csv
 mv -f colors ../
+mv função_de_onda.pdf codes/python2
 mv .gitconfig gitconfig
 mv .gitignore-global gitignore-global
 mv harvest_estadual.csv csv
@@ -323,6 +378,7 @@ mv install_archlinux_201* archlinux
 mv install-termite.sh iury/archlinux/
 mv install-termite.sh ubuntu-install-termite.sh
 mv nvim nvim.local
+mv python python2
 mv -r * ../
 mv -R * ../
 mv -r colors ../
@@ -334,8 +390,11 @@ mv robo3t /opt/
 mv -r termite config
 mv -R termite config
 mv sh_history history
+mv sistema_solar_auxiliar.py codes/python2
 mv termite config
 mv termite termite.local
+mv terra_lua.py codes/python2
+mv thiago-schrodinger.py codes/python2
 mv tmux.conf dotfiles
 mv .tmux.conf tmux.conf
 mv ubuntu-install-termite.sh others
@@ -359,6 +418,9 @@ npm install vtop
 npm search vtop
 nvim
 nvim 595a68714060d2999d8312e8.extracao_estacio.error.log
+nvim archlinux/dotfiles/tmux.conf
+nvim archlinux/dotfiles/vim/colors/iaxs-i3wm-vim-monokai.vim
+nvim archlinux/dotfiles/vimrc
 nvim .bash
 nvim bash_history
 nvim bashrc
@@ -394,6 +456,7 @@ nvim install.zsh
 nvim .ipython/profile_default/ipython_config.py
 nvim .python-version
 nvim qt.conf
+nvim README.md
 nvim robo3t
 nvim robo3t.desktop
 nvim share/applications/z.desktop
@@ -401,8 +464,10 @@ nvim termite.terminfo
 nvim test.py
 nvim test.zsh
 nvim .tmux.conf
+nvim tmux.conf
 nvim .tmux.conf.local
 nvim ubuntu-install-termite.sh
+nvim .vim/colors/iaxs-i3wm-vim-monokai.vim
 nvim vimrc
 nvim .vimrc
 nvim z.desktop
@@ -422,10 +487,14 @@ pip install --upgrade --force-reinstall neovim
 pip install --upgrade --force-reinstall pip
 pip install -U uvloop
 pip install uvloop
+pow
 poweroff
 pwd
+pyenv 
 pyenv activate
 pyenv activate system
+pyenv install list
+pyenv install --list
 pyenv update
 python
 python es-mapping.py
@@ -436,9 +505,13 @@ python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 0
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping False
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping --mapping 0
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-indpy .
+python esmongo-fields.py --coll extracao_nextel_base_civel --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python find_termos.py --colls extracao_nextel_base_civel --csv csv/harvest_estadual.csv
+python -V
+ranger
 reboot
 rm *
 rm bash_history
@@ -459,10 +532,12 @@ rm -rf ./*
 rm -rf colors
 rm -rf .config/nvim/plugged
 rm -rf examples.desktop
+rm -rf ladc
 rm -rf logs/*
 rm -rf __pycache__
 rm -rf stderr/*
 rm -rf termite
+rm -rf tribunais
 rm -rf vim
 rm -rf .vim.local
 rm -rf vim-pyenv
@@ -587,6 +662,7 @@ sudo npm install --user vtop
 sudo npm install vtop
 sudo nvim robo3t.desktop
 sudo pip2 install neovim
+sudo pip2 install neovimex tribunais --es-type processos --mapping 
 sudo pip2 install --upgrade --force-reinstall neovim
 sudo pip2 install -U pip
 sudo pip2 uninstall neovim
@@ -652,6 +728,7 @@ xrandr
 yandex
 yandex-browser
 z
+zathura função_de_onda.pdf
 _z_check_for_updates
 z exit
 z -h

@@ -2,18 +2,22 @@
 " vim: set foldmethod=marker:
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: Iury Adones <iuryadones@gmail.com>
-" Last change:	2017 Set 27
+" Last change:  2018 march 10
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
+"         for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"       for OpenVMS:  sys$login:.vimrc
 
 set nocompatible
 
+filetype indent off
+filetype off
+filetype plugin off
+
+syntax clear
 syntax off
-filetype plugin indent off
 
 let mapleader=" "
 let g:mapleader=" "
@@ -49,18 +53,19 @@ call plug#begin(s:plugdir)
       Plug 'roxma/vim-hug-neovim-rpc'
     endif
 
-    Plug 'tpope/vim-commentary'
     Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
     Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
     Plug 'davidhalter/jedi-vim'
+    Plug 'ervandew/supertab'
+    Plug 'honza/vim-snippets'
+    Plug 'iuryxavier/python-syntax'
+    Plug 'iuryxavier/vim-simple-tex-fold'
     Plug 'lambdalisue/vim-pyenv'
+    Plug 'mhinz/vim-startify'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'tpope/vim-commentary'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'mhinz/vim-startify'
-    Plug 'ervandew/supertab'
-    Plug 'iuryxavier/vim-simple-tex-fold'
 
 call plug#end()
 autocmd VimEnter *
@@ -73,7 +78,9 @@ autocmd VimEnter *
 " Default Config                                                            {{{1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-filetype plugin indent on
+filetype on
+filetype plugin on
+filetype indent on
 
 set autoindent
 set autoread
@@ -82,27 +89,31 @@ set autowriteall
 set backspace=indent,eol,start
 set binary
 set bomb
+set cmdheight=2
 set colorcolumn=81
 set columns=80
 set completeopt=menu,menuone
+set confirm
 set copyindent
 set cursorline
 set display=truncate
 set encoding=utf-8
 set expandtab
-set exrc
 set fileformats=unix,dos,mac
 set foldmethod=marker
 set history=2000
 set hlsearch
-set laststatus=2
+set laststatus=1
 set lazyredraw
-set linebreak
-set list
-set list listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+set linespace=0
+set magic
+set modeline
 set nobackup
+set noerrorbells
+set noexrc
 set nohidden
 set noignorecase
+set nojoinspaces
 set noswapfile
 set nowritebackup
 set nrformats-=octal
@@ -113,26 +124,43 @@ set scrolloff=20
 set secure
 set shell=/bin/sh
 set shiftwidth=4
+set shortmess=at
 set showcmd
 set showmatch
-set showtabline=2
+set showmode
+set showtabline=3
+set sidescroll=6
 set smartindent
 set softtabstop=0
-set synmaxcol=81
+set splitbelow
+set splitright
+set synmaxcol=200
 set tabstop=4
 set textwidth=80
+set title
 set ttimeout
 set ttimeoutlen=0
 set ttyfast
 set wildmenu
-set wrap
 
 redraw
 
-syntax enable
-syntax on
-syntax sync minlines=1
+syntax sync minlines=2000
 syntime on
+
+if has('gui_running')
+  set list
+  set listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+  let &showbreak='↳'
+else
+  set list
+  set listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:$
+  let &showbreak='^'
+endif
+
+if has('nvim')
+  set inccommand=split
+endif
 
 if has('reltime')
   set incsearch
@@ -201,12 +229,6 @@ augroup save
   au FocusLost * wall
 augroup END
 
-for prefix in ['n', 'v']
-  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
-    exe prefix . "noremap " . key . " <Nop>"
-  endfor
-endfor
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clipboard                                                                {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -219,12 +241,8 @@ endif
 " Colorsheme                                                               {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has('termguicolors')
-    set termguicolors
-endif
-
 try
-    colorscheme iaxs-i3wm-vim-monokai
+    colorscheme iaxs-monokai
 catch
     colorscheme default
 endtry
@@ -289,12 +307,32 @@ function! Ulti_ExpandOrJump_and_getRes()
     return g:ulti_expand_or_jump_res
 endfunction
 
+function Count(word)
+    let count_word = "%s/" . a:word . "//gn"
+    execute count_word
+    echo a:word
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping                                                                  {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+for prefix in ['n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+
 " Sorting lines
-let @s=":%sort u"
+vnoremap <Leader>ss :%sort<CR>
+vnoremap <Leader>su :%sort u<CR>
+
+" Count current word
+nmap <Leader>w <Esc>:call Count(expand("<cword>"))<CR>
+
+" editing nvim
+nnoremap <Leader>ev :vsplit ~/.vimrc<CR>
+nnoremap <Leader>sv :source ~/.vimrc<CR>
 
 " Tabs
 nnoremap <Tab> gt
@@ -317,13 +355,13 @@ inoremap <F5> <ESC>:call CompileFile()<CR>
 vnoremap <F5> :!python<CR>
 
 " terminal-mode
-tnoremap <Esc> <C-\><C-n>  
+tnoremap <Esc> <C-\><C-n>
 
 " folding short cut
 nnoremap <Leader>o za
 
 " no highlighting
-nnoremap <leader><cr> :noh<cr> 
+nnoremap <leader><cr> :noh<cr>
 
 " Simplify shortcut for creating windows
 nnoremap <Leader>h :call WinCreate('h')<CR>
@@ -331,25 +369,11 @@ nnoremap <Leader>j :call WinCreate('j')<CR>
 nnoremap <Leader>k :call WinCreate('k')<CR>
 nnoremap <Leader>l :call WinCreate('l')<CR>
 
-" Simplify shortcut windows movement 
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-h> <C-w>h
-nnoremap <A-l> <C-w>l
-inoremap <A-j> <C-w>j
-inoremap <A-k> <C-w>k
-inoremap <A-h> <C-w>h
-inoremap <A-l> <C-w>l
-vnoremap <A-j> <C-w>j
-vnoremap <A-k> <C-w>k
-vnoremap <A-h> <C-w>h
-vnoremap <A-l> <C-w>l
-
 " move line [down|up], with Alt+Shift+[j|k]
-nnoremap <A-S-j> :m .+1<CR>==
-nnoremap <A-S-k> :m .-2<CR>==
-vnoremap <A-S-j> :m '>+1<CR>gv=gv
-vnoremap <A-S-k> :m '<-2<CR>gv=gv
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+vnoremap <C-k> :m '<-2<CR>gv=gv
+vnoremap <C-j> :m '>+1<CR>gv=gv
 
 " move line [down|up], with Control+Shift+[Down|Up]
 nnoremap <C-S-Down> :m .+1<CR>==
@@ -360,10 +384,11 @@ vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 vnoremap <C-S-Up> :m '<-2<CR>gv=gv
 
 map <F7> :if exists("g:syntax_on") <Bar>
+    \   highlight clear <Bar>
+    \   syntax clear <Bar>
     \   syntax off <Bar>
     \ else <Bar>
-    \   syntax enable <Bar>
-    \   syntax on <Bar>
+    \   colorscheme iaxs-monokai <Bar>
     \ endif <CR>
 
 " UtilSnips Trigger
@@ -372,6 +397,8 @@ inoremap <CR> <C-R>=(Ulti_ExpandOrJump_and_getRes() > 0)?"":"\n"<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configs Vim Plug                                                         {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let python_highlight_all = 1
 
 let g:deoplete#enable_at_startup=1
 let g:deoplete#auto_complete_delay=0
