@@ -18,20 +18,43 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL=
 
+export MANWIDTH=${MANWIDTH:-80}
+
+PS1='[\u@\h \W]\$ '
+
+set -o vi
+
 export EDITOR=nvim
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+alias ls="ls --color=auto"
 
-alias ls='ls --color=auto'
+## pyenv
+if [[ -d $HOME/.pyenv ]]; then
+    export PYENV_USER="$HOME/.pyenv"
+    export PATH="$PYENV_USER/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+## local_user: pipenv and others binary
+if [[ -d $HOME/.local ]]; then
+    export LOCAL_USER="$HOME/.local"
+    export PATH="$LOCAL_USER/bin:$PATH"
+fi
 
-eval "$(pandoc --bash-completion)"
+if command -v pipenv &> /dev/null; then
+    eval "$(pipenv --completion)"
+fi
+
+if command -v pip &> /dev/null; then
+    eval "$(pip completion --zsh)"
+fi
+
+if command -v pandoc &> /dev/null; then
+    eval "$(pandoc --bash-completion)"
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -53,19 +53,19 @@ call plug#begin(s:plugdir)
       Plug 'roxma/vim-hug-neovim-rpc'
     endif
 
-    Plug 'iuryxavier/python-syntax'
-    Plug 'tpope/vim-commentary'
     Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
     Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
     Plug 'davidhalter/jedi-vim'
+    Plug 'ervandew/supertab'
+    Plug 'honza/vim-snippets'
+    Plug 'iuryxavier/vim-simple-tex-fold'
+    Plug 'iuryxavier/vim-syntax'
     Plug 'lambdalisue/vim-pyenv'
+    Plug 'mhinz/vim-startify'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'tpope/vim-commentary'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'mhinz/vim-startify'
-    Plug 'ervandew/supertab'
-    Plug 'iuryxavier/vim-simple-tex-fold'
 
 call plug#end()
 autocmd VimEnter *
@@ -148,15 +148,15 @@ redraw
 syntax sync minlines=2000
 syntime on
 
-if has('gui_running')
-  set list
-  set listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
-  let &showbreak='↳'
-else
-  set list
-  set listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:$
-  let &showbreak='^'
-endif
+" if has('gui_running')
+"   set list
+"   set listchars=tab:▸\ ,trail:∙,precedes:←,extends:→,eol:↲,nbsp:.
+"   let &showbreak='↳'
+" else
+"   set list
+"   set listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:$
+"   let &showbreak='^'
+" endif
 
 if has('nvim')
   set inccommand=split
