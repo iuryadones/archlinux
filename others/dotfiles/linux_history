@@ -2,9 +2,8 @@
 ~
 ..
 ...
-\
-ara o ubuntu"
-bash
+apt-cache policy yandex-browser-beta 
+./autogen.sh
 ./bin/z.zsh 
 bin/z.zsh 
 car esmongo.info.20180301132654.log
@@ -13,10 +12,6 @@ cat *
 cat 595a686f4060d2999d8312bd.extracao_estacio.error.log
 cat 595a68704060d2999d8312d6.extracao_estacio.error.log
 cat 595a68714060d2999d8312e8.extracao_estacio.error.log
-cat bash_history
-cat bash_history | sort
-cat bash_history | sort | uniq
-cat bash_history | sort | uniq >| sh_history
 cat csv/harvest_estadual.csv
 cat csv/harvest_estadual.csv | grep MG
 cat csv/harvest_estadual.csv | grep MG | wc -l
@@ -27,80 +22,66 @@ cat esmongo.info.20180222102729.log
 cat esmongo.info.20180301141656.log
 cat esmongo.info.log
 cat esmongo.info.log 
-cat .linux_history
-cat linux_history
-cat ~/.linux_history >>| linux_history
-cat linux_history | sort | uniq
-cat linux_history | sort | uniq >| history 
-cat linux_history | sort | uniq >| linux_history
+cat output.txt
 cat stderr/595a686f4060d2999d8312bd.extracao_estacio.error.log
-cat .zsh_history
-cat .zsh_history | awk -F '
-cat zsh_history | awk -F '
-cat .zsh_history | cut '
-cd 
+cat stderr.txt
 cd ..
+cd 90-mandatory.d/
+cd adapta-gtk-theme
+cd adapta-gtk-theme-master
 cd analytics
+cd  analytics
 cd analytics/
 cd applications
 cd archlinux
-cd archlinux/
 cd archlinux/dotfiles/
-cd autoload
 cd bin
 cd browser-beta
-cd .co
+cd cement
 cd codes
 cd collection_to_kibana
 cd collection_to_kibana/
 cd config
-cd .config
-cd .config/
-cd config/
+cd csv
 cd custos
-cd doc
-cd doc/tags
+cd Desktop
+cd diabetes
 cd dotfiles
-cd dotfiles/
 cd Downloads
+cd /etc
+cd examples
 cd experiments
-cd ~/.fonts && wget https://github.com/google/fonts/archive/master.zip && unzip master.zip
+cd genetic_algorithm
+cd genetics
 cd i
-cd i3
-cd i3/
 cd imageformats
-cd Images
 cd intelivix
 cd intelivix/i
 cd iury
 cd iury/
-cd iury/archlinux
 cd iury/intelivix
 cd iury/intelivix/
 cd iury/intelivix/analytics
+cd iury/intelivix/analytics/collection_to_kibana
 cd iury/intelivix/analytics/collection_to_kibana/
 cd laboratory
 cd ladc
 cd lib
-cd libevent-2.1.8-stable
 cd .linux
 cd local
-cd .local
-cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+cd localauthority
+cd local_db
 cd logs
 cd man
 cd menu
 cd middlewares
-cd nerd-fonts-master
-cd node_modules
-cd nvim
+cd Music
 cd opt
 cd /opt
 cd /opt/
 cd others
-cd .others
 cd platforms
-cd plugged
+cd polkit-1
 cd py3
 cd python
 cd python2
@@ -109,102 +90,80 @@ cd robo3t
 cd science
 cd scraping
 cd scripts
+cd search
 cd share
 cd share/applications
 cd src
+cd stable
 cd stderr
-cd termite
-cd .tmux
-cd tmux-master
-cd tribunais_scrapy
+cd test
 cd usr
 cd usr/
 cd /usr/bin/
 cd /usr/local
 cd /usr/share/applications
-cd vendor
 cd vim
 cd .vim
-cd vim-pyenv
 cd yandex
 cd z
 cd .z
-chmod -x zsh_history
-chsh -s /bin/zsh
 cmake
-./configure && make
-cp ~/.bashrc .
-cp bashrc ~/.bashrc 
-cp ~/.config/nvim .
+cp disable-hibernate.pkla disable-suspend.pkla 
 cp esmongo-fields.py esmongo-fields.py.bkp
-cp ~/.gitconfig .
-cp gitconfig ~/.gitconfig
-cp ~/.gitignore-global .
-cp gitignore-global ~/.gitignore-global
 cp .linux/archlinux/dotfiles/vimrc .vimrc.arch
-cp -r config/i3/* ~/.config/i3/
-cp -r ~/.config/nvim .
-cp -r ~/.config/termite .
-cp -r termite ~/.config/
-cp -r ~/.vim .
 cp -R vim/spell ~/.vim/
-cp -r vim ~/.vim
-cp -r wallpaper ~/.wallpaper
-cp -r zshrc ~/.zshrc
 cp share/applications/z.desktop /usr/share/applications/z.desktop
-cp ~/.tmux.conf .
 cp /usr/share/applications/robo3t.desktop .
 cp vim/
 cp vim/colors/iaxs-monokai.vim ~/.vim/colors
-cp ~/.vimrc .
 cp vimrc ../../others/dotfiles/vimrc 
 cp vimrc ~/.vimrc
 cp vim/spell ~/.vim/
-cp wallpaper ~/.wallpaper
-cp ~/.zsh_history .
-cp ~/.zshrc .
 çs
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \\
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
-df
-df -h
 docker system prune -a
-echo $(cat .zsh_history | awk -F '
-echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" | sudo tee -a /etc/apt/sources.list.d/yandex-browser.list
+-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 0
+echo "\u0000"
+echo "\u0010"
+echo "\u0012"
+echo "\u0032"
+echo "\u00332"
+echo "\u0212"
+echo "\u0300"
+echo "\u0312"
+echo "\u0330"
+echo "\u0333"
+echo "\u0412"
+echo "\u0512"
+echo "\u0612"
+echo "\u0712"
+echo "\u0812"
+echo "\u0912"
+echo "\u3233"
+echo "\u32332"
+echo "\u3333"
+echo "\uff300"
+echo "u\ff300"
+echo "\uffw00"
+echo "\ufw00"
+echo "\uoi"
+eval pip --completion-zsh
 exi
-exir
 exit
 EXIT
-extract libevent-2.1.8-stable.tar.gz
-extract nerd-fonts-master.zip
-extract robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
-extract tmux-master.zip
-fc-cache -fv
-feh Captura_de_tela_2018-02-06-14:06:33.png
-feh workflow.jpg
-firefox
-free -h
-~/.fzf/install
-fzy
-gem install vimgol
-gem install vimgolf
+extract adapta-gtk-theme-master.zip
 git add .
-git add --all .
-git add tags
 git branch
 git branch -D sistema-solar 
 git branch -D thiagoufrpe
 git branch -D thiagoufrpe 
 git branch -D thiagoufrpe-1 
 git branch -D ubuntu 
+git checkout auto-tunning
 git checkout -b share/applications
 git checkout -b ubuntu
-git checkout d
 git checkout dev 
 git checkout DEV 
+git checkout feature/auto-tunning
 git checkout -- install.zsh
 git checkout master 
 git checkout origin share/applications  
@@ -213,21 +172,16 @@ git checkout sistema-solar
 git checkout thiagoufrpe
 git checkout thiagoufrpe-1 
 git checkout ubuntu 
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux
 git commit
 git commit 
-git commit -m "[master] Add script do termite para o ubuntu"
-git commit -m "[master] Add script do termite ppt-get install exuberant-ctags
 git commit -m "[master] Atualiza o README"
 git commit -m "[master] Atualiza other"
 git commit -m "[master] Atualiza version other vimrc"
 git commit -m "[master] Corrigi README"
-git commit -m "[master] history modifica"
+git commit -m "[master] Fitness GA Queens diag"
+git commit -m "[master] GA Queens add Selection"
 git commit -m "[master] linux_history e vimrc"
 git commit -m "[master] Make install requeriments and pyenv"
-git commit -m "[master] Modifica os dotfiles"
-git commit -m "[master] Oganiza os arquivos"
 git commit -m "[master] organiza ArchLinux files vim"
 git commit -m "[master] Outra version de python 2.7.14"
 git commit -m "[master] update others"
@@ -257,313 +211,254 @@ git push origin share/applications
 git push origin thiagoufrpe 
 git push origin thiagoufrpe-1 
 git push origin ubuntu 
+git remot
+git remote add origin https://github.com/intelivix/cement
 git remote add origin https://github.com/intelivix/data-science-lab
 git remote add origin https://github.com/intelivix/data-science-lab .
+git remote add origin https://github.com/intelivix/tri
 git remote add origin https://github.com/intelivix/tribunais
-git remote add origin https://github.com/intelivix/tribunais 
 git remote add origin https://github.com/intelivix/tribunais .
 git remote add origin https://github.com/intelivix/tribunais.git .
-git remote add origin https://github.com/iuryxavier/archlinux 
 git remote add origin https://github.com/iuryxavier/LADC
+git remote add origin https://github.com/iuryxavier/search-algorithms
 git remote add origin https://github.com/victorfsf/z
 git remote origin https://github.com/intelivix/tribunais
 git remote origin origin https://github.com/intelivix/tribunais
 git reset -- HEAD .
-git statis
 git status
+gnome-terminal
 head csv/harvest_estadual.csv
-i3status -c ~/.config/i3/i3status/config
-ifconfg
-ifconfig 
-./install.sh
+htop
 ./install.zsh
 intelivix
 ipython
 iury
 iury/intelivix/analytics
+jupyter notebook
 jupyter-notebook
-k
 ks
 l
 la
-laboratory
 las
 ll
 lll
-ln -rsf .linux/others/dotfiles/bash_history .bash_history
-ln -rsf .linux/others/dotfiles/linux_history .linux_history
 ln -rsf .linux/others/dotfiles/vimrc ~/.vimrc
-ln -sf bashrc ~/.bashrc
-ln -sf config/nvim ~/.config/nvim
-ln -sf config/termite ~/.config/termite
-ln -sf gitconfig ~/.gitconfig
-ln -sf gitignore-global ~/.gitignore-global 
-ln -sf .linux/others/dotfiles/config/nvim .config/nvim 
-ln -sf .linux/others/dotfiles/config/termite .config/termite
-ln -sf .linux/others/dotfiles/linux_history .linux_history
-ln -sf .linux/others/dotfiles/vim .vim 
-ln -sf tmux.conf ~/.tmux.conf
-ln -sf vim ~/
-ln -sf vimrc ~/.vimrc
-ln -sf vim ~/.vim
-ln -sf zshrc ~/.zshrc
 ln -s /home/intelivix/.z/bin/z.zsh z
-ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
-locale-gen
 ls
-ls\
+LS
 ls | grep robo3t
-ls -l
 make
-mkdir analytics
 mkdir applications
-mkdir archlinux
+mkdir cement
 mkdir collection_to_kibana
-mkdir config
 mkdir csv
 mkdir custos
-mkdir dotfiles
-mkdir engineering
 mkdir experiments
-mkdir ~/.fonts
-mkdir Imagens
-mkdir Images
-mkdir install
-mkdir iury
 mkdir laboratory
 mkdir ladc
-mkdir others
-mkdir -p ~/.local/share/fonts
-mkdir root
-mkdir science
-mkdir scraping
-mkdir scripts
+mkdir local_db
+mkdir search
 mkdir share
 mkdir stable
 mkdir stderr
-mkdir tribunais
+mkdir test
 mkdir z
-mv .* *
 mv * ../
+mv adapta-gtk-theme-master ../adapta-gtk-theme
 mv Barreira_de_potencial.dat codes/python2
-mv .bashrc bashrc
 mv colors ..
-mv config dotfiles
 mv * custos
 mv Densidade_de_probabilidade.dat codes/python2
-mv deps_archlinux_i3 archlinux
-mv deps_archlinux_i3 i3
-mv dotfiles archlinux
 mv ~/Downloads/ece_ecer.ipynb .
-mv ~/Downloads/esmongo.ev 
 mv ~/Downloads/esmongo.py .
 mv ~/Downloads/esmongo_py.py .
 mv ~/Downloads/harvest_estadual.csv .
-mv Downloads/intelivix.png .wallpaper/
+mv ~/Downloads/quantity_fields.ipynb .
 mv ece_ecer.ipynb custos/ece_ecer_send.ipynb
 mv esmongo_py.py esmongo.py
-mv etc archlinux
-mv etc root
 mv extracted-collection_name-extracao_nextel_base_civel.csv extracted-collection_name-extracao_nextel_base_civel-stables.csv
 mv -f colors ../
 mv função_de_onda.pdf codes/python2
-mv .gitconfig gitconfig
-mv .gitignore-global gitignore-global
 mv harvest_estadual.csv csv
-mv history linux_history
-mv install_archlinux_2016.txt install
-mv install_archlinux_2016.txt_ install_archlinux_2016.txt
-mv install_archlinux_2017_en.txt install
-mv install_archlinux_201* archlinux
-mv install-termite.sh iury/archlinux/
-mv install-termite.sh ubuntu-install-termite.sh
-mv nvim nvim.local
 mv python python2
 mv -r * ../
 mv -R * ../
 mv -r colors ../
 mv -R colors ../
 mv -Rd colors ../
-mv robo3t-1.1.1-linux-x86_64-c93c6b0 robo3t
 mv robo3t.desktop z.desktop
-mv robo3t /opt/
-mv -r termite config
-mv -R termite config
-mv sh_history history
 mv sistema_solar_auxiliar.py codes/python2
-mv termite config
-mv termite termite.local
 mv terra_lua.py codes/python2
+mv test.py iury
 mv thiago-schrodinger.py codes/python2
-mv tmux.conf dotfiles
-mv .tmux.conf tmux.conf
-mv ubuntu-install-termite.sh others
-mv ubuntu-install-termite.sh scripts
-mv usr archlinux
-mv usr root
-mv vim dotfiles
-mv vimrc dotfiles
-mv .vimrc vimrc
 mv .vim vim
-mv vim .vim
-mv .vim .vim.local
 mv z ..
 mv z ../
-mv .zshrc zshrc
 mv z .z
-nano .tmux.conf
-node_modules
-npm install -g vtop
-npm install vtop
-npm search vtop
 nvim
 nvim 595a68714060d2999d8312e8.extracao_estacio.error.log
 nvim archlinux/dotfiles/tmux.conf
 nvim archlinux/dotfiles/vim/colors/iaxs-i3wm-vim-monokai.vim
 nvim archlinux/dotfiles/vimrc
-nvim .bash
-nvim bash_history
-nvim bashrc
+nvim .bash_history
 nvim .bashrc
-nvim .bashrc 
 nvim bin
 nvim bin/z.zsh
+nvim biorepository.py
+nvim chromosomes.py
+nvim collections.txt
 nvim .config/i3/config
 nvim .config/i3/i3status/config
 nvim .config/nvim/init.vim
-nvim .config/termite/config
-nvim .config/termite/termite.terminfo
 nvim constants.py
 nvim csv/harvest_estadual.csv
+nvim disable-hibernate.pkla
+nvim disable-suspend.pkla 
 nvim elasticsearch.
 nvim elasticsearch.critical.log
 nvim elasticsearch.trace.critical.log
 nvim environment.zsh
+nvim es-mapping-darwix.py
 nvim es-mapping.py
 nvim esmongo
 nvim esmongo-fields.py
 nvim esmongo.py
 nvim /etc/mongod.conf
-nvim /etc/profile.d/vte-2.91.sh
+nvim evolution.py
 nvim extracted-collection_name-extracao_nextel_base_civel.csv
 nvim find_termos.py
+nvim flows.py
 nvim found-extracted-collection_name-extracao_nextel_base_civel.csv
+nvim genes.py
 nvim .git/config
 nvim .gitignore
-nvim install-dotfiles.sh
-nvim install.sh
+nvim __init__.py
 nvim install.zsh
 nvim .ipython/profile_default/ipython_config.py
+nvim linux_history
+nvim main.py
+nvim Makefile
+nvim .profile
 nvim .python-version
 nvim qt.conf
+nvim queen_8.py
 nvim README.md
 nvim robo3t
 nvim robo3t.desktop
 nvim share/applications/z.desktop
-nvim termite.terminfo
+nvim species.py
+nvim tasks.py
 nvim test.py
 nvim test.zsh
 nvim .tmux.conf
 nvim tmux.conf
-nvim .tmux.conf.local
+nvim train.py
+nvim train_test_paths.json
+nvim tutorial.py
 nvim ubuntu-install-termite.sh
+nvim /usr/share/applications/gnome-terminal.desktop
+nvim validation.json
 nvim .vim/colors/iaxs-i3wm-vim-monokai.vim
+nvim .vim/colors/iaxs-monokai.vim
 nvim vimrc
 nvim .vimrc
 nvim z.desktop
 nvim .zsh_history
-nvim ~/.zshrc
 nvim .zshrc
 nvim z.zsh
-nvm install 8.9.4
 opt
-pip3 install --upgrade --force-reinstall neovim
-pip3 install --upgrade --force-reinstall pip
+ping -c 5 google.com 
+ping -c 5 google.com &>1 output.txt 
+ping -c 5 google.com 2>| output.txt 1>| stderr.txt
+ping -c- 5 google.com 2>| output.txt 1>| stderr.txt
+ping -c 5 google.com &> output.txt
+ping -c 5 goosgle.com 1>>| output.txt 2>>| stderr.txt
+ping -c 5 goosgle.com 1>| output.txt 2>| stderr.txt
+ping -c 5 goosgle.com 1&> output.txt 2&> stderr.txt
+ping -c 5 goosgle.com 2>| output.txt 1>| stderr.txt
+ping google.com
+pip --completion-zsh
 pip install elasticsearch pymongo
 pip install ipdb
 pip install jupyter
+pip install matplotlib
 pip install pandas
-pip install --upgrade --force-reinstall neovim
-pip install --upgrade --force-reinstall pip
+pip install -U -e .
+pip install -U pip
+pip install -U sh
 pip install -U uvloop
 pip install uvloop
+pip uninstall sh
+popd
 pow
 poweroff
-pwd
+pushd
 pyenv 
-pyenv activate
-pyenv activate system
+pyenv install 3.6.5
 pyenv install list
 pyenv install --list
+pyenv ls
 pyenv update
+pyenv virtualenv 3.6.5 science
+pyenv virtualenv install science
+pyenv which python
+pythom -c "import sh
+pythom -m "import sh
 python
+python3
+python3 queens.py
+python --completion
 python es-mapping.py
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index outro --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
+python esmongo-fields.py --coll extracao_estacio --es-host search-sce add origin https://github.com/intelivix/tribunais .
+python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.usbunais .
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 0
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping False
 python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping --mapping 0
-python esmongo-fields.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-indpy .
 python esmongo-fields.py --coll extracao_nextel_base_civel --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
+python esmongo-fields.py --coll extracao_sulamerica_descobertanacional --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo.py --coll extracao_estacio --es-host http://search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python esmongo.py --coll extracao_estacio --es-host search-scraping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos
 python find_termos.py --colls extracao_nextel_base_civel --csv csv/harvest_estadual.csv
+python -h
+python -m "import sh
+python queens.py
 python -V
 ranger
+raping-mongo-es-iyvkbxwcm2j2mbv7lhbr4upwwu.us-east-1.es.amazonaws.com --es-port 80 --es-index tribunais --es-type processos --mapping 0
 reboot
 rm *
-rm bash_history
-rm Captura_de_tela_2018-02-06-14:06:33.png
+rm 1
+rm adapta-gtk-theme-master.zip
+rm .bash*
 rm colors
-rm .config.un\~
-rm fontes-ttf.txt
-rm fzy_0.9-1_amd64.deb
-rm Images/Captura_de_area_2018-02-06-14:07:02.png
-rm .init.vim.un
-rm .init.vim.un\~
 rm install.zsh
-rm libstdc++.so.*
-rm .netrwhist
-rm npm-debug.log
-rm nvim
+rm output.txt
 rm -rf ./*
+rm -rf adapta-gtk-theme-master
 rm -rf colors
-rm -rf .config/nvim/plugged
-rm -rf examples.desktop
 rm -rf ladc
 rm -rf logs/*
 rm -rf __pycache__
+rm -rf search
 rm -rf stderr/*
-rm -rf termite
+rm -rf test
 rm -rf tribunais
 rm -rf vim
-rm -rf .vim.local
-rm -rf vim-pyenv
-rm -rf vte-ng
-rm -r Imagens
-rm -rm .tmux
-rm robo3t-1.1.1-linux-x86_64-c93c6b0.tar.gz
-rm -r .tmux
-rm -r .vim.local
-rm -r vim-pyenv
-rm termite
-rm termite-install-master.zip
-rm termite.terminfo
-rm .tmux
-rm .tmux.conf
-rm .tmux.conf.local
-rm vim
+rm stderr.txt
+rm test.py
+rm tutorial.py
 rm .vimrc.arch
 rm z
-rm zsh_history
 rm z.zsh\~
 robo3t
 s
 set -o vi
-sh autogen.sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+setxkbmap -model abnt2 -layout br -variant abnt2 -option caps:swapescape
+setxkbmap -model abnt2 -layout br -variant abnt2 -option caps:swapescape\
 shutdown
 SHUTDOWN
 SHUTDOWN\
@@ -571,162 +466,110 @@ shutdown -c
 shutdown now
 sl
 source install.zsh
-source .zshrc
+source .profile
 source z.zsh
 su
-sudo a
-sudo add-apt-repository \\
-sudo apr install curl
+sudo apt autoclean
 sudo apt autoremove
-sudo apt auto-remove
-sudo apt-get install \\
-sudo apt-get install build-essential gnome-devel
-sudo apt-get install docker-ce
-sudo apt-get install exuberant-ctags
-sudo apt-get install libgtk-3-dev
-sudo apt-get install software-properties-common
+sudo apt autoremove 
+sudo apt-get install update-manager-core
 sudo apt-get update
-sudo apt install curl
-sudo apt install feh scrot
-sudo apt install gem
-sudo apt install git
-sudo apt install git-man
-sudo apt install grml-zsh
-sudo apt install --help
-sudo apt install i3
-sudo apt install libenvent
-sudo apt install libevent-dev
+sudo apt-get upgrade
+sudo apt gnome
+sudo apt install dconf-editor
+sudo apt install fonts-firacode
+sudo apt install gnome
+sudo apt install gnome-terminal
+sudo apt install gnome-terminal -f
+sudo apt install gnome-tweak-tool gnome-shell-extensions
+sudo apt install gnome-tweak-tools gnome-shell-extensions
+sudo apt install htop
+sudo apt install nemo
 sudo apt install neovim
-sudo apt install npm
-sudo apt install nvim
-sudo apt install pandoc
-sudo apt install pavucontrol
-sudo apt install pulse
-sudo apt install pulseaudio
-sudo apt install pulseaudio 
-sudo apt install rubygem
-sudo apt install rubygems
-sudo apt install scrot
-sudo apt install termite
-sudo apt install tmux
-sudo apt install vim
-sudo apt install vte
-sudo apt install xclip
-sudo apt install yandex
-sudo apt install yandex-browser-beta
-sudo apt install -y mongodb-org
-sudo apt install zsh
-sudo apt intall git
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-sudo apt-key fingerprint 0EBFCD88
-sudo apt purge gem rubygems
-sudo apt purge npm
-sudo apt purge tmux
-sudo apt purge vim
-sudo apt purge vim-runtime
-sudo apt remove npm
-sudo apt search i3
-sudo apt search neovim
-sudo apt search nerd
-sudo apt search robo3t
-sudo apt search termite
-sudo apt search vim
-sudo apt search vtop
-sudo apt search xterm
-sudo apt search yandex
-sudo apt uninstall vim
-sudo apt unstall vim
+sudo apt install neovim neovim-runtime
+sudo apt install neovim neovim-runtime -y
+sudo apt install neovim -y
+sudo apt install python-neovim
+sudo apt install --reinstall gnome-terminal -y
+sudo apt install --reinstall gnome -y
+sudo apt install --reinstall ubuntu-gnome-desktop -y
+sudo apt install sassc
+sudo apt install ubuntu-desktop 
+sudo apt install ubuntu-desktop --force
+sudo apt install ubuntu-desktop lightdm 
+sudo apt install ubuntu-desktop --upgrade
+sudo apt install ubuntu-gnome
+sudo apt install ubuntu-gnome-desktop
+sudo apt install vtop
+sudo apt list --upgradable
+sudo apt purge ubuntu-desktop
+sudo apt reinstall ubuntu-desktop
+sudo apt remove neovim neovim-runtime
+sudo apt remove termite
+sudo apt remove ubuntu-desktop
+sudo apt remove vim vim-common vim-tiny
+sudo apt search firacode
+sudo apt search plug
+sudo apt search ubuntu
+sudo apt search ubuntu-genome
+sudo apt search ubuntu-gnome
+sudo apt ubuntu-gnome-desktop
 sudo apt update
+sudo apt update 
+sudo apt update neovim neovim-runtime
+sudo apt update && sudo apt upgrade
+sudo apt update upgrade 
+sudo apt update -y && sudo apt upgrade -y
+sudo apt updte
 sudo apt upgrade
-sudo apt zsh
+sudo apt upgrade ubuntu-desktop
 sudo ./bin/z.zsh 
-sudo chmod 775 install-dotfiles.sh
+sudo cd localauthority
 sudo cp nvim.desktop robo3t.desktop
 sudo cp share/applications/z.desktop /usr/share/applications/z.desktop
-sudo deluser --remove-all-file "Libvirt Qemu"
-sudo deluser --remove-all-file Libvirt\ Qemu
 sudo docker system prune -a
-sudo dpkg -i fzy_0.9-1_amd64.deb
-sudo dpkg -l |grep fontconfig
-sudo fc-cache -f -v
-sudo gem install vimgolf
-sudo gem remove vimgolf
-sudo gem uninstall vimgolf
+sudo do-release-upgrade
+sudo do-release-upgrade 
+sudo do-release-upgrade -d
 sudo ln -s /home/intelivix/.z/bin/z.zsh z
-sudo ln -s /opt/robo3t/bin/robo3t /bin/robo3t
-sudo locale-gen
 sudo make install
-sudo mv robo3t /opt/
-sudo npm install --user -g vtop
-sudo npm install --user vtop
-sudo npm install vtop
+sudo mkdir /etc/polkit-1/localauthority
+sudo mkdir /etc/polkit-1/localauthority/90-mandatory.d
+sudo networkctl
+sudo NetworkManager
+sudo nvim /etc/update-manager/release-upgrades
 sudo nvim robo3t.desktop
-sudo pip2 install neovim
-sudo pip2 install neovimex tribunais --es-type processos --mapping 
-sudo pip2 install --upgrade --force-reinstall neovim
-sudo pip2 install -U pip
-sudo pip2 uninstall neovim
-sudo pip2 unistall neovim
-sudo pip3 install neovim
-sudo pip3 install --upgrade --force-reinstall neovim
+sudo nvim /usr/share/applications/termite.desktop
+sudo pip3 install -U neovim
 sudo pip3 install -U pip
-sudo pip install neovim
+sudo pip install -U neovim
+sudo pip install -U pip
 sudo rm z
-sudo search install termite
-sudo service mongod start
+sudo systemctl disable hibernate.target
+sudo systemctl disable suspend.target
 sudo systemctl enable mongod.service
+sudo systemctl restart NetworkManager.service
 sudo systemctl start mongod.service
+sudo systemctl status
+sudo systemctl status hibernate.target
 sudo systemctl status mongod.service
-sudo update-alternatives --config vim
-sudo update-alternatives --install /usr/bin/vim vim /usr/bin/nvim 60
-sudo update-alternatives --install /usr/bin/vim vim /usr/bin/vim 60
+sudo systemctl status suspend.target
+sudo systemctl stop hibernate.target
+sudo systemctl stop suspend.target
+sudo wifi-menu
 t
-ta
-ta ter
-termite -e tmux
-texit
-tl
+termite
 tmux
-tmux bind -H
-tmux bind -help
-tmux kill-server
-tmux-master
-tmux unbind -t vi-copy Escape
-tmux unbind -t vi-copy -h
-tmux -V
 top
-touch test.py
-tribunais
-ts ses
-uptime 
-/usr/bin/vim
-vim
-vim config 
-vim .config/termite/config
-vimgolf put 55b18bbea9c2c30d04000001
-vimgolf setup
-vim -h
-vimtutor
+/usr/local/bin/termite -e tmux
+/usr/local/bin/termite tmux
 vim .vimrc
-vim .zshrc
-vim .zshrc 
-vi .tmux.conf
-vtoo
 vtop
 wc -l .linux_history
-wc -l .linux_history 
-wc -wl .linux_history
-wget https://github.com/jhawthorn/fzy/releases/download/0.9/fzy_0.9-1_amd64.deb
-wget https://raw.githubusercontent.com/thestinger/termite/master/termite.terminfo\
-wget -q https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG -O- | sudo apt-key add -
 which python
-which vim
-xclip
-xclip -V
-xit
-xrandr
-yandex
-yandex-browser
+which termite
+yandex-browser-beta -V
+yandex-browser -V
 z
 zathura função_de_onda.pdf
 _z_check_for_updates
@@ -740,7 +583,6 @@ z make testing
 _z_print_color
 _z_print_color ola
 _z_print_color "ola"
-zsh
 zsh z.zsh
 _z_usage
 z use
