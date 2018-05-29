@@ -1,0 +1,32 @@
+." An input bar at the top? What is this? A web browser perhaps?
+let barposition="bottom"
+
+" Smoooooooth
+set smoothscroll
+
+" Link hints
+set linkanimations
+let hintcharacters = "asdfqwerzxcv"
+map T createActiveTabbedHint
+
+" The previous tab is "up", not "down".
+map K previousTab
+map J nextTab
+
+" Do not interfere with tab switching with control.
+unmap <C-6>
+
+" One keystroke to paste the clipboard into a search engine is a bit too much for me.
+unmap p
+unmap P
+
+" Instead, use "p" for something more useful.
+map p passKeys
+
+" Open a new page
+map o :open<Space>
+
+" Site specific settings
+site '*://github.com/*' {
+  unmap y
+}

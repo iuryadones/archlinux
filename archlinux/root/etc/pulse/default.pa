@@ -136,8 +136,6 @@ load-module module-filter-heuristics
 load-module module-filter-apply
 
 ### Enable clean noise
-load-module module-echo-cancel aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0\ digital_gain_control=0"
-
-### Make some devices default
-# set-default-sink 0 
-# set-default-source 1
+load-module module-echo-cancel use_master_format=1 aec_method=webrtc sink_properties=device.description="Noise_Reduction" aec_args="analog_gain_control=0 digital_gain_control=1" source_name=echoCancel_source sink_name=echoCancel_sink
+set-default-source echoCancel_source 
+set-default-sink echoCancel_sink 

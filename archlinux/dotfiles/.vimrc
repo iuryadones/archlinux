@@ -60,8 +60,8 @@ call plug#begin(s:plugdir)
     Plug 'honza/vim-snippets'
     Plug 'iuryxavier/vim-simple-tex-fold'
     Plug 'iuryxavier/vim-syntax'
-    " Plug 'lambdalisue/vim-pyenv'
-    Plug 'majutsushi/tagbar'
+    Plug 'lambdalisue/vim-pyenv'
+    Plug 'mhinz/vim-startify'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'tpope/vim-commentary'
     Plug 'vim-airline/vim-airline'
@@ -70,7 +70,7 @@ call plug#begin(s:plugdir)
 call plug#end()
 autocmd VimEnter *
      \ if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
-     \ | PlugInstall | PlugClean! | q
+     \ | PlugInstall | q
      \ | endif
 
 
@@ -167,7 +167,6 @@ endif
 
 if has("autocmd")
   filetype plugin indent on
-
   augroup vimStartup
     au!
     autocmd BufReadPost *
@@ -175,14 +174,6 @@ if has("autocmd")
       \ |   exe "normal! g`\""
       \ | endif
   augroup END
-
-  augroup vimrcEx
-  au!
-  autocmd FileType text setlocal textwidth=80
-  augroup END
-
-else
-  set autoindent
 endif
 
 if !exists(":DiffOrig")
@@ -196,6 +187,15 @@ endif
 
 if has('persistent_undo')
   set undofile
+endif
+
+if has("autocmd")
+  augroup vimrcEx
+  au!
+  autocmd FileType text setlocal textwidth=80
+  augroup END
+else
+  set autoindent
 endif
 
 if has('syntax') && has('eval')
@@ -224,9 +224,8 @@ augroup END
 " Clipboard                                                                {{{1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has('unnamedplus')
-  set clipboard+=unnamed
-  set clipboard+=unnamedplus
+if has('unamedplus')
+  set clipboard=unnamed,unamedplus
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -236,7 +235,7 @@ endif
 try
     colorscheme vim-syntax
 catch
-    colorscheme desert
+    colorscheme default
 endtry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -293,22 +292,10 @@ function! CompileFile()
     endif
 endfunction
 
-" UltiSnips ExpandSnippetOrJump
 let g:ulti_expand_or_jump_res=0
 function! Ulti_ExpandOrJump_and_getRes()
-    if exists('g:UltiSnipsListSnippets')
-        call UltiSnips#ExpandSnippetOrJump()
-        return g:ulti_expand_or_jump_res
-    else
-        return g:ulti_expand_or_jump_res
-    endif
-endfunction
-
-" deoplete mappings
-inoremap <expr><TAB> pumvisible() ? "\<C-y>\<CR>" : "\<TAB>"
-inoremap <silent> <CR> <C-r>=<SID>cr_function()<CR>
-function! s:cr_function()
-    return deoplete#mappings#smart_close_popup()."\<CR>"
+    call UltiSnips#ExpandSnippetOrJump()
+    return g:ulti_expand_or_jump_res
 endfunction
 
 function Count(word)
@@ -338,18 +325,19 @@ nmap <Leader>w <Esc>:call Count(expand("<cword>"))<CR>
 nnoremap <Leader>st      :vsplit +terminal<cr>
 nnoremap <Leader>ht      :split +terminal<cr>
 
+" editing nvim
+nnoremap <Leader>ev :vsplit ~/.vimrc<CR>
+nnoremap <Leader>sv :source ~/.vimrc<CR>
+
 " Tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <silent> <Leader>tt :tabnew<CR>
 
 " Simplify Leader mappings Clipboard
-vnoremap <Leader>P "+P
+noremap <Leader>y "+y
 nnoremap <Leader>p "+p
-nnoremap <Leader>y "+y
-vnoremap <Leader>P "+P
-vnoremap <Leader>p "+p
-vnoremap <Leader>y "+y
+nnoremap <Leader>P "+P
 
 " NERDTreeToggle open/close
 nnoremap <Leader><Leader> <ESC>:NERDTreeToggle<CR>
@@ -357,9 +345,6 @@ nnoremap <Leader><Leader> <ESC>:NERDTreeToggle<CR>
 " Python, C++ e C
 nnoremap <F5> <ESC>:call CompileFile()<CR>
 inoremap <F5> <ESC>:call CompileFile()<CR>
-
-" Tagbar Toggle
-nnoremap <F8> :TagbarToggle<CR>
 
 " Visual com Python
 vnoremap <F5> :!python<CR>
@@ -371,7 +356,7 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <Leader>o za
 
 " no highlighting
-nnoremap <Leader><CR> :noh<CR>
+nnoremap <leader><cr> :noh<cr>
 
 " Simplify shortcut for creating windows
 nnoremap <Leader>h :call WinCreate('h')<CR>
@@ -393,20 +378,12 @@ inoremap <C-S-Up> <Esc>:m .-2<CR>==gi
 vnoremap <C-S-Down> :m '>+1<CR>gv=gv
 vnoremap <C-S-Up> :m '<-2<CR>gv=gv
 
-" syntax toggle
 map <F7> :if exists("g:syntax_on") <Bar>
-    \
     \   highlight clear <Bar>
     \   syntax clear <Bar>
     \   syntax off <Bar>
     \ else <Bar>
-    \   syntax enable <Bar>
-    \   syntax on <Bar>
-    \   try <Bar>
-    \       colorscheme vim-syntax <Bar>
-    \   catch <Bar>
-    \       colorscheme desert <Bar>
-    \   endtry <Bar>
+    \   colorscheme iaxs-monokai <Bar>
     \ endif <CR>
 
 " UtilSnips Trigger
@@ -442,7 +419,7 @@ let g:ycm_use_ultisnips_completer=1
 let g:jedi#auto_initialization=1
 let g:jedi#auto_vim_configuration=0
 let g:jedi#completions_command=""
-let g:jedi#completions_enabled=1
+let g:jedi#completions_enabled=0
 let g:jedi#popup_on_dot=1
 let g:jedi#show_call_signatures="1"
 let g:jedi#show_call_signatures_delay=0
@@ -450,16 +427,17 @@ let g:jedi#smart_auto_mappings=0
 
 autocmd FileType nerdtree setlocal number relativenumber
 
-" if exists('g:jedi') && exists('g:pyenv') 
-"   if jedi#init_python()
-"     function! s:jedi_auto_force_py_version() abort
-"       let major_version=pyenv#python#get_internal_major_version()
-"       call jedi#force_py_version(major_version)
-"     endfunction
-"     augroup vim-pyenv-custom-augroup
-"       au! *
-"       au User vim-pyenv-activate-post   call s:jedi_auto_force_py_version()
-"       au User vim-pyenv-deactivate-post call s:jedi_auto_force_py_version()
-"     augroup END
-"   endif
-" endif
+if exists('g:jedi')
+  if jedi#init_python()
+    function! s:jedi_auto_force_py_version() abort
+      let major_version = pyenv#python#get_internal_major_version()
+      call jedi#force_py_version(major_version)
+    endfunction
+    augroup vim-pyenv-custom-augroup
+      au! *
+      au User vim-pyenv-activate-post   call s:jedi_auto_force_py_version()
+      au User vim-pyenv-deactivate-post call s:jedi_auto_force_py_version()
+    augroup END
+  endif
+endif
+

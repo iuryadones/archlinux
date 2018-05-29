@@ -1,0 +1,418 @@
+# vim:filetype=i3
+
+# < Comand: Mod1 > Alt or < Comand: Mod4 > Win
+set $mod Mod1
+set $sup Mod4
+
+#font pango:monospace 10
+font pango:DejaVu Sans Mono Terminus (TTF) 10
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $sup
+
+# color: http://www.color-hex.com/color-palette/39942
+# set color focused 
+set $f-border                       #41434f
+set $f-background                   #406e8f
+set $f-text                         #cee0c8
+set $f-indicator                    #468ca5
+set $f-child-border                 #7196a6
+
+# set color focused_inactive
+set $fi-border                      #406e8f
+set $fi-background                  #41434f
+set $fi-text                        #7196a6
+set $fi-indicator                   #468ca5
+set $fi-child-border                #cee0c8
+
+# set color unfocused
+set $uf-border                      #406e8f
+set $uf-background                  #41434f
+set $uf-text                        #7196a6
+set $uf-indicator                   #468ca5
+set $uf-child-border                #41434f
+
+# set color urgent
+set $u-border                       #406e8f
+set $u-background                   #ffe0c8
+set $u-text                         #406e8f
+set $u-indicator                    #468ca5
+set $u-child-border                 #ffe0c8
+
+# set color placeholder
+set $ph-border                      #406e8f
+set $ph-background                  #41434f
+set $ph-text                        #7196a6
+set $ph-indicator                   #468ca5
+set $ph-child-border                #41434f
+
+# set color background
+set $background                     #406e8f
+
+# Bar
+# set color
+set $bar-background                 #41434f
+set $bar-statusline                 #cee0c8
+set $bar-separator                  #7196a6
+
+# set color focused workspace
+set $fw-border                      #41434f
+set $fw-background                  #406e8f
+set $fw-text                        #cee0c8
+
+# set color active workspace
+set $aw-border                      #41434f
+set $aw-background                  #cee0c8
+set $aw-text                        #7196a6
+
+# set color inactive workspace
+set $iw-border                      #406e8f
+set $iw-background                  #41434f
+set $iw-text                        #7196a6
+
+# set color urgent workspace
+set $uw-border                      #406e8f
+set $uw-background                  #ffe0c8
+set $uw-text                        #406e8f
+
+# Color_Class           Border       Background     Text     Indicator     Child_Border
+client.focused          $f-border    $f-background  $f-text  $f-indicator  $f-child-border
+client.focused_inactive $fi-border   $fi-background $fi-text $fi-indicator $fi-child-border
+client.unfocused	    $uf-border   $uf-background $uf-text $uf-indicator $uf-child-border
+client.urgent           $u-border    $u-background  $u-text  $u-indicator  $u-child-border
+client.placeholder      $ph-border   $ph-background $ph-text $ph-indicator $ph-child-border
+client.background       $background
+
+# Bar LVDS-1-1 
+# status_command         i3status -c ~/.config/i3/i3status/config
+# status_command         i3blocks -c ~/.config/i3/i3blocks/config
+bar {
+    output                 LVDS-1-1
+    status_command         i3blocks -c ~/.config/i3/i3blocks/config
+    position               bottom
+    workspace_buttons      yes
+    binding_mode_indicator yes
+    tray_padding           1
+    colors {
+        background $bar-background
+        statusline $bar-statusline
+        separator  $bar-separator
+
+        # Color_Class      Border     Background     Text
+        focused_workspace  $fw-border $fw-background $fw-text
+        active_workspace   $aw-border $aw-background $aw-text
+        inactive_workspace $iw-border $iw-background $iw-text
+        urgent_workspace   $uw-border $uw-background $uw-text
+    }
+}
+
+# Bar HDMI-1-1 
+#bar {
+#    output                 HDMI-1
+#    status_command         i3status -c ~/.config/i3/i3status/config
+#    position               bottom
+#    workspace_buttons      yes
+#    binding_mode_indicator yes
+#    tray_padding           1
+#    colors {
+#        background $bar-background
+#        statusline $bar-statusline
+#        separator  $bar-separator
+#
+#        # Color_Class      Border     Background     Text
+#        focused_workspace  $fw-border $fw-background $fw-text
+#        active_workspace   $aw-border $aw-background $aw-text
+#        inactive_workspace $iw-border $iw-background $iw-text
+#        urgent_workspace   $uw-border $uw-background $uw-text
+#    }
+#}
+
+## Bar VGA-1-1
+#bar {
+#    output                 VGA-1-1
+#    status_command         i3status -c ~/.config/i3/i3status/config
+#    position               bottom
+#    workspace_buttons      yes
+#    binding_mode_indicator yes
+#    tray_padding           1
+#    colors {
+#        background $bar-background
+#        statusline $bar-statusline
+#        separator  $bar-separator
+#
+#        # Color_Class      Border     Background     Text
+#        focused_workspace  $fw-border $fw-background $fw-text
+#        active_workspace   $aw-border $aw-background $aw-text
+#        inactive_workspace $iw-border $iw-background $iw-text
+#        urgent_workspace   $uw-border $uw-background $uw-text
+#    }
+#}
+
+
+###########################
+# Disparos Personalizados #
+###########################
+
+# KeyMap
+# exec --no-startup-id "setxkbmap -model abnt2 -layout br -variant abnt2 -option caps:swapescape"
+
+# Compton
+# exec --no-startup-id "compton --config ~/.config/i3/compton/config -b"
+
+# Wallpaper
+exec_always --no-startup-id "feh --bg-scale ~/.wallpaper/archlinux_simplicity.png"
+
+# Audio
+exec --no-startup-id "pulseaudio --start"
+
+###########################
+# Comandos Personalizados #
+###########################
+
+# Change Focus
+bindsym --release $sup+h             focus left
+bindsym --release $sup+j             focus down
+bindsym --release $sup+k             focus up
+bindsym --release $sup+l             focus right
+
+# Move Focused Window
+bindsym --release $sup+Shift+h       move left
+bindsym --release $sup+Shift+j       move down
+bindsym --release $sup+Shift+k       move up
+bindsym --release $sup+Shift+l       move right
+
+# Alternatively, you can use the cursor keys:
+bindsym --release $mod+Left          focus left
+bindsym --release $mod+Down          focus down
+bindsym --release $mod+Up            focus up
+bindsym --release $mod+Right         focus right
+
+# Alternatively, you can use the cursor keys:
+bindsym --release $mod+Shift+Left    move left
+bindsym --release $mod+Shift+Down    move down
+bindsym --release $mod+Shift+Up      move up
+bindsym --release $mod+Shift+Right   move right
+
+# enter fullscreen mode for the focused container
+bindsym --release $sup+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $sup+h split horizontal
+bindsym $sup+t split toggle
+bindsym $sup+v split vertical
+bindsym $sup+s layout stacking
+bindsym $sup+w layout tabbed
+bindsym $sup+e layout toggle split
+
+# toggle tiling / floating
+bindsym $sup+space floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# WorkSpace customizada
+set $WS1 1
+set $WS2 2
+set $WS3 3
+set $WS4 4
+set $WS5 5
+set $WS6 6
+set $WS7 7
+set $WS8 8
+set $WS9 9
+set $WS0 10
+
+set $default_gaps_inner 10
+set $default_gaps_outer 5
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
+
+# workspace $WS2 gaps inner 0
+# workspace $WS2 gaps outer 0
+
+workspace_auto_back_and_forth yes
+force_display_urgency_hint 0 ms
+focus_on_window_activation urgent
+
+floating_minimum_size -1 x -1
+floating_maximum_size -1 x -1
+
+# switch to workspace
+bindsym --release $sup+1 workspace $WS1
+bindsym --release $sup+2 workspace $WS2
+bindsym --release $sup+3 workspace $WS3
+bindsym --release $sup+4 workspace $WS4
+bindsym --release $sup+5 workspace $WS5
+bindsym --release $sup+6 workspace $WS6
+bindsym --release $sup+7 workspace $WS7
+bindsym --release $sup+8 workspace $WS8
+bindsym --release $sup+9 workspace $WS9
+bindsym --release $sup+0 workspace $WS0
+
+# move focused container to workspace
+bindsym --release $sup+Shift+1 move container to workspace $WS1
+bindsym --release $sup+Shift+2 move container to workspace $WS2
+bindsym --release $sup+Shift+3 move container to workspace $WS3
+bindsym --release $sup+Shift+4 move container to workspace $WS4
+bindsym --release $sup+Shift+5 move container to workspace $WS5
+bindsym --release $sup+Shift+6 move container to workspace $WS6
+bindsym --release $sup+Shift+7 move container to workspace $WS7
+bindsym --release $sup+Shift+8 move container to workspace $WS8
+bindsym --release $sup+Shift+9 move container to workspace $WS9
+bindsym --release $sup+Shift+0 move container to workspace $WS0
+
+# kill focused window
+bindsym --release $sup+Shift+q kill
+
+# reload the configuration file
+bindsym --release $sup+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym --release $sup+Shift+r restart
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+    bindsym l         resize shrink width  10 px or 1 ppt
+    bindsym j         resize grow   height 10 px or 1 ppt
+    bindsym k         resize shrink height 10 px or 1 ppt
+    bindsym h         resize grow   width  10 px or 1 ppt
+
+    bindsym Left  resize shrink width  10 px or 1 ppt
+    bindsym Down  resize grow   height 10 px or 1 ppt
+    bindsym Up    resize shrink height 10 px or 1 ppt
+    bindsym Right resize grow   width  10 px or 1 ppt
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym --release $sup+r mode "resize"
+
+set $mode_power power
+bindsym $mod+Control+l mode "$mode_power"
+mode "$mode_power" {
+    bindsym l mode "default", exec --no-startup-id ~/.config/i3/i3exit/script.sh logout
+    bindsym s mode "default", exec --no-startup-id ~/.config/i3/i3exit/script.sh suspend
+    bindsym h mode "default", exec --no-startup-id ~/.config/i3/i3exit/script.sh hibernate
+    bindsym r mode "default", exec --no-startup-id ~/.config/i3/i3exit/script.sh reboot
+    bindsym p mode "default", exec --no-startup-id ~/.config/i3/i3exit/script.sh poweroff
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+set $mode_gaps gaps
+set $mode_gaps_outer outer gaps
+set $mode_gaps_inner inner gaps
+bindsym $mod+Control+g mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym o      mode "$mode_gaps_outer"
+    bindsym i      mode "$mode_gaps_inner"
+    bindsym 0      mode "default", exec --no-startup-id i3-msg "gaps inner current set 0" && i3-msg "gaps outer current set 0"
+    bindsym d      mode "default", exec --no-startup-id i3-msg "gaps inner current set $default_gaps_inner" && i3-msg "gaps outer current set $default_gaps_outer"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+    bindsym p     gaps inner current plus 5
+    bindsym m     gaps inner current minus 5
+    bindsym 0     mode "default", gaps inner current set 0
+    bindsym d     mode "default", gaps inner current set $default_gaps_inner
+
+    bindsym Shift+p     gaps inner all plus 5
+    bindsym Shift+m     gaps inner all minus 5
+    bindsym Shift+0     mode "default", gaps inner all set 0
+    bindsym Shift+d     mode "default", gaps inner all set $default_gaps_inner
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+    bindsym p     gaps outer current plus 5
+    bindsym m     gaps outer current minus 5
+    bindsym 0     mode "default", gaps outer current set 5
+    bindsym d     mode "default", gaps outer current set $default_gaps_outer
+
+    bindsym Shift+p     gaps outer all plus 5
+    bindsym Shift+m     gaps outer all minus 5
+    bindsym Shift+0     mode "default", gaps outer all set 5
+    bindsym Shift+d     mode "default", gaps outer all set $default_gaps_outer
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Configure os displays externos
+set $mode_display (v) VGA ON || (f) VGA OFF || (h) HDMI ON || (g) HDMI OFF
+mode "$mode_display" {
+    bindsym v exec --no-startup-id "xrandr --output VGA-1-1  --auto --right-of LVDS-1-1", mode "default"
+    bindsym f exec --no-startup-id "xrandr --output VGA-1-1  --auto --off",            mode "default"
+    bindsym h exec --no-startup-id "xrandr --output HDMI-1-1 --auto --right-of LVDS-1-1", mode "default"
+    bindsym g exec --no-startup-id "xrandr --output HDMI-1-1 --auto --off",            mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym --release $sup+x mode "$mode_display"
+
+# exit i3 (logs you out of your X session)
+bindsym --release $sup+Shift+e exec --no-startup-id  "i3-nagbar -t warning -m 'Pressione o botão sair, caso queira realmente sair do i3?' -b 'sair' 'i3-msg exit'"
+
+# Google Chrome
+bindsym $sup+Shift+i exec --no-startup-id yandex-browser-beta
+
+# Start a terminal
+bindsym $sup+Return exec --no-startup-id termite
+
+# Start dmenu (a program launcher)
+bindsym --release $sup+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#41434f' -sb '#406e8f' -sf '#cee0c8' -l 3 -i" --entry-type="command"
+
+# PrintScreen
+bindsym --release Print       exec --no-startup-id "scrot ~/Images/Captura_de_tela_%Y-%m-%d-%T.png"
+bindsym --release Shift+Print exec --no-startup-id "scrot -s ~/Images/Captura_de_area_%Y-%m-%d-%T.png"
+
+# Sreen brightness controls
+bindsym --release XF86MonBrightnessUp   exec --no-startup-id "light -A 10"
+bindsym --release XF86MonBrightnessDown exec --no-startup-id "light -U 10"
+
+# Pulse Audio controls
+set $sink `pactl list short sinks | cut -f1 | xargs | awk '{print $1}'`
+bindsym --release XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume $sink +5%"
+bindsym --release XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume $sink -5%"
+bindsym --release XF86AudioMute        exec --no-startup-id "pactl set-sink-mute $sink toggle"
+
+###########################
+#    Configura Janelas    #
+###########################
+set $height 34
+
+new_window none
+
+for_window [class=(?i)termite] border pixel 1
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="Preferences"] floating enable
+
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
+for_window [class="(?i)VirtualBox" title="(?i)Manager"] floating enable
+for_window [class="(?i)VirtualBox"] floating enable
+
+for_window [class="(?i)vokoscreen"] floating enable
+
+for_window [class="(?i)pavucontrol"] floating enable, move position mouse
+for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
+
+assign [class="(?i)yandex"] $WS2
+assign [class="(?i)vokoscreen"] $WS3
